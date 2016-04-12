@@ -1,7 +1,8 @@
 $(document).ready(function() {
   // Navigation
   $('.menu-toggle').click(function() {
-    $('.site-nav').slideToggle(500);
+    $('.site-nav').fadeToggle(500);
+
   });
 });
 
@@ -10,8 +11,10 @@ $(document).ready(function() {
 var icon = $(".menu-icon")
 $(".menu-toggle").click(function() {
   if (icon.hasClass("active")) {
+    $('body').css({ 'overflow': "auto" });
     icon.removeClass("active");
   } else {
+    $('body').css({ 'overflow': "hidden" });
     icon.addClass("active");
   }
 });

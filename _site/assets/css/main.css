@@ -363,3 +363,11 @@ footer {
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: 1px; }
+
+.site-nav {
+  position: absolute;
+  top: 0px;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); }
