@@ -120,6 +120,37 @@ footer {
   & a {
     color: $white;
   }
+
+  &-container {
+    top: 60px;
+    padding-left: 10px;
+    position: absolute;
+    color: $white;
+
+    @include desktop {
+      padding-left: 80px;
+    }
+
+    & h1 {
+      font-size: 5rem;
+      font-weight: 600;
+    }
+
+    & h2 {
+      font-size: 2.6rem;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    & p {
+      color: $white;
+      font-size: 1.6rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 40px;
+      max-width: 500px
+    }
+  }
 }
 
 // Featured project
