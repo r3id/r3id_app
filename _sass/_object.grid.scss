@@ -1,0 +1,115 @@
+// -- Object: Grid
+
+// Grid functions
+// Lets calculate the column widths
+@function grid-column-width($n) {
+  @return  $column-width * $n - ($column-margin*($total-columns - $n)/$total-columns);
+}
+
+@function grid-offset-length($n) {
+  @return grid-column-width($n) + $column-margin;
+}
+
+// Container & Rows
+.container {
+  width: $mobile-container;
+  max-width: $max-container-width;
+  margin: 0 auto;
+  padding: 0 5px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.row {
+  zoom: 1;
+  // There is room to add padding here if its required, otherwise set at a class
+  // level, which gives EVEN MORE control!
+}
+
+.col {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+////
+// To set the width of a column on desktops do this: @extend %col-*a number*;
+// You make certain classes not display on screen sizes by adding:
+// @extend %mobile-none; for mobile
+// @extend %tablet-none; for tablet
+// @extend %desktop-none; for desktop
+////
+
+// Desktop grid widths
+@media (min-width: $desktop-break) {
+  .container {
+    max-width: $desktop-container;
+  }
+
+  .col {
+    margin-left: $column-margin;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  %col-1  { width: grid-column-width(1); }
+  %col-2  { width: grid-column-width(2); }
+  %col-3  { width: grid-column-width(3); }
+  %col-4  { width: grid-column-width(4); }
+  %col-5  { width: grid-column-width(5); }
+  %col-6  { width: grid-column-width(6); }
+  %col-7  { width: grid-column-width(7); }
+  %col-8  { width: grid-column-width(8); }
+  %col-9  { width: grid-column-width(9); }
+  %col-10 { width: grid-column-width(10); }
+  %col-11 { width: grid-column-width(11); }
+  %col-12 { width: 100%; margin-left: 0; }
+
+  %col-half { width: grid-column-width(6); }
+  %col-third {width: grid-column-width(4); }
+  %col-two-thirds { width: grid-column-width(8); }
+  %col-quater {width: grid-column-width(3); }
+
+  // Offsets
+  %offset-by-1  { margin-left: grid-offset-length(1); }
+  %offset-by-2  { margin-left: grid-offset-length(2); }
+  %offset-by-3  { margin-left: grid-offset-length(3); }
+  %offset-by-4  { margin-left: grid-offset-length(4); }
+  %offset-by-5  { margin-left: grid-offset-length(5); }
+  %offset-by-6  { margin-left: grid-offset-length(6); }
+  %offset-by-7  { margin-left: grid-offset-length(7); }
+  %offset-by-8  { margin-left: grid-offset-length(8); }
+  %offset-by-9  { margin-left: grid-offset-length(9); }
+  %offset-by-10 { margin-left: grid-offset-length(10); }
+  %offset-by-11 { margin-left: grid-offset-length(11); }
+
+  %offset-by-half { margin-left: grid-offset-length(6); }
+  %offset-by-one-third  { margin-left: grid-offset-length(4); }
+  %offset-by-two-thirds  { margin-left: grid-offset-length(8); }
+
+  // Hide from desktop
+  %desktop-none {
+    display: none;
+  }
+}
+
+
+@media only screen and (min-width: $tablet-break) and (max-width: $desktop-break) {
+  .container {
+    max-width: $tablet-container;
+  }
+
+  // Hide from tablet view
+  %tablet-none {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: $mobile-break) {
+  // Hide from mobile view
+  %mobile-none {
+    display: none;
+  }
+}

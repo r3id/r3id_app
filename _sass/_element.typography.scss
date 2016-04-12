@@ -1,0 +1,90 @@
+// -- Element: Typography
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 5.2rem;
+}
+
+h2 {
+  font-size: 3.0rem;
+  line-height: 4.5rem;
+}
+
+h3 {
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+}
+
+p {
+  color: $font-default;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 0 0 1.6rem;
+
+  &.lead {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin: 0 0 1.8rem;
+  }
+}
+
+// Could become a mixin ?
+a {
+  color: $link-default;
+  text-decoration: none;
+  cursor:pointer;
+
+  &:hover {
+    color: $link-default;
+    text-decoration: underline;
+  }
+
+  &:visited,
+  &:focus {
+    color: $link-default;
+  }
+}
+
+strong {
+  font-weight: 600;
+}
+
+small {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin: 0 0 1.2rem;
+}
+
+blockquote {
+  font-size: 1.6rem;
+  font-style: italic;
+  padding: 1rem  0 1rem 1.5rem ;
+  margin: 0 2rem;
+  border-left: 2px solid rgb(204,204,204);
+}
+
+cite {
+  color: rgb(153,153,153);
+  font-size: 1.2rem;
+}

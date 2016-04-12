@@ -1,0 +1,32 @@
+//// -- Settings
+
+//// Responsive
+// Container widths
+$mobile-container                               : 100%  ;
+$tablet-container                               : 70.0rem;
+$desktop-container                              : 96.0rem;
+
+// break points
+$mobile-break                                   : $tablet-container + 2.4rem;
+$tablet-break                                   : $tablet-container + 2.5rem;
+$desktop-break                                  : $desktop-container      ;
+
+// Column variables
+$max-container-width                            : 100.0rem;
+$total-columns                                  : 12;
+$column-width                                   : 100 / $total-columns; // calculates individual column width based off of # of columns
+$column-margin                                  : 0%; // Adds space between columns, must be a %.
+
+//// Font
+$font-family                                  : 'Source Sans Pro', sans-serif;
+
+//// Global
+$global-radius                                  : 2px !default;
+
+//// Colors
+$font-default                                   : rgb(119, 119, 119);
+$doughnut                                       : rgb(241, 85, 62);
+$link-default                                   : $doughnut;
+$error-color                                    : rgb(208,2,27);
+$white                                          : rgb(255,255,255);
+$black                                          : rgb(0,0,0);

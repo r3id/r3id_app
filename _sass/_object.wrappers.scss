@@ -1,0 +1,14 @@
+// -- Object: Wrappers
+
+:root { font-size: 10px; }
+
+html {
+  //background: rgb(68,68,68);
+  font-family: $font-family;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+  margin:0;
+}
