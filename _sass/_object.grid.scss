@@ -97,9 +97,10 @@
 
 
 @media only screen and (min-width: $tablet-break) and (max-width: $desktop-break) {
-  .container {
-    max-width: $tablet-container;
-  }
+  // Removed on R3ID as not needed.
+  // .container {
+  //   max-width: $tablet-container;
+  // }
 
   // Hide from tablet view
   %tablet-none {
