@@ -191,15 +191,17 @@ footer {
   .hero a {
     color: white; }
   .hero-container {
-    top: 60px;
+    top: 50px;
     padding: 0 10px;
     position: absolute;
     color: white; }
     @media (min-width: 72.5rem) {
       .hero-container {
+        top: 70px;
         padding-left: 80px; } }
     .hero-container h1 {
       font-size: 5rem;
+      line-height: 1;
       font-weight: 600; }
     .hero-container h2 {
       font-size: 2.6rem;
@@ -212,10 +214,12 @@ footer {
       line-height: 1.6;
       margin-bottom: 20px;
       max-width: 500px; }
-    .hero-container .social-links a {
-      margin: 0 10px 0 0; }
-      .hero-container .social-links a .icon {
-        font-size: 2.0rem; }
+    .hero-container .social-links {
+      margin: 0 0 20px; }
+      .hero-container .social-links a {
+        margin: 0 10px 0 0; }
+        .hero-container .social-links a .icon {
+          font-size: 2.0rem; }
 
 .featured-project {
   animation: fadein 0.5s both 0.1s;
@@ -251,15 +255,15 @@ footer {
   transition: 100ms; }
 
 .about-title {
-  font-size: 40px;
-  font-weight: 600;
-  margin-bottom: 10px; }
+  font-size: 4.0rem;
+  line-height: 4rem;
+  font-weight: 600; }
 
 .about-subtitle {
   color: #8fa1ae;
-  font-size: 26px;
+  font-size: 2.6rem;
   font-weight: 300;
-  margin-bottom: 70px; }
+  margin-bottom: 50px; }
 
 .resume-section {
   margin-bottom: 60px; }
