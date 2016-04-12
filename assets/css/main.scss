@@ -111,22 +111,27 @@ footer {
 
 // Hero
 .hero {
-background-color: #3A4750;
-height: 470px;
-padding: 5px;
-position: relative;
--webkit-user-select: none;
+  background-color: $doughnut;
+  height: 380px;
+  padding: 5px;
+  position: relative;
+  -webkit-user-select: none;
+
+  & a {
+    color: $white;
+  }
 }
 
 // Featured project
 .featured-project {
 animation: fadein 0.5s both 0.1s;
-background-color: rgb(173, 216, 230);
+background-color: rgb(223, 223, 223);
 }
 // Case studies
 .project-col {
 float: left;
 width: 50%;
+background-color: rgb(223, 223, 223);
 
 &:nth-of-type(odd) {
   padding-right: 10px;
@@ -209,7 +214,7 @@ width: 50%;
       margin-left: 200px;
       margin-bottom: 40px;
       width: calc(100% - 200px);
-    }    
+    }
 
     & h3 {
       &.resume-entry {
@@ -232,13 +237,19 @@ width: 50%;
       margin-bottom: 23px;
 
       &.resume-entry {
-        line-height: 1.5;
-        margin-bottom: 4px;
 
         &-position {
           color: rgb(143, 161, 174);
+          font-size: 1.7rem;
           display: inline-block;
+          line-height: 1.5;
           margin: 0;
+        }
+
+        &-date {
+          color: rgb(143, 161, 174);
+          font-size: 1.3rem;
+          margin-bottom: 5px;
         }
       }
     }

@@ -67,7 +67,7 @@ h6 {
   font-weight: 400; }
 
 p {
-  color: #777777;
+  color: black;
   font-size: 1.6rem;
   line-height: 1.8;
   margin: 0 0 1.6rem; }
@@ -187,19 +187,22 @@ footer {
   padding: 50px; }
 
 .hero {
-  background-color: #3A4750;
-  height: 470px;
+  background-color: #f1553e;
+  height: 380px;
   padding: 5px;
   position: relative;
   -webkit-user-select: none; }
+  .hero a {
+    color: white; }
 
 .featured-project {
   animation: fadein 0.5s both 0.1s;
-  background-color: lightblue; }
+  background-color: #dfdfdf; }
 
 .project-col {
   float: left;
-  width: 50%; }
+  width: 50%;
+  background-color: #dfdfdf; }
   .project-col:nth-of-type(odd) {
     padding-right: 10px; }
   .project-col:nth-of-type(even) {
@@ -273,10 +276,13 @@ footer {
       font-size: 1.6rem;
       line-height: 1.6;
       margin-bottom: 23px; }
-      .resume-section-content p.resume-entry {
+      .resume-section-content p.resume-entry-position {
+        color: #8fa1ae;
+        font-size: 1.7rem;
+        display: inline-block;
         line-height: 1.5;
-        margin-bottom: 4px; }
-        .resume-section-content p.resume-entry-position {
-          color: #8fa1ae;
-          display: inline-block;
-          margin: 0; }
+        margin: 0; }
+      .resume-section-content p.resume-entry-date {
+        color: #8fa1ae;
+        font-size: 1.3rem;
+        margin-bottom: 5px; }
