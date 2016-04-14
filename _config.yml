@@ -15,5 +15,7 @@ markdown: kramdown
 
 # Collection
 collections:
-  - casestudy
-  
+  casestudy:
+    title: Case study
+    render: true
+    output: true

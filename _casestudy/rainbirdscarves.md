@@ -1,8 +1,9 @@
 ---
-
-title: Rainbird Scarves
+layout: case-study
+title: Rainbird Scarves // Case Study
+project-url: http://www.rainbirdscarves.co.uk
 ---
 
-This wil be some content.
+This will be some content.
 
 ** Image

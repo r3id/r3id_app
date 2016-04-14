@@ -15,7 +15,7 @@ $desktop-break                                  : $desktop-container      ;
 $max-container-width                            : 100.0rem;
 $total-columns                                  : 12;
 $column-width                                   : 100 / $total-columns; // calculates individual column width based off of # of columns
-$column-margin                                  : 0%; // Adds space between columns, must be a %.
+$column-margin                                  : 0.5%; // Adds space between columns, must be a %.
 
 //// Font
 $font-family                                  : 'Source Sans Pro', sans-serif;

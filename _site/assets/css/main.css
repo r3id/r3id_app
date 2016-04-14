@@ -30,12 +30,12 @@ body {
     max-width: 96rem; }
 
   .col {
-    margin-left: 0%; }
+    margin-left: 0.5%; }
     .col:first-child {
       margin-left: 0; }
 
   .case-study {
-    width: 50%; } }
+    width: 49.75%; } }
 h1, h2, h3, h4, h5, h6 {
   font-weight: 300; }
 
@@ -164,7 +164,8 @@ body {
 .fade-box {
   animation: fadein 0.5s both;
   padding: 30px;
-  position: relative; }
+  position: relative;
+  margin: 0 0 5px; }
 
 .container {
   margin: 0 auto; }
@@ -247,6 +248,7 @@ footer {
   background-color: #dfdfdf;
   cursor: pointer;
   height: 250px;
+  margin: 0 0 5px;
   overflow: hidden;
   padding: 0;
   position: relative;
