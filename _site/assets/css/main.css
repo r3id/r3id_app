@@ -135,6 +135,10 @@ body {
   font-family: "Khula", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
+h1, h2, h3 {
+  margin: 0;
+  line-height: 1em; }
+
 p {
   color: #4b5c68;
   font-size: 1.6rem;
@@ -187,7 +191,8 @@ footer {
   padding: 50px; }
   footer .copyright {
     text-align: center;
-    color: white; }
+    color: white;
+    margin: 0; }
 
 .hero {
   background-color: #8dc63f;
@@ -318,12 +323,14 @@ footer {
   .case-study-details h2 {
     color: white;
     font-size: 2.4rem;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 1; }
   .case-study-details .case-study-description {
     color: white;
     font-size: 15px;
     line-height: 1.3;
     opacity: 0;
+    margin: 0 0 10px;
     visibility: hidden;
     -webkit-transition: 250ms;
     -moz-transition: 250ms;
@@ -415,13 +422,13 @@ footer {
       font-size: 1.7rem;
       font-weight: 600;
       margin: 0 10px 4px 0; }
-    .resume-section-content.resume-entry-position {
+    .resume-section-content .resume-entry-position {
       color: #8fa1ae;
       font-size: 1.7rem;
       display: inline-block;
       line-height: 1.5;
       margin: 0; }
-    .resume-section-content.resume-entry-date {
+    .resume-section-content .resume-entry-date {
       color: #8fa1ae;
       font-size: 1.3rem;
       margin-bottom: 5px; }
@@ -444,14 +451,19 @@ footer {
   background-size: cover;
   width: 100%;
   position: relative; }
-  .container-cs .hero-image h1 {
-    font-size: 4rem;
-    color: white;
+  .container-cs .hero-image .hero-content {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    z-index: 100;
-    position: relative; }
+    position: relative;
+    z-index: 10; }
+    .container-cs .hero-image .hero-content h1 {
+      font-size: 4rem;
+      color: white; }
+    .container-cs .hero-image .hero-content p {
+      color: white;
+      max-width: 500px;
+      margin: 5px auto; }
 .container-cs .hero-mask {
   top: 0;
   left: 0;
@@ -459,9 +471,9 @@ footer {
   bottom: 0;
   position: absolute;
   z-index: 0;
-  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
-  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.6) 100%);
   background-repeat: repeat-x; }
 
 .container-cs-content {
@@ -469,6 +481,19 @@ footer {
   @media (min-width: 72.5rem) {
     .container-cs-content {
       padding: 20px 80px 30px; } }
+
+.separator {
+  position: relative;
+  width: 25px;
+  height: 28px;
+  margin: 0 auto; }
+  .separator .fa {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem; }
 
 .menu-toggle {
   display: block; }

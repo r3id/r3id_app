@@ -4,7 +4,13 @@ layout: default
 
 <div class="container container-cs">
   <div class="hero-image" style="background-image:url('/assets/images/{{ page.header-image }}');">
-    <h1>{{ page.header-title }}</h1>
+    <div class="hero-content">
+      <h1>{{ page.header-title }}</h1>
+      <div class="separator">
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+      <p>{{ page.header-blurb }}</p>
+    </div>
     <div class="hero-mask"></div>
   </div>
 

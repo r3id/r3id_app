@@ -3,6 +3,7 @@ layout: case-study
 title: Capital on Tap // Case Study
 project-url: https://www.capitalontap.com
 header-title: Capital on Tap
+header-blurb: Capital on Tap are a responsible and ethical small business finance company, who specialise in offering simple, easy to understand business financial solutions.
 header-image: capontap.jpg
 ---
 
