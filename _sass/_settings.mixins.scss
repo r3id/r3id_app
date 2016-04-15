@@ -126,7 +126,7 @@
 }
 
 @mixin desktop {
-  @media (min-width: #{$tablet-break}) {
+  @media (min-width: #{$desktop-break}) {
     @content;
   }
 }
