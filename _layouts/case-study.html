@@ -1,8 +1,14 @@
 ---
 layout: default
 ---
-<div class="container container-light">
 
+<div class="container container-cs">
+  <div class="hero-image" style="background-image:url('/assets/images/{{ page.header-image }}');">
+    <h1>{{ page.header-title }}</h1>
+    <div class="hero-mask"></div>
+  </div>
+
+  <div class="container-cs-content">
     {{ content }}
-
+  </div>
 </div>

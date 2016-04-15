@@ -130,21 +130,16 @@ cite {
 .u-right {
   text-align: right; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline; }
-
 body {
   background-color: #F3F3F3;
   font-family: "Khula", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
-.clearfix {
-  clear: both; }
+p {
+  color: #4b5c68;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 23px; }
 
 @keyframes fadein {
   from {
@@ -169,21 +164,30 @@ body {
 
 .container {
   margin: 0 auto; }
+  @media (min-width: 72.5rem) {
+    .container {
+      margin: 20px auto 40px; } }
   .container-light {
     animation: fadein both 0.5s;
     background: #fff;
     color: #3A4750;
     padding: 50px 25px 30px; }
+    @media (min-width: 72.5rem) {
+      .container-light {
+        padding: 50px 80px 30px; } }
+  .container-cs {
+    animation: fadein both 0.5s;
+    background: #fff;
+    color: #3A4750;
+    padding: 0; }
 
-@media (min-width: 72.5rem) {
-  .container {
-    margin: 20px auto 40px; }
-    .container-light {
-      padding: 50px 80px 30px; } }
 footer {
   animation: fadein 0.5s both 0.45s;
-  background-color: #3A4750;
+  background-color: #3a4750;
   padding: 50px; }
+  footer .copyright {
+    text-align: center;
+    color: white; }
 
 .hero {
   background-color: #8dc63f;
@@ -326,6 +330,14 @@ footer {
     -ms-transition: 250ms;
     -o-transition: 250ms;
     transition: 250ms; }
+  .case-study-details .button {
+    color: white;
+    font-size: 1.1rem; }
+    .case-study-details .button:hover, .case-study-details .button:visited {
+      color: white; }
+    .case-study-details .button .fa {
+      margin-right: 5px;
+      transition: 100ms; }
 
 .hover-overlay {
   background-color: #3A4750;
@@ -403,21 +415,16 @@ footer {
       font-size: 1.7rem;
       font-weight: 600;
       margin: 0 10px 4px 0; }
-    .resume-section-content p {
-      color: #4b5c68;
-      font-size: 1.6rem;
-      line-height: 1.6;
-      margin-bottom: 23px; }
-      .resume-section-content p.resume-entry-position {
-        color: #8fa1ae;
-        font-size: 1.7rem;
-        display: inline-block;
-        line-height: 1.5;
-        margin: 0; }
-      .resume-section-content p.resume-entry-date {
-        color: #8fa1ae;
-        font-size: 1.3rem;
-        margin-bottom: 5px; }
+    .resume-section-content.resume-entry-position {
+      color: #8fa1ae;
+      font-size: 1.7rem;
+      display: inline-block;
+      line-height: 1.5;
+      margin: 0; }
+    .resume-section-content.resume-entry-date {
+      color: #8fa1ae;
+      font-size: 1.3rem;
+      margin-bottom: 5px; }
 
 .resume-list {
   list-style: none;
@@ -428,6 +435,40 @@ footer {
     font-size: 1.6rem;
     line-height: 1.6;
     margin-bottom: 4px; }
+
+.container-cs .hero-image {
+  display: table;
+  height: 350px;
+  background-color: #8dc63f;
+  background-position: bottom center;
+  background-size: cover;
+  width: 100%;
+  position: relative; }
+  .container-cs .hero-image h1 {
+    font-size: 4rem;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 100;
+    position: relative; }
+.container-cs .hero-mask {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0, rgba(0, 0, 0, 0.6) 100%);
+  background-repeat: repeat-x; }
+
+.container-cs-content {
+  padding: 20px 25px 30px; }
+  @media (min-width: 72.5rem) {
+    .container-cs-content {
+      padding: 20px 80px 30px; } }
 
 .menu-toggle {
   display: block; }
@@ -487,3 +528,20 @@ footer {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.7); }
+
+.site-nav-container {
+  display: table; }
+  .site-nav-container ul {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+    .site-nav-container ul li a {
+      display: block;
+      padding: 10px 30px;
+      line-height: 1;
+      font-size: 3rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: white; }
+      .site-nav-container ul li a:hover {
+        text-decoration: none; }
