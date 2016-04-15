@@ -39,12 +39,11 @@ h6 {
 p {
   color: $font-default;
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1em;
   margin: 0 0 1.6rem;
 
   &.lead {
     font-size: 1.8rem;
-    line-height: 1.8;
     margin: 0 0 1.8rem;
   }
 }

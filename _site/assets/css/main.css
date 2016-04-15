@@ -68,11 +68,10 @@ h6 {
 p {
   color: black;
   font-size: 1.6rem;
-  line-height: 1.8;
+  line-height: 1em;
   margin: 0 0 1.6rem; }
   p.lead {
     font-size: 1.8rem;
-    line-height: 1.8;
     margin: 0 0 1.8rem; }
 
 a {
@@ -160,6 +159,16 @@ p {
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
     transform: translateY(0px); } }
+.dev-version {
+  background: #db493d; }
+  .dev-version p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+    padding: 15px 0; }
+
 .fade-box {
   animation: fadein 0.5s both;
   padding: 30px;

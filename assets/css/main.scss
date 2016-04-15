@@ -30,6 +30,8 @@ body {
   font-family: "Khula", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+
+// Typography
 h1, h2, h3 {
   margin: 0;
   line-height: 1em;
@@ -62,9 +64,19 @@ to {
 }
 }
 
-// Typography
+// Dev Warning!
+.dev-version {
+  background: rgb(219, 73, 61);
 
-
+  & p {
+    color: white;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+    line-height: 1em;
+    padding: 15px 0;
+  }
+}
 // Container
 .fade-box {
   animation: fadein 0.5s both;
