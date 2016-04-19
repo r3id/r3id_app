@@ -571,59 +571,62 @@ footer {
 
 //// ---- Navigation
 .menu-toggle {
-  display: block;
+  animation: fadein 0.5s both;
 
-  @include desktop {
-    display: none;
-  }
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 100;
 }
 
 
 // Menu icon
 .menu-icon {
-  position: absolute;
-  top: 27px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  z-index: 100;
-}
-.menu-icon span {
+  cursor: pointer;
   position: relative;
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: rgb(255,255,255);
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s, bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s;
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s, bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s;
-  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s, bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1) 0.2s;
-}
-.menu-icon span:first-of-type {
-  top: -3px;
-}
-.menu-icon span:last-of-type {
-  bottom: -3px;
-}
-.menu-icon.active span {
-  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1), bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1);
-  -moz-transition: -moz-transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1), bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1);
-  transition: transform 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s, top 0.2s cubic-bezier(0.3, 1.4, 0.7, 1), bottom 0.2s cubic-bezier(0.3, 1.4, 0.7, 1);
-}
-.menu-icon.active span:first-of-type {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 1px;
-}
-.menu-icon.active span:last-of-type {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  bottom: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  & span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    transform: translateX(-50%) translateY(-50%);
+    transition: background 0.5s;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 5px;
+      transform: translateY(-6px);
+      display: block;
+      width: 20px;
+      height: 2px;
+      background-color: #fff;
+      transition: transform 0.5s;
+    }
+    &::after {
+      transform: translateY(6px);
+    }
+  }
+
+  &.is-opened {
+    span {
+      background: transparent;
+
+      &::before {
+        transform: translateY(0) rotate(-45deg);
+      }
+      &::after {
+        transform: translateY(0) rotate(45deg);
+      }
+    }
+  }
 }
 
 .site-nav {
@@ -632,15 +635,15 @@ footer {
   display: none;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .site-nav-container {
-  display: table;
+  margin:100px 0 0;
 
   ul {
-    display: table-cell;
-    vertical-align: middle;
+    list-style: none;
+    padding: 0;
     text-align: center;
 
     & li {
@@ -659,5 +662,59 @@ footer {
         }
       }
     }
+  }
+}
+
+
+// Return to top
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  font-size: 3.5rem;
+  line-height:1em;
+  color: $white;
+  text-align:center;
+  background-color: #3a4750;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+
+  @include Desktop {
+    right: 30px;
+    bottom: 30px;
+  }
+
+  &:hover, &:visited {
+    color: $white;
+  }
+
+  &.cd-is-visible,
+  &.cd-fade-out,
+  .no-touch &:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+
+  &.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+  }
+
+  &.cd-top:hover {
+    background-color: #3a4750;
+    opacity: 1;
   }
 }
