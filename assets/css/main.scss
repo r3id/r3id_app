@@ -685,7 +685,7 @@ footer {
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
 
-  @include Desktop {
+  @include desktop {
     right: 30px;
     bottom: 30px;
   }
