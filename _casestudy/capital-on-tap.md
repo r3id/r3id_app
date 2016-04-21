@@ -7,7 +7,7 @@ header-blurb: Capital on Tap are a responsible and ethical small business financ
 header-image: capontap.jpg
 ---
 
-During my time working at Capital on Tap I tasked with reworking the homepage which led to improved load times, a cleaner mobile experience, and a overall improvement to the user experience.
+During my time working at Capital on Tap I took on the task of reworking the homepage which led to improved load times, a cleaner mobile experience, and a overall improvement to the user experience.
 
 It was also the project which allowed me to kick off the Capital on Tap internal CSS library.
 
@@ -15,6 +15,8 @@ It was also the project which allowed me to kick off the Capital on Tap internal
 In the middle of 2015 the Capital on Tap website needed to be rewritten as it was not working on mobile, and had an average load time of 12 seconds. It relied heavily on some complex JavaScript code and Bootstrap.
 
 The website was only a few months old, and new branding had just been introduced. The goal of the work was to reduce page load times, improve the mobile experience and structure the site to improve SEO.
+
+![Capital on Tap](/assets/images/capontap-multi.jpeg "Multiple screen sizes")
 
 ## Solution
 - Rewrote the CSS using LESS and a more structured method.

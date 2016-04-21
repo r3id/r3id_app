@@ -87,3 +87,50 @@ cite {
   color: rgb(153,153,153);
   font-size: 1.2rem;
 }
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+// List items
+ul,
+ol {
+  font-size: 1.6rem;
+  margin: 0 0 1.6rem;
+  padding: 0 0 0 1.6rem;
+
+  & .unstyled-list {
+    list-style: none;
+  }
+
+  & .inline-list {
+    list-style: none;
+    padding: 0;
+
+    & > li {
+      display: inline-block;
+      padding: 0 5px;
+      margin: 0;
+    }
+  }
+
+  & li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: .6rem 0;
+  }
+
+  & ul {
+    list-style: disc;
+    margin: 0;
+  }
+
+  & ol {
+    list-style: decimal;
+    margin: 0;
+  }
+}

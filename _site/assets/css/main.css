@@ -103,6 +103,43 @@ cite {
   color: #999999;
   font-size: 1.2rem; }
 
+ul {
+  list-style: disc; }
+
+ol {
+  list-style: decimal; }
+
+ul,
+ol {
+  font-size: 1.6rem;
+  margin: 0 0 1.6rem;
+  padding: 0 0 0 1.6rem; }
+  ul .unstyled-list,
+  ol .unstyled-list {
+    list-style: none; }
+  ul .inline-list,
+  ol .inline-list {
+    list-style: none;
+    padding: 0; }
+    ul .inline-list > li,
+    ol .inline-list > li {
+      display: inline-block;
+      padding: 0 5px;
+      margin: 0; }
+  ul li,
+  ol li {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: .6rem 0; }
+  ul ul,
+  ol ul {
+    list-style: disc;
+    margin: 0; }
+  ul ol,
+  ol ol {
+    list-style: decimal;
+    margin: 0; }
+
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
@@ -130,7 +167,7 @@ cite {
   text-align: right; }
 
 body {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   font-family: "Khula", sans-serif;
   -webkit-font-smoothing: antialiased; }
 
@@ -143,6 +180,14 @@ p {
   font-size: 1.6rem;
   line-height: 1.6;
   margin-bottom: 23px; }
+
+blockquote {
+  margin: 0;
+  border-color: #8dc63f;
+  background: #fafafa;
+  padding: 1em 1em .8em; }
+  blockquote p {
+    margin: 0; }
 
 @keyframes fadein {
   from {
@@ -488,6 +533,21 @@ footer {
   background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.6) 100%);
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0, rgba(0, 0, 0, 0.6) 100%);
   background-repeat: repeat-x; }
+.container-cs h2 {
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  position: relative;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+  .container-cs h2:after {
+    content: '';
+    width: 50px;
+    height: 2px;
+    background: #8dc63f;
+    position: absolute;
+    left: 0;
+    bottom: -14px; }
 
 .container-cs-content {
   padding: 20px 25px 30px; }
