@@ -9,23 +9,35 @@ layout: default
     </div>
   </div>
 
-  <div class="hero-image" style="background-image:url('/assets/images/{{ page.header-image }}');">
+  <div class="hero-image" style="background-image:url('/assets/images/cs/{{ page.project-image }}');">
     <div class="hero-content">
-      <h1>{{ page.header-title }}</h1>
+      <h1>{{ page.project-title }}</h1>
       <div class="separator">
         <i class="fa fa-ellipsis-h"></i>
       </div>
-      <p>{{ page.header-blurb }}</p>
+      <p>{{ page.project-blurb }}</p>
     </div>
     <div class="hero-mask"></div>
   </div>
 
-  <div class="cd-details">
-    <h1>{{ page.header-title }}</h1>
-    URL: <a href="{{ page.project-url }}" target="_blank">{{ page.project-url }}</a>
-  </div>
 
   <div class="container-cs-content">
+    <div class="cs-details">
+      <div class="row">
+        <div class="col cs-details-item">
+          <h2>Client</h2>
+          <p>{{ page.project-title }}</p>
+        </div>
+        <div class="col cs-details-item">
+          <h2>URL</h2>
+          <p><a href="{{ page.project-url }}" target="_blank">{{ page.project-url }}</a></p>
+        </div>
+        <div class="col cs-details-item">
+          <h2>Technology</h2>
+          <p>{{ page.project-tech }}</p>
+        </div>
+      </div>
+    </div>
     {{ content }}
   </div>
 </div>

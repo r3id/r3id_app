@@ -101,7 +101,7 @@ ul,
 ol {
   font-size: 1.6rem;
   margin: 0 0 1.6rem;
-  padding: 0 0 0 1.6rem;
+  padding: 0 0 .35em 1em;
 
   & .unstyled-list {
     list-style: none;
@@ -121,7 +121,7 @@ ol {
   & li {
     font-size: 1.6rem;
     line-height: 1.6;
-    margin: .6rem 0;
+    margin: 0;
   }
 
   & ul {

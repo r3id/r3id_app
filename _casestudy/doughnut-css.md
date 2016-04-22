@@ -1,10 +1,11 @@
 ---
 layout: case-study
 title: Doughnut CSS // Case Study
-project-url: http://r3id.io/doughnut
-header-title: Doughnut CSS
-header-blurb: Doughnut is a simple, easy to use, mobile first CSS boilerplate, built using Sass, which can help kickstart any project into life.
-header-image: doughnut.png
+project-title: Doughnut CSS
+project-blurb: Doughnut is a simple, easy to use, mobile first CSS boilerplate, built using Sass, which can help kickstart any project into life.
+project-image: doughnut/doughnut.png
+project-tech: Sass, HTML 5
+project-url: http://doughnut.r3id.io
 ---
 
 There a many CSS libraries and frameworks out there, so why build another?

@@ -1,32 +1,46 @@
 ---
 layout: case-study
 title: Capital on Tap // Case Study
+project-title: Capital on Tap
+project-blurb: Capital on Tap are a responsible and ethical small business finance company, who specialise in offering simple, easy to understand financial solutions.
+project-image: cot/capontap.jpg
+project-tech: HTML 5, jQuery, LESS, CSS animations, .NET MVC
 project-url: https://www.capitalontap.com
-header-title: Capital on Tap
-header-blurb: Capital on Tap are a responsible and ethical small business finance company, who specialise in offering simple, easy to understand business financial solutions.
-header-image: capontap.jpg
 ---
 
-During my time working at Capital on Tap I took on the task of reworking the homepage which led to improved load times, a cleaner mobile experience, and a overall improvement to the user experience.
+During my time working at Capital on Tap I took on the task of reworking the company's homepage which led to improved load times, a cleaner mobile experience, and an overall improvement to the user experience. It also provided Capital on Tap with a easily maintainable front-end code base.
 
 It was also the project which allowed me to kick off the Capital on Tap internal CSS library.
 
+![Capital on Tap](/assets/images/cs/cot/capontap-multi.png "Multiple screen sizes")
+
 ## Challenge
-In the middle of 2015 the Capital on Tap website needed to be rewritten as it was not working on mobile, and had an average load time of 12 seconds. It relied heavily on some complex JavaScript code and Bootstrap.
+In mid 2015 the Capital on Tap website needed to be rewritten. The company was experiencing rapid growth, and a large number of users were using mobile devices. Due to the complex design the site was simply not providing the user experience users expected. With load times of around 12 seconds, the site relied heavily on complex SVG animations (which were not mobile friendly), multiple stylesheets including the full bootstrap library, and also a load of JavaScript.
 
-The website was only a few months old, and new branding had just been introduced. The goal of the work was to reduce page load times, improve the mobile experience and structure the site to improve SEO.
+The website was only a month or two old, and had only just introduced the new company branding. Upon taking on this project I set myself a few goals:
 
-![Capital on Tap](/assets/images/capontap-multi.jpeg "Multiple screen sizes")
+- Reduce page load times
+- Improve the mobile and overall user experience
+- Structure the site to improve not only the SEO, but the maintainability
 
 ## Solution
-- Rewrote the CSS using LESS and a more structured method.
-- Built using "mobile first" to remove unnecessary code being loaded.
-- Removed the heavy SVG images and JavaScript animation.
+After reviewing the code for the public site I decided it would be best to write it from scratch. I started off by structuring the site based on the original content. This allowed me to clean it up and remove a lot of the HTML which was not required.
+
+![Capital on Tap](/assets/images/cs/cot/cot-collage.png "Capital on Tap re-development")
+
+Once the base HTML was complete I moved onto the styling. Taking a ‘mobile first’ approach this would allow me to prevent unnecessary code being loaded when on a mobile device. I decided to use the my own variation of the [ITCSS methodology](https://youtu.be/1OKZOV-iLj4) which was introduced by Harry Roberts.
 
 ## Result
-- A clean easy to use site, which improved the overall user experience.
-- the old site had 2,342 CSS rules and was 243kb. After rewriting the CSS it reduced to 1,007 CSS rules and had a file size of 57kb.
-- Due to the new structure of the CSS less styles were loaded, meaning less items were loaded on the page.
-- Load times were reduced to around 300ms compared to the previous 12 seconds!
+Over the 4 days I worked on this project, I managed to achieve the goals I had set myself. The site worked as expected across all screen sizes and orientations, and load times were also reduced from 12 seconds to 300ms!
 
-> CTO Julian Guppy stated "Alan delivered us into the world of preprocessors (LESS/Sass) and started the cleanup of our webpages making them much smaller, much faster, and easier to maintain
+The re-working of the code made the site not only quicker, but far more maintainable. The CSS file size was reduced from 243kb to 57kb, this was due to optimising the CSS and removing repeated styles. This optimisation and ‘DRY’ mentality saw the CSS drop considerably to 1,007 from 2,342!
+
+These changes also improved the experience for users, which meant there were far less dropped users, application conversations increased, and users were able to find the information they wanted quicker.
+
+> "Alan delivered us into the world of preprocessors (LESS/Sass) and started the cleanup of our webpages making them much smaller, much faster, and easier to maintain." - Julian Guppy, CTO Capital on Tap
+
+![Capital on Tap](/assets/images/cs/cot/cot-home.png "Capital on Tap homepage")
+
+![Capital on Tap](/assets/images/cs/cot/cot-about.png "Capital on Tap about page")
+
+![Capital on Tap](/assets/images/cs/cot/cot-login.png "Capital on Tap login modal")

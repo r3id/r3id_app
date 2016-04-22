@@ -1,9 +1,11 @@
 ---
 layout: case-study
 title: Rainbird Scarves // Case Study
+project-title: Rainbird Scarves
+project-blurb:
+project-image: capontap.jpg
+project-tech: HTML 5, jQuery, LESS, CSS animations
 project-url: http://www.rainbirdscarves.co.uk
-header-title: Rainbird Scarves
-header-image: capontap.jpg
 ---
 
 This will be some content.
