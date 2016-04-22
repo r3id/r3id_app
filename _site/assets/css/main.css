@@ -143,6 +143,11 @@ ol {
     list-style: decimal;
     margin: 0; }
 
+code {
+  background: #e3e3e3;
+  font-size: 1.3rem;
+  padding: 4px 10px; }
+
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }
