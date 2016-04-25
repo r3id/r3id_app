@@ -6,4 +6,11 @@ permalink: /blog/
 
 <div class="container container-light">
   <p>This is where all my awesome blog posts will be. Hold on to your seats people!!</p>
+
+  {% for post in site.posts %}
+   <div>
+     <a href="{{ post.url }}">{{ post.title }}</a>
+     - {{ post.date | date: "%d %B %Y" }}
+   </div>
+  {% endfor %}
 </div>

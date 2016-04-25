@@ -12,6 +12,7 @@ twitter_username: alr3id
 
 # Build settings
 markdown: kramdown
+permalink: /blog/:title/
 
 # Collection
 collections:

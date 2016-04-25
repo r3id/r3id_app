@@ -135,8 +135,41 @@ ol {
   }
 }
 
+/* Code */
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
 code {
-  background: #e3e3e3;
+  padding: .25em .5em;
   font-size: 1.3rem;
-  padding: 4px 10px;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  padding: 1rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 1.3rem;
+  color: inherit;
+  background-color: transparent;
+}
+.highlight {
+  margin: 0 0 1.6rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
 }
