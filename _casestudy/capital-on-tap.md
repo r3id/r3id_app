@@ -15,7 +15,7 @@ It was also the project which allowed me to kick off the Capital on Tap internal
 ![Capital on Tap](/assets/images/cs/cot/capontap-multi.png "Multiple screen sizes")
 
 ## Challenge
-In mid 2015 the Capital on Tap website needed to be rewritten. The company was experiencing rapid growth, and a large number of users were using mobile devices. Due to the complex design the site was simply not providing the user experience users expected. With load times of around 12 seconds, the site relied heavily on complex SVG animations (which were not mobile friendly), multiple stylesheets including the full bootstrap library, and also a load of JavaScript.
+In mid 2015 the Capital on Tap website needed to be rewritten. The company was experiencing rapid growth, and a large number of users were using mobile devices. Due to the complex design the site was simply not providing the user experience, which users expected. With load times of around 12 seconds, the site relied heavily on complex SVG animations (which were not mobile friendly), multiple stylesheets including the full bootstrap library, and also a load of JavaScript.
 
 The website was only a month or two old, and had only just introduced the new company branding. Upon taking on this project I set myself a few goals:
 
