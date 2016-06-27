@@ -1,4 +1,6 @@
-// -- Settings: Mixins
+/*
+ * Settings: Minxins
+ */
 
 // Transitions
 // http://www.w3schools.com/css/css3_transitions.asp
@@ -120,13 +122,13 @@
 //   }
 // }
 @mixin tablet {
-  @media (min-width: #{$mobile-break}) and (max-width: #{$tablet-break - 1px}) {
+  @media (min-width: #{$bp-larger-phablet}) and (max-width: #{$bp-larger-tablet} - 1px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop-break}) {
+  @media (min-width: #{$bp-larger-tablet}) {
     @content;
   }
 }

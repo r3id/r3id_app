@@ -1,33 +1,30 @@
-//// -- Settings
+/*
+ * Settings
+ */
 
 //// Responsive
-// Container widths
-$mobile-container                               : 100%  ;
-$tablet-container                               : 70.0rem;
-$desktop-container                              : 96.0rem;
+$bp-larger-phablet                            : 550px !default;
+$bp-larger-tablet                             : 750px !default;
 
-// break points
-$mobile-break                                   : $tablet-container + 2.4rem;
-$tablet-break                                   : $tablet-container + 2.5rem;
-$desktop-break                                  : $desktop-container      ;
+$container-larger-phablet                     : 98% !default;
+$container-width                              : 1180px !default;
 
-// Column variables
-$max-container-width                            : 100.0rem;
-$total-columns                                  : 12;
-$column-width                                   : 100 / $total-columns; // calculates individual column width based off of # of columns
-$column-margin                                  : 0.5%; // Adds space between columns, must be a %.
+$grid-columns                                 : 16 !default;
+$grid-gutter                                  : 0.5% !default;
+$column-width                                 : 100 / $grid-columns;
+
 
 //// Font
 $font-family                                  : 'Khula', sans-serif;
 
 //// Global
-$global-radius                                  : 2px !default;
-$white                                          : rgb(255,255,255);
-$black                                          : rgb(0,0,0);
+$global-radius                                : 2px !default;
+$white                                        : rgb(255,255,255);
+$black                                        : rgb(0,0,0);
 
 //// Colors
-$font-default                                   : $black;
-$doughnut                                       : rgb(241, 85, 62);
-$r3id-default                                   : rgb(141, 198, 63);
-$link-default                                   : $r3id-default;
-$error-color                                    : rgb(208,2,27);
+$font-default                                 : $black;
+$doughnut                                     : rgb(241, 85, 62);
+$r3id-default                                 : rgb(141, 198, 63);
+$link-default                                 : $r3id-default;
+$error-color                                  : rgb(208,2,27);

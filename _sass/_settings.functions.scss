@@ -1,0 +1,14 @@
+/*
+ * Settings: Functions
+ */
+
+
+ // Grid functions
+ // Lets calculate the column widths, outputs in %'s
+ @function grid-column-width($n) {
+   @return  $column-width * $n - ($grid-gutter*($grid-columns - $n)/$grid-columns);
+ }
+
+ @function grid-offset-length($n) {
+   @return grid-column-width($n) + $grid-gutter;
+ }
