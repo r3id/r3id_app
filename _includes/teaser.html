@@ -16,6 +16,15 @@
 
 		<div class="excerpt">
 
+			<span class="title">
+		    {% assign words = page.content | number_of_words %}
+		    {% if words < 360 %}
+		      1 min
+		    {% else %}
+		      {{ words | divided_by:180 }} mins
+		    {% endif %} read
+		  </span>
+
 			{% if teaser.title %}
 				<h1><a href="{{ teaser.url | prepend: site.baseurl }}" title="{{ teaser.title }}">{{ teaser.title }}</a></h1>
 			{% endif %}
