@@ -1,18 +1,39 @@
-<!DOCTYPE html>
-<html>
+{% include header.html %}
 
-  {% include head.html %}
+<section class="content">
 
-  <body>
+	<article>
 
-    {{ content }}
+		<header class="" data-animation="fadeInDownBig">
 
-    <a href="#0" class="cd-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+			{% include excerpt.html %}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/assets/js/main.js"></script>
+		</header>
 
-    {% include ga.html %}
-  </body>
+		<div class="body" data-animation="fadeInUp">
 
-</html>
+			{% if page.type == 'casestudy' %}
+				{% include cs-summary.html %}
+	    {% endif %}
+
+			{{ content }}
+
+		</div>
+
+		{% if page.type != 'page' %}
+		<footer>
+
+			{% include meta.html %}
+
+			{% include pagination.html %}
+
+		</footer>
+		{% endif %}
+
+	</article>
+
+</section>
+
+{% include teaser.html %}
+
+{% include footer.html %}
