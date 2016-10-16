@@ -2,7 +2,14 @@
 
 <div class="excerpt">
   {% if page.type != 'home' and page.type != 'page' %}
-	
+	<span class="title">
+    {% assign words = page.content | number_of_words %}
+    {% if words < 360 %}
+      1 min
+    {% else %}
+      {{ words | divided_by:180 }} mins
+    {% endif %} read
+  </span>
   {% endif %}
 
 	{% if page.title %}
