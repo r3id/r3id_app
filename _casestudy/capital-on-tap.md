@@ -45,7 +45,7 @@ These changes also improved the overall experience for users, which meant Capita
 > "Alan delivered us into the world of preprocessors (LESS/Sass) and started the cleanup of our webpages making them much smaller, much faster, and easier to maintain." <span>Julian Guppy, CTO Capital on Tap</span>
 
 {% include media-image.html file="cs/cot/cot-home.png" title="Screens" caption="Capital on Tap homepage" %}
-
+<hr>
 {% include media-image.html file="cs/cot/cot-about.png" title="Screens" caption="Capital on Tap about page" %}
-
+<hr>
 {% include media-image.html file="cs/cot/cot-login.png" title="Screens" caption="Capital on Tap login modal" %}
