@@ -599,9 +599,10 @@ pre, code {
     background: #f8f7fa;
     color: #333333;
     font-size: 1rem;
-    margin: 12px 0; }
+    margin: 12px 0;
+    padding: 3px 6px; }
 
-code { padding: 3px 6px; }
+pre.highlight code { padding: 3px 0; }
 
 .highlight { padding: 10px 20px; }
 .highlight .c { color: #333333 }
