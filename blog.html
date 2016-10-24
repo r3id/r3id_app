@@ -1,0 +1,12 @@
+---
+layout:     default
+title:      Articles
+type:       page
+navigation: true
+
+excerpt: My ramblings about development, experiences, and life in general.
+---
+
+{% for post in site.posts %}
+  {% include post-summary.html %}
+{% endfor %}
