@@ -9,7 +9,7 @@ date:   		  2016-10-16
 excerpt: 		  Let's take a look at the basic Jekyll file structure, and find out more about the files within.
 categories:		jekyll
 gradient: 		1
-image: 			  jekyll-elcap-install.png
+image: 			  articles/jekyll-file-structure/jekyll-file-structure.png
 details:		  false
 
 author: 		  Alan Reid
@@ -19,7 +19,7 @@ bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and
 
 In this article we are going to take a high-level look at what these directories mean. Don’t worry if you don’t pick up these concepts just yet, as we’ll be going over these files and directories in later articles.
 
-{% include media-image.html file="jekyll-structure.png" %}
+{% include media-image.html file="articles/jekyll-file-structure/jekyll-structure.png" %}
 
 ## _config.yml
 

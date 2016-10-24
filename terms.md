@@ -6,7 +6,7 @@ type:          page
 navigation: 	 false
 
 date:          2015-10-01 18:00:00
-last-update:   2015-10-01 18:00:00
+last-update:   2015-10-24 18:00:00
 excerpt:       
 categories:    
 tech:          
@@ -25,7 +25,7 @@ This is a summary of our contract. You won’t find complicated legal terms or l
 
 ## In short...
 
-You, the client, are hiring [R3ID][r3idurl], to design and develop a website for an estimated total price as outlined in previous correspondence. Of course it’s a little more complicated, but we’ll get to that.
+You, the client, are hiring [R3ID][r3idurl], to design and develop a website for an estimated total price which is/has been outlined in previous correspondence. Of course it’s a little more complicated, but we’ll get to that.
 
 ## What do both parties agree to do?
 
@@ -39,7 +39,11 @@ We’ll create the design for the look-and-feel, layout and functionality of you
 
 ## HTML and CSS layout templates
 
-If the project includes HTML markup and CSS templates, we’ll develop these using HTML5 and CSS2.1 and CSS3 for styling. The landscape of web browsers and devices changes regularly and our approach is to look forward, not back. With that in mind we will test all our markup and CSS in the last two versions of most of the major desktop browsers to ensure that we make the most from them. Users of older or less capable browsers will experience a design that is appropriate to the capabilities of their software. For people using Microsoft Internet Explorer 7 and 8, this means a universal, typographically focussed design but no layout. We will not test old or abandoned browsers, for example Microsoft Internet Explorer 5, 5.5, 6 for Windows or Mac, previous versions of Apple’s Safari, Mozilla Firefox or Opera unless otherwise specified.
+If the project includes HTML markup and CSS templates, we’ll develop these using HTML5 and CSS2.1 and CSS3 for styling. The landscape of web browsers and devices changes regularly and our approach is to look forward, not back. With that in mind we will test all our markup and CSS in the last two versions of most of the major desktop browsers to ensure that we make the most from them.
+
+Users of older or less capable browsers will experience a design that is appropriate to the capabilities of their software. For people using Microsoft Internet Explorer 7 and 8, this means a universal, typographically focussed design but no layout.
+
+We will not test old or abandoned browsers, for example Microsoft Internet Explorer 5, 5.5, 6 for Windows or Mac, previous versions of Apple’s Safari, Mozilla Firefox or Opera unless otherwise specified.
 
 If you need us to consider these older browsers, we will charge you at the hourly rate of £45.00 per/hour for any necessary additional design work, development and testing.
 
@@ -82,11 +86,10 @@ We are sure you understand how important it is as a small business that you pay 
 
 Invoices will be raised and dispatched according to the following schedule:
 
-- 20% of order value upon express confirmation of order.
-- 40% of order value upon commencement of the project.
-- 40% balance of order on agreed work completion, plus all necessary costs incurred for any additional goods and services provided.
+- 40% of quoted value upon confirmation of the project.
+- 60% balance of order on agreed work completion, plus all necessary costs incurred for any additional goods and services provided.
 
-Upon receipt of invoice payment is required within 30 days, unless other arrangements have been expressly agreed.
+Upon receipt of invoice payment is required within 14 days, unless other arrangements have been expressly agreed.
 
 [R3ID][r3idurl] reserves the right to charge interest on overdue invoices at the rate of 5% above Bank base rate at the time of the charge.
 

@@ -1,5 +1,4 @@
 ---
-
 layout:			  default
 title:  		  Setting up Jekyll
 type:			    post
@@ -9,12 +8,11 @@ date:   		  2016-10-16
 excerpt: 		  Setting up Jekyll is really simple, in this article we take things a step further.
 categories:		jekyll
 gradient: 		1
-image: 			  jekyll-elcap-install.png
+image: 			  articles/setting-up-jekyll/jekyll-elcap-install.png
 details:		  false
 
 author: 		  Alan Reid
 bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and standard compliant solutions for my clients from all around the world.
-
 ---
 
 Late last year I began moving my existing sites over to [Jekyll](https://jekyllrb.com/) from asp.net MVC. Why? I hear you ask, well I had found that a lot of the sites didn’t require a lot of the features offered by the .net framework, and it seemed like overkill using it.
@@ -37,7 +35,7 @@ XCode once came with the Command Line Tools, but now you have to install them se
 
 `$ xcode-select -install`
 
-{% include media-image.html file="install-xcode.png" title="Getting started" caption="Install the XCode command line tools" %}
+{% include media-image.html file="articles/setting-up-jekyll/install-xcode.png" title="Getting started" caption="Install the XCode command line tools" %}
 
 ## Installing Homebrew
 Next up we need to install Homebrew - [http://brew.sh](http://brew.sh)
@@ -45,7 +43,7 @@ It comes with a very simple install script. If you skipped the previous step it 
 
 `$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
-{% include media-image.html file="installing-homebrew.png" title="Getting started" caption="Installing homebrew" %}
+{% include media-image.html file="articles/setting-up-jekyll/installing-homebrew.png" title="Getting started" caption="Installing homebrew" %}
 
 ## Installing Ruby
 Now that we have Homebrew installed, we can use it to install Ruby. We're going to use [rbenv](https://github.com/sstephenson/rbenv) to install and manage our Ruby versions. To do this, run the following commands in your Terminal:
@@ -63,7 +61,7 @@ if
  fi
 ```
 
-{% include media-image.html file="edit-bash-profile.png" title="Getting started" caption="Edit your .bash_profile" %}
+{% include media-image.html file="articles/setting-up-jekyll/edit-bash-profile.png" title="Getting started" caption="Edit your .bash_profile" %}
 
 Once you have saved your `.bash_profile` we can then install Ruby.
 
@@ -80,7 +78,7 @@ $ rbenv global 2.3.1
 $ ruby -v
 ```
 
-{% include media-image.html file="ruby-installed.png" title="Getting started" caption="If Ruby has installed correctly you should see similar" %}
+{% include media-image.html file="articles/setting-up-jekyll/ruby-installed.png" title="Getting started" caption="If Ruby has installed correctly you should see similar" %}
 
 ## Configuring Git
 I use Git for my version control system so we're going to set it up to match our [Github](https://github.com) account. If you don't already have a Github account, make sure to [register](https://github.com/join). It will come in handy for the future.
@@ -113,11 +111,11 @@ Open up your terminal window and enter...
 
 `gem install jekyll bundle`
 
-{% include media-image.html file="jekyll-install.png" title="Getting started" caption="Let's install Jekyll" %}
+{% include media-image.html file="articles/setting-up-jekyll/jekyll-install.png" title="Getting started" caption="Let's install Jekyll" %}
 
 Let's make sure Jekyll installed by typing `jekyll -v`
 
-{% include media-image.html file="jekyll-version.png" title="Getting started" caption="If Jekyll installed correctly you should see the version you have installed" %}
+{% include media-image.html file="articles/setting-up-jekyll/jekyll-version.png" title="Getting started" caption="If Jekyll installed correctly you should see the version you have installed" %}
 
 ## Final Steps: Working with Jekyll
 Now hopefully you have Jekyll installed so we can move on to the fun stuff, creating and running your first Jekyll site.
@@ -139,11 +137,11 @@ Once again within terminal enter
 
 We should now be in your newly created site, and we are almost done! Yes, it’s that easy.
 
-{% include media-image.html file="jekyll-new-site.png" title="Getting started" caption="Our newly created Jekyll site" %}
+{% include media-image.html file="articles/setting-up-jekyll/jekyll-new-site.png" title="Getting started" caption="Our newly created Jekyll site" %}
 
 So there’s one more command that needs to be run, and this is where the magic happens! Back into terminal we go and enter `$ jekyll s` you could also enter `$ jekyll serve`. This simply starts up the Jekyll server locally.
 
-{% include media-image.html file="jekyll-serve.png" title="Getting started" caption="The Jeykll server is now running" %}
+{% include media-image.html file="articles/setting-up-jekyll/jekyll-serve.png" title="Getting started" caption="The Jeykll server is now running" %}
 
 And we’re done! So now in the background Jekyll is humming away watching our site files, so as you edit your sites files the site will update and rebuild. There are some things you’ll need to watch out for, occasionally things won’t update this maybe because you have updated your configuration file. If this does happen simply hit `CTRL + C` inside terminal to cancel/stop Jekyll. And then restart the site again by using the `$ jekyll s`command.
 
