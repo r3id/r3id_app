@@ -749,3 +749,25 @@ code { padding: 3px 6px; }
   text-transform: uppercase;
   margin: 0 10px 0 0;
 }
+
+/* Availability */
+.availability {
+  text-align: center;
+  padding: 12px 24px
+}
+
+.availability,.availability a {
+  color: #fff
+}
+
+.availability a {
+  font-weight: inherit
+}
+
+.availability--available {
+  background-color: rgb(103, 158, 55);
+}
+
+.availability--unavailable {
+  background-color: rgb(219, 68, 55);
+}
