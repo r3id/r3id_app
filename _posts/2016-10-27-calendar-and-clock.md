@@ -17,7 +17,7 @@ bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and
 
 Ok so we have had a couple of "boring" posts about getting set up with Jekyll and Rails. Lets move onto something a little more fun.
 
-You can download the source code <a href="/assets/downloads/resume.pdf">here</a>.
+You can download the source code <a href="/assets/downloads/cal-clock.zip">here</a>.
 
 <div class="demo-holder animated fadeInUp">
 <style>
