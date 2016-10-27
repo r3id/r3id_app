@@ -5,7 +5,7 @@ type:			    post
 navigation: 	false
 
 date:   		  2016-10-27
-excerpt: 		  Time for a little bit of fun, let's build a Calender and Clock using HTML, Sass and jQuery...
+excerpt: 		  Time for a little bit of fun, let's build a Calendar and Clock using HTML, Sass and jQuery...
 categories:		html sass jquery development
 gradient: 		1
 image: 			  articles/clock-cal/clock-cal.png
