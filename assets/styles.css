@@ -772,3 +772,8 @@ pre.highlight code { padding: 3px 0; }
 .availability--unavailable {
   background-color: rgb(219, 68, 55);
 }
+
+.demo-holder {
+  position: relative;
+  margin: 30px 0;
+}
