@@ -89,7 +89,7 @@ Invoices will be raised and dispatched according to the following schedule:
 - 40% of quoted value upon confirmation of the project.
 - 60% balance of order on agreed work completion, plus all necessary costs incurred for any additional goods and services provided.
 
-Upon receipt of invoice payment is required within 14 days, unless other arrangements have been expressly agreed.
+Upon receipt of invoice payment is required within 28 days, unless other arrangements have been expressly agreed.
 
 [R3ID][r3idurl] reserves the right to charge interest on overdue invoices at the rate of 5% above Bank base rate at the time of the charge.
 
