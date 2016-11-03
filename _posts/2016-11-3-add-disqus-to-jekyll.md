@@ -5,7 +5,7 @@ type:			    post
 navigation: 	false
 
 date:   		  2016-11-3
-excerpt: 		  Disqus is a awesome commenting system which you can easily add to your Jekyll site
+excerpt: 		  Disqus is an awesome commenting system which you can easily add to your Jekyll site
 categories:		html jekyll howto development
 gradient: 		1
 image: 			  articles/add-disqus/add-disqus.png
