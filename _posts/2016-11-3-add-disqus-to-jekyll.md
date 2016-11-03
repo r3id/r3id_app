@@ -15,9 +15,11 @@ author: 		  Alan Reid
 bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and standard compliant solutions for my clients from all around the world.
 ---
 
-[Disqus](https://disqus.com/) is an excellent way to add comments to your articles. Comments allow you to interact with your site's users, and provide a much more engaging experience for them.
+[Disqus](https://disqus.com/) is an excellent way to add comments to your articles. Comments allowing you to interact with your site's users, and provide a much more engaging experience for them.
 
 In this article we are going to do a simple implementation, it does not take much to get it all setup and ready for use.
+
+Why haven't I added [Disqus](https://disqus.com/) to my site yet so you lovely lot can respond to my articles? Good point. I will look at adding it soon, once i see traffic get a little higher ;-)
 
 <hr>
 
