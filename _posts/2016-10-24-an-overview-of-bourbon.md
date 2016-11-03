@@ -23,6 +23,7 @@ As some of you are aware, i created a Sass Library called "[Doughnut](/casestudy
 [Bourbon](http://bourbon.io) is a semantic, lightweight, yet extensive mixin library which makes the development of a site much quicker and easily maintainable. Containing up-to-date mixins, vendor prefixes and variables sheet makes it very easy to maintain and write site-wide changes with little fuss. You can read in the [Bourbon docs](http://bourbon.io/docs/) about the dozens of others!
 
 Here's a really simple example of a Bourbon mixin:
+
 ```
 
 section {
@@ -30,6 +31,7 @@ section {
 }
 
 ```
+
 This compiles to:
 
 ```
