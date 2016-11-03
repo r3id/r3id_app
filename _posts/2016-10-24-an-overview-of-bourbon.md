@@ -172,4 +172,4 @@ Import Bourbon at the beginning of `application.scss`. All additional stylesheet
 ## Conclusion
 [Bourbon](http://bourbon.io) gives you more than enough to create a great base for a site's styling, and quickly too. But the best thing about [Bourbon's](http://bourbon.io) approach is that it also allows you to go a step further and provides the freedom you need to customise and add styles to it without becoming a pain to maintain.
 
-Throw in the addition of Neat, Bitters and Refills, and you start to see why thoughtbot’s [Bourbon](http://bourbon.io) should seriously be in the running for your next project.
+Throw in the addition of [Neat](http://neat.bourbon.io), [Bitters](http://bitters.bourbon.io) and [Refills](http://refills.bourbon.io), and you start to see why thoughtbot’s [Bourbon](http://bourbon.io) should seriously be in the running for your next project.
