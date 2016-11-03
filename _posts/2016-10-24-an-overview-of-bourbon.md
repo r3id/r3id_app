@@ -172,4 +172,4 @@ Import Bourbon at the beginning of `application.scss`. All additional stylesheet
 ## Conclusion
 I really, really like Bourbon, mainly due to it’s “just enough” approach. Bourbon gives you more than sufficient to create most of a site's styling quickly but also allows you to go a step further by providing the freedom to customise and add styles to it without becoming a pain to manage.
 
-With the addition of Neat, Bitters and Refills thoughtbot’s Bourbon](http://bourbon.io) should seriously be in the running for your next project.
+With the addition of Neat, Bitters and Refills thoughtbot’s [Bourbon](http://bourbon.io) should seriously be in the running for your next project.
