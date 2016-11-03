@@ -25,6 +25,7 @@
 
     {% if post.title %}
       <h2><a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+      <span class="meta">{{ post.date | date: '%b %-d, %Y' }}</span>
     {% endif %}
 
     <p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ post.url | prepend: site.baseurl }}" title="Read More" class="more">Read More</a></p>

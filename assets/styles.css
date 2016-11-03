@@ -350,6 +350,8 @@ body > header {
 
     .content article .body .summary { padding-bottom: 34px; }
 
+        .content article .body .summary .meta { font-size: 0.875rem; }
+
         .content article .body .summary:last-of-type { padding-bottom: 0; }
 
     .content article .body .media {
