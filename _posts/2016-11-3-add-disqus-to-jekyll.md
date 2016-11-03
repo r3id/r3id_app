@@ -15,7 +15,13 @@ author: 		  Alan Reid
 bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and standard compliant solutions for my clients from all around the world.
 ---
 
-You will need to modify the file `_layouts/default.html` and include the line:
+[Disqus](https://disqus.com/) is an excellent way to add comments to your articles. Comments allow you to interact with your site's users, and provide a much more engaging experience for them.
+
+In this article we are going to do a simple implementation, it does not take much to get it all setup and ready for use.
+
+<hr>
+
+First off you will need to modify the file `_layouts/default.html` and include the following line:
 
 {% raw %}
 ```jekyll
@@ -23,7 +29,7 @@ You will need to modify the file `_layouts/default.html` and include the line:
 ```
 {% endraw %}
 
-You will then need to create the file `_includes/comments.html` which we will add the following code snippet to and is provided by Disqus:
+With that done you will now need to create the file `_includes/comments.html` which we will add the following code snippet to which has been provided by [Disqus](https://disqus.com/):
 
 {% raw %}
 ```jekyll
