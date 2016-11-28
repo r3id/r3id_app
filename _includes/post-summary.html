@@ -4,11 +4,12 @@
     {% if post.details and post.image %}
       <div class="media image" data-animation="fadeInUp">
 
-        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"><img src="{{ post.image | prepend: '/images/' | prepend: site.baseurl }}" alt="{{ post.title }}" /></a>
+        <a href="{{ post.url | prepend: site.baseurl }}" title="{{ post.title }}"><img src="{{ post.image | prepend: '/assets/images/' | prepend: site.baseurl }}" alt="{{ post.title }}" /></a>
 
         <div class="caption" data-animation="fadeInUp">
-
+          {% if post.date %}
           <h4>{{ post.date | date: '%b %-d, %Y' | prepend: '<b>' | append: '</b>' }}</h4>
+          {% endif %}
 
           {% if post.author %}
             <p>By <b>{{ post.author }}</b></p>

@@ -1,0 +1,14 @@
+---
+layout:     default
+title:      My work
+type:       page
+navigation: true
+
+excerpt: I've worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. Here is a selection of the work i have done.
+---
+
+{% for work in site.work %}
+
+  {% include work-summary.html %}
+
+{% endfor %}

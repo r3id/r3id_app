@@ -1,0 +1,31 @@
+{% if work %}
+  <div class="summary">
+
+    {% if work.details and work.image %}
+      <div class="media image" data-animation="fadeInUp">
+
+        <a href="{{ work.url | prepend: site.baseurl }}" title="{{ work.title }}"><img src="{{ work.image | prepend: '/assets/images/' | prepend: site.baseurl }}" alt="{{ work.title }}" /></a>
+
+        <div class="caption" data-animation="fadeInUp">
+
+          {% if work.author %}
+            <p>By <b>{{ work.author }}</b></p>
+          {% endif %}
+
+          {% if work.url %}
+            <a href="{{ work.url }}" title="Read work" class="icon image">{{ work.content | reading_time_as_i }}</a>
+          {% endif %}
+
+        </div>
+
+      </div>
+    {% endif %}
+
+    {% if work.title %}
+      <h2><a href="{{ work.url | prepend: site.baseurl }}" title="{{ work.title }}">{{ work.title }}</a></h2>
+    {% endif %}
+
+    <p>{{ work.excerpt | remove: '<p>' | remove: '</p>' }} <a href="{{ work.url | prepend: site.baseurl }}" title="Read More" class="more">Read More</a></p>
+
+  </div>
+{% endif %}

@@ -6,13 +6,7 @@
 		{% assign teaser = page.next %}
 	{% endif %}
 
-	{% if teaser.gradient and teaser.gradient > 0 and teaser.gradient < 6 %}
-		{% assign gradient = teaser.gradient %}
-	{% else %}
-		{% assign gradient = 1 %}
-	{% endif %}
-
-	<section class="teaser gradient-{{ gradient }}" data-animation="fadeInUp">
+	<section class="teaser" data-animation="fadeInUp">
 
 		<div class="excerpt">
 
@@ -31,8 +25,12 @@
 
 			<p>{{ teaser.excerpt | remove: '<p>' | remove: '</p>' }}</p>
 
-			{% if teaser.date or teaser.categories %}
-				<span class="meta">Published {{ teaser.date | date: '%b %-d, %Y' | prepend: '<b>' | append: '</b>' }} {{ teaser.categories | join: ', ' | prepend: 'in <b>' | append: '</b>' }}</span>
+			{% if teaser.categories %}
+				<span class="meta">
+
+					Published {{ teaser.categories | join: ', ' | prepend: 'in <b>' | append: '</b>' }}
+
+				</span>
 			{% endif %}
 
 		</div>

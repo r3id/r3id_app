@@ -27,6 +27,10 @@ collections:
     title:      Case study
     render:     true
     output:     true
+  work:
+    title:      Work
+    render:     true
+    output:     true
 
 # Gems
 gems:           [jekyll-paginate]
