@@ -2,11 +2,13 @@
 layout:     default
 title:      Articles
 type:       page
-navigation: true
+navigation: false
 
 excerpt: My ramblings about development, experiences, and life in general.
 ---
 
-{% for post in site.posts %}
+{% for post in paginator.posts %}
+
   {% include post-summary.html %}
+
 {% endfor %}

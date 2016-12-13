@@ -1,10 +1,10 @@
 ---
 layout:			  default
-title:  		  How to&#58; Add Disqus to your Jekyll site
+title:  		  Add Disqus to your Jekyll site
 type:			    post
 navigation: 	false
 
-date:   		  2016-11-3
+date:   		  2016-11-03
 excerpt: 		  Disqus is an awesome commenting system which you can easily add to your Jekyll site
 categories:		html jekyll howto development
 gradient: 		1

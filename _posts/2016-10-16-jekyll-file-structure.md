@@ -9,7 +9,7 @@ date:   		  2016-10-16
 excerpt: 		  Let's take a look at the basic Jekyll file structure, and find out more about the files within.
 categories:		jekyll
 gradient: 		1
-image: 			  articles/jekyll-file-structure/jekyll-file-structure.png
+image: 			  articles/jekyll-file-structure/jekyll-structure.png
 details:		  false
 
 author: 		  Alan Reid

@@ -1,28 +1,27 @@
 ---
 layout:			  default
-title:  		  Setting up Rails and Jekyll revisited
+title:  		  Setting up Rails and Jekyll (Part 1)
 type:			    post
 navigation: 	false
 
-date:   		  2016-11-15
-excerpt: 		  Recently I had to setup both Rails and Jekyll today on a fresh install of macOS. So I thought I would revisit setting up Rails and Jekyll in one article.
-categories:		rails jeykll development
+date:   		  2016-10-14
+excerpt: 		  In part 1 we are going to get Rails setup, and test our install.
+categories:		rails jekyll setup guide
 gradient: 		1
-image: 			  articles/general/code.png
+image: 			  articles/setting-up-rails-and-jekyll/setting-up-rails.png
 details:		  false
 
 author: 		  Alan Reid
 bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and standard compliant solutions for my clients from all around the world.
 ---
 
-# Setting up Rails and Jekyll
-Recently I had to setup both Rails and Jekyll on a fresh install of macOS. So I thought I would revisit setting up Rails and Jekyll and put them into one article.
+I finally took the plunge back in June and decided to learn [Ruby on Rails](http://rubyonrails.org/). Five months on I've discovered a new love for back-end development, heck I don’t know it all, but now I feel that I have a good level of understanding and there is an amazing community out there for support.
 
-I noticed a couple of changes since my previous articles, so I wanted to have a place I can use for my reference, yet would be helpful to others too.
+In the first part we are going to go over installing Rails. I use Rails for pretty much any site which needs anything data related. Jekyll is perfect for static sites, or sites which don't rely on a database, but still need a simple way to update.
 
 <hr>
 
-Ruby on Rails is pretty straightforward to install, but as in my previous article, there is some prep work first. You will need to make sure you have the latest version of Xcode installed before starting.
+Ruby on Rails is pretty straightforward to install. There is however some prep work first. You will need to make sure you have the latest version of Xcode installed before starting.
 
 If you don’t have Xcode installed, you will need to pop over to the [Mac App Store](https://itunes.apple.com/gb/app/xcode/id497799835?mt=12) and download yourself a copy.
 
@@ -124,6 +123,7 @@ We are going to use Homebrew to install our PostgreSQL server and client so open
 `$ brew install postgresql`
 
 Once completed you need to run a couple of additional commands. Follow the instructions and run them.
+
 ```
 # This will have launchd start postgresql at login:
 $ ln -sfv /usr/local/opt/postgresql/*plist ~/Library/LaunchAgents
@@ -167,48 +167,4 @@ You could run `rails s` or `rails server` they are both the same thing its more 
 
 So now you have Rails setup and your server running, all that's left to do is to visit [http://localhost:3000](http://localhost:3000) to view your new Rails app in your browser of choice.
 
-<hr>
-
-## Moving onto Jekyll
-So Jekyll is where I noticed the main changes. Nothing too major really, but still it's nice to have them documented. So fire up iTerm2 and enter the following command
-
-`$ gem install jekyll bundler`
-
-Once this has done its thing let's make sure Jekyll installed by typing `jekyll -v`
-
-<hr>
-
-## Working with Jekyll
-So now you have Jekyll installed we can move on to the fun stuff, creating and running your first Jekyll site.
-
-So let’s take our first step’s to create a new site, for this we need to change directory. I have a `source` directory which resides inside my `documents` directory, so let’s go to that within iTerm2.
-
-Switch over to iTerm2 and type the following command, and this will change us in our source directory. Make sure we have this created first!
-
-`$ cd source`
-
-We now want to create our first site! In iTerm2 enter
-
-`$ jekyll new my-site`
-
-Jekyll then creates a folder structure which contains the files needed for our new site. Once this has completed, we’ll need to switch to our newly created site directory.
-
-Switch back into iTerm2 enter
-`$ cd my-site`
-
-You should now be in your newly created site directory, and you will be pleased to know we're coming to the end of this article!
-
-So there’s one more command that needs to be run, and this is where the magic happens! Back into terminal we go and enter `$ jekyll s` you could also enter `$ jekyll serve`. The command simply starts up the Jekyll server locally.
-
-And we’re done! So now in the background Jekyll is humming away watching our site files, so as you edit your sites files the site will update and rebuild. There are some things you’ll need to look out for; occasionally things won’t update this maybe because you have updated your configuration file. If this does happen, simply hit `CTRL + C` inside terminal to cancel/stop Jekyll. And then restart the site again by using the `$ jekyll s` command.
-
-And that’s about it for now. I will be covering more on Jekyll in future articles, thanks for taking the time to read this.
-
-*“Wait!!!! How do I view my site?”* I hear you say…
-
-That’s an excellent point! So to view the site we have just made point your browser of choice to [http://127.0.0.1:4000](http://127.0.0.1:4000) or [http://localhost:4000](http://localhost:4000) (they are the same thing!) and you will be able to view the site. Now what you do is totally down to you, but the default site is a great starting point. Now, off you go build something awesome!
-
-## Final words...
-Well, I hope you have found this article useful. I wanted to get this written down as there is a lot to cover, however by the end of the article you should have two working environments to develop in.
-
-Jekyll is fantastic for creating simple blog sites, which can be hosted on GitHub Pages. While Rails as a framework can be used to create some excellent solutions, just look at Airbnb and YouTube! Anyhow, off your trott, build something amazing!
+Next up we will move on to [installing Jekyll](/blog/setting-up-rails-and-jekyll-part-2/) so i will see you in [part 2](/blog/setting-up-rails-and-jekyll-part-2/)!
