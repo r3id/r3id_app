@@ -26,7 +26,7 @@ So this is my attempt at making an advent calendar concept - only using CSS.
 Let's get *cracking* and create our HTML. First off we need a containing "day" `div`, this will keep the contents of our days clean and tidy.
 
 ```
-<div class="day">
+<div class="day" onclick="void(0)">
   <div class="door">
     <h2>1</h2>
   </div>
@@ -35,11 +35,14 @@ Let's get *cracking* and create our HTML. First off we need a containing "day" `
   </div>
 </div>
 ```
-Inside our "day" `div` we will need to place our "door" so let's create another `div` for this. Inside our "door" div we will put our date, for the date we will just use the number. I decided to use a `h2` tag here.
+
+*What's this `onclick="void(0)` on our "day" `div`?* I hear you ask. Well, this will allow our door to open when we touch it on mobile, and prevent it from simply refreshing the page.
+
+Inside our "day" `div` we will need to place our "door" so let's create another `div` for this. Now we have our "door" `div` we will put our date, for the date we will just use the number. I decided to use a `h2` tag here.
 
 Now we want something to give to the user, so let's create a `div` and call it "present". For now, I will make a bauble to give to our users. Let's create another `div` and we will use the `:before` and `:after` selectors to help build this up more, so it looks like a bauble. To complete the advent calendar, we will just need to create a "day" for each day in the advent calendar.
 
-For our CSS i am going to build it in Sass, it just means its a lot easier to read and we can keep it nice and clean.
+For our CSS I am going to build it in Sass, it just means its a lot easier to read and we can keep it nice and clean.
 
 ```
 
@@ -191,7 +194,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>3</h2>
       </div>
@@ -199,7 +202,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>4</h2>
       </div>
@@ -207,7 +210,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>5</h2>
       </div>
@@ -215,7 +218,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>6</h2>
       </div>
@@ -223,7 +226,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>7</h2>
       </div>
@@ -231,7 +234,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>8</h2>
       </div>
@@ -239,7 +242,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>9</h2>
       </div>
@@ -247,7 +250,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>10</h2>
       </div>
