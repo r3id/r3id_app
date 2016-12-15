@@ -5,7 +5,7 @@ type:			    post
 navigation: 	false
 
 date:   		  2016-12-15
-excerpt: 		  After speaking to a large UK based retailer yesterday it got me thinking... how would I build an advent calendar, which also works on mobile?
+excerpt: 		  After speaking to a large UK based retailer yesterday, it got me thinking... how would I build an advent calendar, which also works on mobile?
 categories:		html sass css development
 gradient: 		1
 image: 			  articles/general/code.png
