@@ -89,7 +89,9 @@ main {
   }
 }
 
-.day:hover {
+.day:hover,
+.day:focus,
+.day:active {
   .door {  
     background: darken(rgb(120, 22, 26), 10%);
     transform: rotateY(-97deg);
