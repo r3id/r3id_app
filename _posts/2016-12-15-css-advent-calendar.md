@@ -21,6 +21,9 @@ I was speaking to the Head of Development at one of the UK’s largest flash sal
 
 So this is my attempt at making an advent calendar concept - only using CSS.
 
+{% include media-image.html file="articles/css-advent-calendar/css-advent-calendar.png" %}
+
+
 <hr>
 
 Let's get *cracking* and create our HTML. First off we need a containing "day" `div`, this will keep the contents of our days clean and tidy.
