@@ -309,7 +309,9 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
     border-radius: 50%;
   }
 
-  .day:hover .door {
+  .day:hover .door,
+  .day:focus .door,
+  .day:active .door {
     background: #78161a;
     -webkit-transform: rotateY(-97deg);
             transform: rotateY(-97deg);
@@ -318,11 +320,15 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
     -webkit-transition: all .4s ease-in;
     transition: all .4s ease-in;
   }
-  .day:hover .door h2 {
+  .day:hover .door h2,
+  .day:focus .door h2,
+  .day:active .door h2 {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
-  .day:hover .bauble {
+  .day:hover .bauble,
+  .day:focus .bauble,
+  .day:active .bauble {
     display: inline-block;
     -webkit-animation: shake 1s;
             animation: shake 1s;
