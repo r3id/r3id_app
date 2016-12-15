@@ -175,7 +175,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
 
 <div class="demo-holder animated fadeInUp">
   <main>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>1</h2>
       </div>
@@ -183,7 +183,7 @@ Let's take a look at what our HTML and compiled CSS would look like I have only 
         <div class="bauble">?</div>
       </div>
     </div>
-    <div class="day">
+    <div class="day" onclick="void(0)">
       <div class="door">
         <h2>2</h2>
       </div>
