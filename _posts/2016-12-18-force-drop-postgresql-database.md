@@ -17,6 +17,7 @@ bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and
 So while developing a new site I discovered the need to drop (delete) my database and recreate it. Word to the wise, make sure you **DON'T** do this on your production server! I've not done this (yet!), but i thought i best give the warning. As always I decided to document this for future reference.
 
 Running the script below will force the disconnection of all clients connected to this database. This will allow you to then drop and recreate your DB.
+
 ```
 SELECT pg_terminate_backend(pid)
 FROM pg_stat_activity
