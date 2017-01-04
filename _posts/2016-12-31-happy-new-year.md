@@ -9,7 +9,7 @@ date:   		  2016-12-31
 excerpt: 		  As 2016 comes to an end, I want to wish you all the best for the coming year.
 categories:		html sass css development
 gradient: 		1
-image: 			  articles/general/newyear.png
+image: 			  articles/general/nye-london.png
 details:		  false
 
 author: 		  Alan Reid
