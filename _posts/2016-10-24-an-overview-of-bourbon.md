@@ -45,6 +45,7 @@ section {
 ```
 
 And here’s just a couple of mixin examples that I’ve used (they also include the up-to-date vendor prefixes, where required):
+
 ```
 
 //Animations
@@ -78,6 +79,7 @@ font-size: rem(12);
 ```
 
 CSS Output
+
 ```
 font-size: 0.75rem;
 ```
