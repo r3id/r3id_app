@@ -1,6 +1,6 @@
 ---
 layout:			  default
-title:  		  Add some colour to iTerm
+title:  		  Add some colour and Git branch to iTerm
 type:			    post
 navigation: 	false
 
@@ -18,7 +18,7 @@ bio: 			    I'm a freelance designer/developer who enjoys creating beautiful and
 
 Open iTerm2 and enter `- touch ~/.bash_profile; open ~/.bash_profile`
 
-This will open our bash_profile document
+This will open your `.bash_profile` and allow you to add the following to it.
 
 ```
 # bash_profile
