@@ -4,7 +4,7 @@ title:  		  Getting into Sass
 type:			    post
 navigation: 	false
 
-date:   		  2017-02-09
+date:   		  2017-02-28
 
 excerpt: 		  Get a better understanding of Sass with this simple guide
 categories:		general
