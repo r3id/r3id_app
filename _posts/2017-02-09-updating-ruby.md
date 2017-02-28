@@ -20,7 +20,7 @@ So previously when we were setting up Rails we installed Ruby 2.3.1, so in this 
 
 As you may remember we are using `rbenv` to manage our Ruby versions. And this was installed on top of [Homebrew](http://brew.sh/).
 
-The following lines are used to install Ruby 2.4.0 (check [ruby-Lang.org](http://ruby-lang.org) for the latest version) and set it as your default Ruby version:
+The following lines are used to install Ruby 2.4.0 (check [ruby-lang.org](http://ruby-lang.org) for the latest version) and set it as your default Ruby version:
 
 ```
 $ brew update
