@@ -1,0 +1,30 @@
+/*
+  Check for inline styles. - Red border
+  Inline styles should be avoided as they can cause issues due to their specificy. That said
+  we occasionally need to use them to hide elements for example. This highlights elements which
+  have inline styles so we can make sure they are being used correctly.
+*/
+*[style] {
+  border: 1px solid red;
+}
+
+/*
+  Faulty or Missing Link Targets. - orange border
+  We look for any link (anchor) elements which either don't have a href, or ones which
+  isn't very useful.
+*/
+a:not([href]),
+a[href="#"],
+a[href=""],
+a[href*="javascript:void(0)"] {
+  border: 1px solid orange;
+}
+
+/*
+  Unaccessible Images - lime border
+  General rule of thumb is that images should always have an alt attribute.
+  If the alt attribute is missing screenreaders read out the src instead which is
+  not that great for the user, and could cause confusion.
+*/
+img:not([alt]),
+img[alt=""] { border: 1px solid lime; }
