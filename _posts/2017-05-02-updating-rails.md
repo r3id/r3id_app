@@ -4,7 +4,7 @@ title:  		  Updating Rails
 type:			    post
 navigation: 	false
 
-date:   		  2017-02-09
+date:   		  2017-05-02
 
 excerpt: 		  Rails 5.1 was released on April, 27. So lets have a look at updating our current install.
 categories:		general, rails
