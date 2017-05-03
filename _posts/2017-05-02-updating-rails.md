@@ -7,7 +7,7 @@ navigation: 	false
 date:   		  2017-05-02
 
 excerpt: 		  Rails 5.1 was released on April, 27. So lets have a look at updating our current install.
-categories:		general, rails
+categories:		general rails
 gradient: 		1
 image: 			  articles/general/code.png
 details:		  false
