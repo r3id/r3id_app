@@ -110,7 +110,7 @@ Now lets just double check to make sure Rails has installed correctly. Run the f
 
 ```
 $ rails -v
-Rails 5.0.0.1
+Rails 5.0.1
 ```
 
 <hr>

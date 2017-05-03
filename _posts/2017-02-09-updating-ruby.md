@@ -7,7 +7,7 @@ navigation: 	false
 date:   		  2017-02-09
 
 excerpt: 		  Ruby has been updated, so lets go over how we update our Ruby version.
-categories:		general
+categories:		general, ruby
 gradient: 		1
 image: 			  articles/general/code.png
 details:		  false
