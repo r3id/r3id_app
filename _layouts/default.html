@@ -1,39 +1,41 @@
-{% include header.html %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{% if page.title %}{{ page.title }} || {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300|Muli:400,600,700" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}favicon.ico" />
 
-<section class="content">
+    {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+      <script>
+        (function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,"script","//www.google-analytics.com/analytics.js","ga");
+        ga("create", "{{ site.google_analytics_key }}", "auto");
+        ga("send", "pageview");
+      </script>
+    {% endif %}
+  </head>
+  <body>
+    <div class="sidebar-wrapper">
 
-	<article>
-
-		<header class="" data-animation="fadeInDownBig">
-
-			{% include excerpt.html %}
-
-		</header>
-
-		<div class="body" data-animation="fadeInUp">
-
-			{% if page.type == 'casestudy' %}
-				{% include cs-summary.html %}
-	    {% endif %}
-
-			{{ content }}
-
-		</div>
-
-		{% if page.type != 'page' %}
-		<footer>
-
-			{% include meta.html %}
-
-			{% include pagination.html %}
-
-		</footer>
-		{% endif %}
-
-	</article>
-
-</section>
-
-{% include teaser.html %}
-
-{% include footer.html %}
+      <div class="about_container">
+        <h1 class="about" >DEVEVLOPER.<br>DESIGNER.<br>PHOTOGRAPHER<br>&amp; DAD.</h1>
+        <p class="about-copy">I believe in structured processes, clean design & excellent attention to detail. Problem-solving by delivering innovative solutions which are device-agnostic and accessible to as many visitors as possible through client collaboration.</p>
+        <div class="social">
+          <a class="twitter_button button" href="http://twitter.com/alr3id" target="_blank"></a>
+          <a class="instagram_button button"href="https://www.instagram.com/alan.r3id/" target="_blank"></a>
+          <a class="medium_button button" href="https://medium.com/@r3id" target="_blank"></a>
+        </div>
+        <a class="contact_btn button" data-ix="text-slide" href="mailto:hello@r3id.io?subject=Website%20Inquiry">Say Hello!</a>
+      </div>
+    </div>
+    <div class="content-wrapper">
+      {{ content }}
+    </div>
+  </body>
+</html>

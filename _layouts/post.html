@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<header class="blog-post-header blog-post-header--blank">
+  <div class="container container--narrow">
+    <div class="date">{{ page.date | date: '%b %-d, %Y' }}</div>
+    <div class="category">
+      {{ page.categories }}
+    </div>
+    <h1 class="post-title">
+      {{ page.title }}
+    </h1>
+  </div>
+</header>
+
+<section class="article-text">
+  {{ content }}
+</section>

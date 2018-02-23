@@ -1,39 +1,26 @@
-# Site Settings
-baseurl: 		    ""
-title: 			    R3ID
+title: R3ID
+url: "https://r3id.io"
+baseurl: /
+google_analytics_key:
 
-name: 			    R3ID
-description: 	  My portfolio of work, along with some randmon thoughts and articles.
-url: 			      "http://r3id.io"
+email:
+description:  Test stuff.
 
-paginate: 		  4
-paginate_path: 	"blog/page:num"
-
-email: 			    hello@r3id.io
-
-disqus: 		    your_disqus_shortname
-analytics: 	    UA-68933763-1
-
-copyright: 		  Copyright &copy; 2016 R3ID.
-
-# Build Settings
-permalinks: 	  pretty
+# Build settings
+paginate:       5
+paginate_path:  "/blog/:num/"
+permalink:      pretty
 
 markdown:       kramdown
-permalink:      /blog/:title/
+permalink:      /:title/
 
 sass:
   style: compressed
 
-collections:
-  casestudy:
-    title:      Case study
-    render:     true
-    output:     true
-  work:
-    title:      Work
-    render:     true
-    output:     true
+plugins:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
-# Gems
-gems:           [jekyll-paginate]
+plugins:        [jekyll-paginate]
