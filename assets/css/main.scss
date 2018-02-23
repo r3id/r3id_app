@@ -178,17 +178,6 @@ label {
   line-height: 26px;
 }
 
-.capitalontap {
-  width: 100%;
-  height: auto;
-  padding: 45px 65px;
-  background-image: -webkit-linear-gradient(270deg, #62965a, #62965a);
-  background-image: linear-gradient(180deg, #62965a, #62965a);
-  -webkit-transition: opacity 200ms ease;
-  transition: opacity 200ms ease;
-}
-
-
 .title_sub {
   margin-top: 0px;
   margin-left: 0px;
@@ -336,11 +325,18 @@ label {
   margin-bottom: -45px;
   margin-left: 17%;
 }
+.capitalontap {
+  width: 100%;
+  height: auto;
+  padding: 45px 65px 75px;
+  background-image: -webkit-linear-gradient(270deg, #62965a, #62965a);
+  background-image: linear-gradient(180deg, #62965a, #62965a);
+}
 
 .thisisbud {
   width: 100%;
   height: auto;
-  padding: 65px 45px;
+  padding: 45px 65px 75px;
   background-image: -webkit-linear-gradient(270deg, #5f87e3, #5f87e3);
   background-image: linear-gradient(180deg, #5f87e3, #5f87e3);
 }
