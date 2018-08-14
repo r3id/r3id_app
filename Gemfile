@@ -8,7 +8,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.7.2"
+gem 'jekyll', '~> 3.8', '>= 3.8.3'
 gem "jekyll-paginate"
 
 # Keeping to this version until the issues with 1.9.21 are fixed!

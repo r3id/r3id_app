@@ -183,8 +183,6 @@ label {
   margin-left: 0px;
   float: none;
   clear: none;
-
-  color: #fff;
   font-size: 12px;
   line-height: 12px;
 }
@@ -193,8 +191,6 @@ label {
   margin-top: 5px;
   margin-left: 0px;
   float: left;
-
-  color: #fff;
 }
 
 .social {
@@ -325,26 +321,35 @@ label {
   margin-bottom: -45px;
   margin-left: 17%;
 }
-.capitalontap {
+.ibrandiq {
   width: 100%;
   height: auto;
   padding: 45px 65px 75px;
-  background-image: -webkit-linear-gradient(270deg, #62965a, #62965a);
-  background-image: linear-gradient(180deg, #62965a, #62965a);
+  background: rgb(53, 29, 56);
+
+  & .title,
+  & .title_sub {
+      color: #fff;
+  }
 }
 
-.thisisbud {
+.thatdroneco {
   width: 100%;
   height: auto;
   padding: 45px 65px 75px;
-  background-image: -webkit-linear-gradient(270deg, #5f87e3, #5f87e3);
-  background-image: linear-gradient(180deg, #5f87e3, #5f87e3);
+  background: rgb(218, 166, 32);
+
+  & .title,
+  & .title_sub {
+    color: #fff;
+  }
 }
 
 .image-2 {
   width: 80%;
-  margin-top: 25px;
+  margin-top: 20px;
   margin-left: 10%;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
