@@ -293,13 +293,13 @@ label {
 
 .contact_btn {
   padding: 15px 65px;
-  background-color: #ff7b08;
+  background-color: #ff6f61;
   -webkit-transition: all 200ms ease;
   transition: all 200ms ease;
   font-size: 16px;
 
   &:hover {
-    background-color: darken(#ff7b08, 10%);
+    background-color: darken(#ff6f61, 10%);
     box-shadow: 0 16px 32px -6px rgba(0, 0, 0, 0.2);
   }
 }
@@ -515,7 +515,7 @@ label {
   text-indent: 100%;
   white-space: nowrap
 }
-a { color: #FF7B09; text-decoration: none;}
+a { color: #ff6f61; text-decoration: none;}
 
 // Resume page
 .resume-section { margin-bottom: 60px; }
