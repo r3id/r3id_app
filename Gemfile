@@ -12,7 +12,7 @@ gem 'jekyll', '~> 3.8', '>= 3.8.3'
 gem "jekyll-paginate"
 
 # Keeping to this version until the issues with 1.9.21 are fixed!
-gem 'ffi', '1.9.18'
+gem 'ffi', '1.11.1'
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 
