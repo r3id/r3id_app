@@ -7,8 +7,6 @@ email:
 description:  Test stuff.
 
 # Build settings
-paginate:       5
-paginate_path:  "/blog/:num/"
 permalink:      pretty
 
 markdown:       kramdown
@@ -22,5 +20,3 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-
-plugins:        [jekyll-paginate]
