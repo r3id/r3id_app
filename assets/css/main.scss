@@ -321,6 +321,13 @@ label {
   margin-bottom: -45px;
   margin-left: 17%;
 }
+.image-2 {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
 .cmdspace {
   width: 100%;
   height: auto;
@@ -350,11 +357,38 @@ label {
   }
 }
 
-.image-2 {
-  width: 80%;
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-bottom: 10px;
+.ibrandiq {
+  width: 100%;
+  height: auto;
+  padding: 45px 65px 75px;
+  background: rgb(53, 29, 56);
+
+  & .title,
+  & .title_sub {
+      color: #fff;
+  }
+}
+
+.bud {
+  width: 100%;
+  height: auto;
+  padding: 45px 65px 75px;
+  background: rgb(51, 51, 51);
+
+  & .title,
+  & .title_sub {
+      color: #fff;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
 }
 
 @media (max-width: 991px) {
