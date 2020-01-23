@@ -321,15 +321,20 @@ label {
   margin-bottom: -45px;
   margin-left: 17%;
 }
-.ibrandiq {
+.cmdspace {
   width: 100%;
   height: auto;
   padding: 45px 65px 75px;
-  background: rgb(53, 29, 56);
+  background: rgb(0, 0, 0);
 
   & .title,
   & .title_sub {
       color: #fff;
+  }
+
+  & .image-2 {
+    width: 40%;
+    margin-left: 30%;
   }
 }
 
