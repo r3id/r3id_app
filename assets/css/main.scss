@@ -265,13 +265,19 @@ label {
   padding: 0px;
   float: right;
   background-color: transparent;
-  background-image: url("/assets/imgs/ext_link.svg");
   background-position: 0px 0px;
-  background-size: 30px;
+  background-size: 20px;
   background-repeat: no-repeat;
   opacity: 0.6;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+
+  &.light{
+    background-image: url("/assets/imgs/ext_link-light.svg");
+  }
+  &.dark {
+    background-image: url("/assets/imgs/ext_link-dark.svg");
+  }
   &:hover {
     opacity: 1;
   }
@@ -328,7 +334,24 @@ label {
   margin-bottom: 10px;
 }
 
-.cmdspace {
+.bill-split {
+  width: 100%;
+  height: auto;
+  padding: 45px 65px 75px;
+  background: rgb(219, 219, 219);
+
+  & .title,
+  & .title_sub {
+      color: #000000;
+  }
+
+  & .image-2 {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+.mono-weather {
   width: 100%;
   height: auto;
   padding: 45px 65px 75px;
