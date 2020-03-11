@@ -1,44 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>{% if page.title %}{{ page.title }} || {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} || {% if page.layout == 'post' %}Notes to self ::{% endif %} {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv=”last-modified” content=”{{ 'now' | date: '%Y-%m-%d' }}”>
-    <meta name="description" content="Developer. Designer. Photographer and Dad. I believe in structured processes, clean design & excellent attention to detail. Problem-solving by delivering innovative solutions which are device-agnostic and accessible to as many visitors as possible through client collaboration." />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,600,700" />
+    <meta name="description" content="" />
     <link rel="stylesheet" href="/assets/css/main.css" media="screen" />
     <link rel="stylesheet" href="/assets/css/main.css" media="print" />
     <link rel="icon" type="image/png" href="{{ site.baseurl }}favicon.ico" />
   </head>
-  <body>
-    <div class="sidebar-wrapper">
-
-      <div class="about_container">
-        <h1 class="about" >DEVELOPER.<br>DESIGNER.<br>PHOTOGRAPHER<br>&amp; DAD.</h1>
-        <p class="about-copy">I believe in structured processes, clean design & excellent attention to detail. Problem-solving by delivering innovative solutions which are device-agnostic and accessible to as many visitors as possible through client collaboration.</p>
-        <div class="social">
-          <a class="twitter_button button" href="http://twitter.com/alr3id" target="_blank" title="Follow me on Twitter"></a>
-          <a class="instagram_button button"href="https://www.instagram.com/alan.r3id/" target="_blank" title="Visit my Instagram"></a>
-          <a class="medium_button button" href="https://medium.com/@r3id" target="_blank" title="Follow me on Medium"></a>
-        </div>
-        <a class="contact_btn button" data-ix="text-slide" href="mailto:hello@r3id.io?subject=Website%20Inquiry" title="Drop me an email" rel=”nofollow”>Say Hello!</a>
-      </div>
-    </div>
-    <div class="content-wrapper">
-      {{ content }}
-    </div>
-    {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics_key }}"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', '{{ site.google_analytics_key }}');
-      </script>
-    {% endif %}
+  <body class="{{ layout.class }}">
+    {{ content }}
   </body>
 </html>

@@ -1,23 +1,9 @@
 ---
-
-layout:        default
-title:         Privacy policy
-type:          page
-navigation: 	 false
-
-date:          2015-10-01 18:00:00
-last-update:   2015-10-01 18:00:00
-excerpt:       
-categories:    
-tech:          
-gradient:      
-image:         
-details:      
-external-url:
-
+layout: legal_page
+title: Privacy
 ---
 
-At [R3ID][r3idurl] we are committed to safeguarding and preserving the privacy of our visitors.
+At [r3id.io][r3idurl] we are committed to safeguarding and preserving the privacy of our visitors.
 This Privacy Policy explains what happens to any personal data that you provide to us, or that we collect from you whilst you visit our site.
 
 We do update this Policy from time to time so please do review this Policy regularly.

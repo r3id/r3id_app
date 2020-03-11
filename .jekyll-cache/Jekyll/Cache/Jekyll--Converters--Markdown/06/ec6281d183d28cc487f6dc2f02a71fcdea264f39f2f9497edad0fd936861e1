@@ -1,0 +1,16 @@
+I"B<p>I was moving a blog from Wordpress to a Jekyll site, and after finally managing to import all my posts I found a slight issue, my file names all had an uppercase character to start each word. <strong>:sigh:</strong></p>
+
+<p><em>“Crap!”</em> was one of the words that came to mind, as now my URL’s were also in this format. I personally prefer URL’s in lowercase - i suppose its a spaces vs. tabs kinda thing.</p>
+
+<p>So after a little investigation I came across a handy little terminal snippet.
+So, first off we need to be in our directory with the offending files</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd your-dir
+</code></pre></div></div>
+
+<p>Next we will enter the much needed snippet…</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ for i in *; do mv "$i" "$(echo $i|tr A-Z a-z)"; done
+</code></pre></div></div>
+
+<p>This terminal snippet will loop through each file in the current directory, and rename the files to lower case! Yay!! My OCD has been appeased for the day ✊</p>
+:ET

@@ -1,0 +1,178 @@
+---
+layout: post
+title: An overview of Bourbon
+categories: css sass framework
+---
+
+As some of you are aware, I created a Sass Library called "[Doughnut](https://doughnut.r3id.io/){:target="_blank"}", it's pretty awesome if I don’t say so myself. It has served me well on a few personal projects I have done. However, there are many others out there which are far more mature. In this post, I am going to do a quick overview of one that has stood out to me the most due to its simplicity and ability to add features quickly.
+
+---
+
+<div class="image-center">
+<img src="assets/images/articles/bourbon-logo.png" />
+</div>
+
+[Bourbon](http://bourbon.io){:target="_blank"} is a semantic, lightweight, yet extensive mixin library which makes the development of a site much quicker and easily maintainable. Containing up-to-date mixins, vendor prefixes and variables sheet makes it very easy to maintain and write site-wide changes with little fuss. You can read in the [Bourbon docs](http://bourbon.io/docs/){:target="_blank"} about the dozens of others!
+
+Here's a really simple example of a Bourbon mixin:
+
+```
+
+section {
+  @include linear-gradient(to top, red, orange);
+}
+
+```
+
+This compiles to:
+
+```
+
+section {
+  background-color: red;
+  background-image: -webkit-linear-gradient(bottom, red, orange);
+  background-image:         linear-gradient(to top, red, orange);
+}
+
+```
+
+And here’s just a couple of mixin examples that I’ve used (they also include the up-to-date vendor prefixes, where required):
+
+```
+
+//Animations
+.intro-text {
+    @include animation-duration(2s);
+}
+
+//Key Frames
+.example {
+    @include keyframes(fadeIn) {
+        from {
+           @include transform(scale(0));
+        }
+        to {
+           @include transform(scale(1));
+        }
+     }
+}
+
+//Transitions
+.example {
+     @include transition(all 1.4s ease-in-out);
+}
+
+```
+
+Bourbon also includes a great selection of [functions](http://bourbon.io/docs/#functions){:target="_blank"}. One of my most used functions is the Pixels and Rems conversion function as seen below. Assuming 1rem is equal to 16px. (You can override this by defining a new size for the `$em-base`).
+
+```
+font-size: rem(12);
+```
+
+CSS Output
+
+```
+font-size: 0.75rem;
+```
+
+
+Developed by the team over at [thoughtbot](https://thoughtbot.com){:target="_blank"}, Bourbon is part of an expanding family of other useful tools ([Neat](http://neat.bourbon.io){:target="_blank"}, [Bitters](http://bitters.bourbon.io){:target="_blank"} and [Refills](http://refills.bourbon.io){:target="_blank"}) which have developed using Bourbon as a base, let's have a look at them now.
+
+---
+
+## Neat
+[Neat](http://neat.bourbon.io){:target="_blank"} is a semantic grid framework built on top of Sass and Bourbon. It is simple enough to get you up and running in minutes, and powerful enough to handle virtually any responsive layout you can dream of building.
+
+So instead of implementing the grid layout into my html markup:
+
+```
+
+<div class=“row”>
+  <section>
+    <aside class=“col-md-3”>
+      ...
+    </aside>
+    <article class=“col-md-9”>
+      ...
+    </article>
+  </section>
+</div>
+
+```
+
+Bourbon Neat lets me implement the grid layout through Css:
+
+```
+
+section {
+  @include outer-container;
+  aside { @include span-columns(3); }
+  article { @include span-columns(9); }
+}
+
+```
+
+This makes my html markup stay clean and semantic:
+
+```
+
+<section>
+  <aside>What is it about?</aside>
+  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
+</section>
+
+```
+
+---
+
+## Bitters
+[Bitters](http://bitters.bourbon.io){:target="_blank"} a collection of base styles, typography, form styles, variables, and even includes an error message module. Bitters is not a library. [Thoughtbot](https://thoughtbot.com){:target="_blank"} has structured them in a way that is designed to be your starting point. Bitters are worth using and easy enough to edit to your liking.
+
+---
+
+## Refills
+[Refills](http://refills.bourbon.io){:target="_blank"} are a collection of nifty UI components built using 'The Bourbon Family'. It has components and patterns built with Bourbon and Neat. It's a good thing to have in your tool belt because even if it's not really what you want, it gets you pretty close.
+
+---
+
+## Installing Bourbon
+
+In Rails its a very simple to install. Switch to your selected project using your terminal install the Bourbon gem file.
+
+```
+$ gem bourbon
+```
+
+The run:
+
+```
+$ bundle install
+```
+
+Restart your server. Then rename `application.css` to `application.scss` this SCSS extension allows us to use Sass:
+
+```
+mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+```
+
+Delete the sprocket directive in application.scss:
+
+```
+*= require_tree .
+```
+
+Import Bourbon at the beginning of `application.scss`. All additional stylesheets should get imported below Bourbon:
+
+```
+@import "bourbon";
+@import 'neat';
+@import 'base/base' # This is for bitters
+```
+
+---
+
+## Conclusion
+[Bourbon](http://bourbon.io){:target="_blank"} gives you more than enough to create a great base for a site's styling, and quickly too. But the best thing about [Bourbon's](http://bourbon.io){:target="_blank"} approach is that it also allows you to go a step further and provides the freedom you need to customise and add styles to it without becoming a pain to maintain.
+
+Throw in the addition of [Neat](http://neat.bourbon.io){:target="_blank"}, [Bitters](http://bitters.bourbon.io){:target="_blank"} and [Refills](http://refills.bourbon.io){:target="_blank"}, and you start to see why thoughtbot’s [Bourbon](http://bourbon.io){:target="_blank"} should seriously be in the running for your next project.

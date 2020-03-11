@@ -1,25 +1,17 @@
-<div class="media image" data-animation="fadeInUp">
-
-	{% if include.file %}
-		<img src="{{ include.file | prepend: '/assets/images/' | prepend: site.baseurl }}" alt="{{ include.title }}" />
-	{% endif %}
-
-	{% if include.title or include.caption or include.link %}
-		<div class="caption" data-animation="fadeInUp">
-
-		  {% if include.title %}
-		  	<h4>{{ include.title }}</h4>
-		  {% endif %}
-
-		  {% if include.caption %}
-		  	<p>{{ include.caption }}</p>
-		  {% endif %}
-
-		  {% if include.link %}
-		  	<a href="{{ include.link }}" title="Visit Website" class="icon image">Visit Website</a>
-		  {% endif %}
-
-		</div>
-	{% endif %}
-
-</div>
+<figure class="img-figure" data-template="with">
+  <div class="img-container">
+    <div class="img-wrapper" style="padding-bottom: 56.25%">
+      {% if include.file %}
+    		<img src="{{ include.file | prepend: '/assets/images/' | prepend: site.baseurl }}" alt="{{ include.title }}" class="img" decoding="async"  />
+    	{% endif %}
+    </div>
+    </div>
+    {% if include.caption or include.link %}
+    <figcaption>
+      {{ include.caption }}
+      {% if include.link %}
+        <a href="{{ include.link }}" title="Visit Website" class="icon image">Visit Website</a>
+      {% endif %}
+    </figcaption>
+    {% endif %}
+</figure>

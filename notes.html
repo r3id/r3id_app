@@ -1,0 +1,30 @@
+---
+layout: notes_page
+title: Notes to self
+---
+
+<div class="archive archive-posts">
+  <p>Welcome to my ramblings on tech, development, and life.</p>
+{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
+{% for yearMonth in postsByYearMonth %}
+  <h3 class="archive-subtitle" id="y{{post.date | date: "%Y"}}">
+    <span class="archive-year">{{yearMonth.name | date:"%Y"}}</span>
+    <span class="archive-month">{{yearMonth.name | date:"%B"}}</span>
+  </h3>
+  {% for post in yearMonth.items %}
+    <a class="archive-post-link" href="{{ post.url }}">
+      <p class="archive-post-name">{{ post.title }}</p>
+      <hr class="archive-post-spacer">
+      <p class="archive-post-day">
+        {% assign d = post.date | date: "%-d"  %}
+        {% case d %}
+          {% when '1' or '21' or '31' %}{{ d }}st
+          {% when '2' or '22' %}{{ d }}nd
+          {% when '3' or '23' %}{{ d }}rd
+          {% else %}{{ d }}th
+        {% endcase %}
+      </p>
+    </a>
+  {% endfor %}
+{% endfor %}
+</div>

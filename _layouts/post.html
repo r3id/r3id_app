@@ -1,19 +1,18 @@
 ---
 layout: default
+class: page-post
 ---
 
-<header class="blog-post-header blog-post-header--blank">
-  <div class="container container--narrow">
-    <div class="date">{{ page.date | date: '%b %-d, %Y' }}</div>
-    <div class="category">
-      {{ page.categories }}
-    </div>
-    <h1 class="post-title">
-      {{ page.title }}
+<main class="main">
+  <div class="text">
+    <h1 class="text-title">
+      <a href="{{ site.url }}">{{ page.title }}</a>
     </h1>
+    <div class="text-content">
+      {{ content }}
+    </div>
   </div>
-</header>
+  {% include notes.html %}
 
-<section class="article-text">
-  {{ content }}
-</section>
+  {% include footer.html %}
+</main>

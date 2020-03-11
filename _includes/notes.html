@@ -1,0 +1,39 @@
+<nav class="archive archive-posts">
+  <h2 class="archive-title">Where do you go from here?</h2>
+  <div class="archive-text">
+    <p>
+      For thoughts, comments or if you'd like to work together <a href="mailto:hello@r3id.io" rel="noopener noreferrer">please do get in touch</a>.
+      <br>And for my ramblings and techie posts, the notes list is down below.
+     </p>
+  </div>
+
+  <details>
+    <summary>
+      <span class="open">View all notes</span>
+      <span class="close">Close archive</span>
+    </summary>
+
+    {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
+    {% for yearMonth in postsByYearMonth %}
+      <h3 class="archive-subtitle" id="y{{post.date | date: "%Y"}}">
+        <span class="archive-year">{{yearMonth.name | date:"%Y"}}</span>
+        <span class="archive-month">{{yearMonth.name | date:"%B"}}</span>
+      </h3>
+      {% for post in yearMonth.items %}
+        <a class="archive-post-link" href="{{ post.url }}">
+          <p class="archive-post-name">{{ post.title }}</p>
+          <hr class="archive-post-spacer">
+          <p class="archive-post-day">
+            {% assign d = post.date | date: "%-d"  %}
+            {% case d %}
+              {% when '1' or '21' or '31' %}{{ d }}st
+              {% when '2' or '22' %}{{ d }}nd
+              {% when '3' or '23' %}{{ d }}rd
+              {% else %}{{ d }}th
+            {% endcase %}
+          </p>
+        </a>
+      {% endfor %}
+    {% endfor %}
+  </details>
+</nav>
