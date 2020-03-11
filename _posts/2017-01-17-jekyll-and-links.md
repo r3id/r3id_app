@@ -29,10 +29,8 @@ Create yourself a blog post, `2017-01-04-test-post.md`, and make sure you have y
 Add some text to your newly created blog post, and then when you want to add a link add the following line to the post.
 
 ```
-include media-link.html url='http://google.com/' text='Google' target=”_blank”
+{% raw %}{% include media-link.html url='http://google.com/' text='Google' target=”_blank” %}{% endraw %}
 ```
-
-_**Remember to enclose this in the liquid tags_
 
 Now run your Jekyll app and go to the post, you should see this link in all its glory!
 

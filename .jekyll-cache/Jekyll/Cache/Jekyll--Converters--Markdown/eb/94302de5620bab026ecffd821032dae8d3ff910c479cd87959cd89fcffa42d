@@ -1,4 +1,4 @@
-I"�	<p>Jekyll is fantastic, and I love creating posts using Markdown. However, I have found that adding links to articles can be a of a bit of a pain. While there is a way to open links in a new tab/window in Markdown, this does not always work too well.</p>
+I"i	<p>Jekyll is fantastic, and I love creating posts using Markdown. However, I have found that adding links to articles can be a of a bit of a pain. While there is a way to open links in a new tab/window in Markdown, this does not always work too well.</p>
 
 <p>For example, Kramdown provides the following snippet:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[link name](url_link){:target="_blank"}
@@ -19,10 +19,8 @@
 Create yourself a blog post, <code class="highlighter-rouge">2017-01-04-test-post.md</code>, and make sure you have your front matter in there.
 Add some text to your newly created blog post, and then when you want to add a link add the following line to the post.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>include media-link.html url='http://google.com/' text='Google' target=”_blank”
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% include media-link.html url='http://google.com/' text='Google' target=”_blank” %}
 </code></pre></div></div>
-
-<p><em>**Remember to enclose this in the liquid tags</em></p>
 
 <p>Now run your Jekyll app and go to the post, you should see this link in all its glory!</p>
 

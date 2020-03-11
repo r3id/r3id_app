@@ -10,22 +10,22 @@ Here are a few little helpers for you to use as you build up your site.
 Add the reading time to a post, like they do here on medium! Paste the code below inside a post layout. If you are using within a layout file change `content` to `page.content`.
 
 ```
-{% capture words %}
+{% raw %}{% capture words %}
   {{ content | number_of_words | minus: 180 }}
-{% endcapture %}
+{% endcapture %}{% endraw %}
 ```
 
 ```
-{% unless words contains “-” %}
+{% raw %}{% unless words contains “-” %}
   {{ words | plus: 180 | divided_by: 180 | append: “ minutes to read” }}
-{% endunless %}
+{% endunless %}{% endraw %}
 ```
 ## Dates
 Month, day, year
 ```
-{{ page.date | date: “%B %-d, %Y” }}
+{% raw %} {{ page.date | date: “%B %-d, %Y” }} {% endraw %}
 ```
 Current year
 ```
-{{ site.time | date: "%Y" }}
+{% raw %} {{ site.time | date: "%Y" }} {% endraw %}
 ```
