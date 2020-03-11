@@ -12,7 +12,7 @@ I have been a developer for close to 15 years and spent many years working with 
 
 I'm currently available for freelance work! Let's chat via [email](mailto:hello@r3id.io).
 
-For a downloadable PDF resume, [click here](http://r3id.io/assets/downloads/resume.pdf){:target="_blank"}.
+For a downloadable PDF resume, [click here](http://r3id.io/assets/downloads/cv.pdf){:target="_blank"}.
 
 ---
 ## Experience
