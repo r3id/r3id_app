@@ -1,0 +1,5 @@
+I"<p>Can’t finish GitHub sharing process
+    Successfully created project ‘myproject’ on GitHub, but initial push failed:
+    remote: error: GH007: Your push would publish a private email address.
+    failed to push some refs to ‘https://github.com/me/myproject.git’</p>
+:ET

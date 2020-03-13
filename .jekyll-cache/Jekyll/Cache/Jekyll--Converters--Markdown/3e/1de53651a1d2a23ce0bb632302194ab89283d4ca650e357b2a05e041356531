@@ -1,0 +1,106 @@
+I"<p>Well I have been learning GraphQL for around a week, and how time has flown past. It’s been an interesting journey I must say.</p>
+
+<p>From importing over 1/2 Million establishments to my DB, to fixing some of the data issues, it has been a really fun learning practice.</p>
+
+<p>But what did I build? What is the API for?</p>
+
+<p>I completely re-wrote the FHRS API! Lets take a quick peek shall we 😁</p>
+
+<p>This is the establishment query. This will lookup an establishment based on it’s FHRS_ID - I haven’t given them my own ID’s… yet 😉</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  establishment(fhrsId: 349461) {
+    fhrsId
+    busiessName
+    addressLine1
+    addressLine2
+    addressLine3
+    addressLine4
+    postcode
+    rating {
+      value
+      image
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>This would return the data for the establishment as seen in the example below.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "data": {
+    "establishment": [
+      {
+        "fhrsId": 349461,
+        "busiessName": "Old Red Lion",
+        "addressLine1": "Old Red Lion PH",
+        "addressLine2": "Hydean Way",
+        "addressLine3": "Stevenage",
+        "addressLine4": "Herts",
+        "postcode": "SG2 9XR",
+        "rating": {
+          "value": "5",
+          "image": "fhrs_5_en-gb"
+        }
+      }
+    ]
+  }
+}
+</code></pre></div></div>
+
+<p>But this is where the beauty of GraphQL comes into play. By allowing the user to pick the data they want, they can get even more data. The below example is now adding in the scheme name, and the local authority information.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  establishment(fhrsId: 349461) {
+    fhrsId
+    busiessName
+    addressLine1
+    addressLine2
+    addressLine3
+    addressLine4
+    postcode
+    scheme {
+      name
+    }
+    rating {
+      value
+      image
+    }
+    authority{
+      name
+      email
+    }
+  }
+}
+</code></pre></div></div>
+
+<p>This query would return the following information.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+  "data": {
+    "establishment": [
+      {
+        "fhrsId": 349461,
+        "busiessName": "Old Red Lion",
+        "addressLine1": "Old Red Lion PH",
+        "addressLine2": "Hydean Way",
+        "addressLine3": "Stevenage",
+        "addressLine4": "Herts",
+        "postcode": "SG2 9XR",
+        "scheme": {
+          "name": "Food Hygiene Rating Scheme"
+        },
+        "rating": {
+          "value": "5",
+          "image": "fhrs_5_en-gb"
+        },
+        "authority": {
+          "name": "Stevenage",
+          "email": "env.health@stevenage.gov.uk"
+        }
+      }
+    ]
+  }
+}
+</code></pre></div></div>
+:ET
