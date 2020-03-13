@@ -4,7 +4,7 @@ title:  "GraphQL and Rails, getting started"
 categories: graphql rails
 ---
 
-I was working with the [ShopifyAPI](https://shopify.dev/docs/admin-api), and developing an app which utilised the REST API, and connected up to a development store.
+I was working with the [ShopifyAPI](https://shopify.dev/docs/admin-api){:target="_blank"}, and developing an app which utilised the REST API, and connected up to a development store.
 
 Then I came across an issue, the REST API was very slow to update the large amount of data I was needing to pass updates too. So I started to look at GraphQL.
 

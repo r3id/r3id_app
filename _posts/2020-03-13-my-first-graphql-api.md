@@ -14,7 +14,7 @@ From importing over 1/2 Million establishments to my DB, to fixing some of the d
 
 _But what did I build? What is the API for?_
 
-Basically, I re-wrote the [FHRS API](https://api.ratings.food.gov.uk/help)! Lets take a quick peek shall we 😁
+Basically, I re-wrote the [FHRS API](https://api.ratings.food.gov.uk/help){:target="_blank"}! Lets take a quick peek shall we 😁
 
 This is the establishment query. This will lookup an establishment based on it's FHRS_ID - I haven't given them my own ID's... yet 😉
 
