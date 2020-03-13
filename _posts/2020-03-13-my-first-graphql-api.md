@@ -4,7 +4,7 @@ title:  "My first GraphQL API"
 categories: graphql rails
 ---
 
-Well I have been learning GraphQL for around a week, and how time has flown past. It's been an interesting journey I must say.
+Well, I have been learning GraphQL for around a week, and how time has flown past. It's been an interesting journey I must say.
 
 <div class="image-center">
 <img src="assets/images/articles/graph-ql-logo.png" />
@@ -14,7 +14,7 @@ From importing over 1/2 Million establishments to my DB, to fixing some of the d
 
 _But what did I build? What is the API for?_
 
-I completely re-wrote the [FHRS API](https://api.ratings.food.gov.uk/help)! Lets take a quick peek shall we 😁
+Basically, I re-wrote the [FHRS API](https://api.ratings.food.gov.uk/help)! Lets take a quick peek shall we 😁
 
 This is the establishment query. This will lookup an establishment based on it's FHRS_ID - I haven't given them my own ID's... yet 😉
 
