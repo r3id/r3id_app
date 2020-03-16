@@ -3,7 +3,7 @@ layout: legal_page
 title: Privacy
 ---
 
-At [r3id.io][r3idurl] we are committed to safeguarding and preserving the privacy of our visitors.
+At [r3id.dev][r3idurl] we are committed to safeguarding and preserving the privacy of our visitors.
 This Privacy Policy explains what happens to any personal data that you provide to us, or that we collect from you whilst you visit our site.
 
 We do update this Policy from time to time so please do review this Policy regularly.
@@ -52,7 +52,7 @@ In accordance with the Data Protection Act 1998 you have the right to access any
 
 ## Contacting us
 
-Please do not hesitate to contact us regarding any matter relating to this Privacy Policy at [hello@r3id.io][emaillink]
+Please do not hesitate to contact us regarding any matter relating to this Privacy Policy at [hello@r3id.dev][emaillink]
 
-[r3idurl]: http://r3id.io
-[emaillink]: mailto:hello@r3id.io
+[r3idurl]: https://r3id.dev
+[emaillink]: mailto:hello@r3id.dev

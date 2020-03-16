@@ -1,0 +1,97 @@
+I"A<h2 id="tldr">tl;dr</h2>
+
+<p>Hello, I’m Alan, and I am a developer, designer, photographer and dad.</p>
+
+<p>I’ve worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. I find myself more at home creating user-friendly, well-crafted front-end experiences with a strong focus on usability, performance, and maintainability.</p>
+
+<p>I have been a developer for close to 15 years and spent many years working with .NET (C#). Recently I have embraced Ruby and Swift, and have found myself working on more Rails projects. In 2020 I will be branching out in to iOS development more.</p>
+
+<p>I’m currently available for freelance work! Let’s chat via <a href="mailto:hello@r3id.dev">email</a>.</p>
+
+<p>For a downloadable PDF resume, <a href="https://r3id.dev/assets/downloads/cv.pdf" target="_blank">click here</a>.</p>
+
+<hr />
+<h2 id="experience">Experience</h2>
+
+<p><strong>Freelance as Designer/Developer</strong> <em>April 2016 ~ Present</em></p>
+
+<p>I have worked on a selection of projects, across different industries. I plan to keep working on these in my free time and further develop my skill set.</p>
+
+<p>I’m currently accepting freelance projects. If you’d like to discuss any exciting project you have, send me an <a href="mailto:hello@r3id.io">email</a>.</p>
+
+<p><strong>ibrandIQ as Tecnical Director</strong> <em>July 2018 ~ July 2019</em></p>
+
+<p>Working at ibrandIQ, I was brought in to maintain their existing where-to-buy platform. This quickly moved to into developing the next version of the platform.</p>
+
+<p>The new platform organised products from a global catalogue of retailers, in multiple languages. It also took a different approach to the where-to-buy solution which made it far more flexible than the previous system. The outcome meant there were less daily admin tasks, which allowed the team to work on other more critical projects.</p>
+
+<p><strong>Bud. as UI Developer</strong> <em>July 2017 ~ Feb 2018</em></p>
+
+<p>I joined Bud to head up their front-end team, and move the web app forward. I worked closely with the in-house design team; the goal was to design and develop a functional and user-friendly platform which would enable users to aggregate all their financial data.</p>
+
+<p><strong>Capital on Tap as Senior UI Developer</strong> <em>February 2017 ~ July 2017</em></p>
+
+<p>I was asked to return to Capital on Tap as they needed someone to create a living style guide and develop guidelines for their front end projects. While there I worked on some public facing pages to help promote the company and build there online presence.</p>
+
+<p><strong>Capital on Tap as Developer</strong> <em>April 2015 ~ April 2016</em></p>
+
+<p>I primarily worked on front-end projects optimising, reworking and improving load times to the public facing sites. I also led the creation and implementation of a custom SASS library into existing web solutions projects and training members of the team on how to use the library.</p>
+
+<p>During my time at Capital on Tap, I also had exposure to some of the .NET back end. Including working on unit tests, developing the customer portals so users could manage their accounts online.</p>
+
+<p><strong>Balmoral Financial as Senior Developer</strong> <em>November 2014 ~ March 2015</em></p>
+
+<p>I refactored the company site by rewriting most of the code on the front end. These changes led to improvements in the UI, and performance of the site overall.</p>
+
+<p><strong>Fasttrack Company as Developer</strong> <em>April 2014 ~ October 2014</em></p>
+
+<p>I designed and developed the UI concept for the user and admin areas which were built using .NET MVC, and WebAPI. Along with the admin areas, I also created a conceptual native Android application. This app used Bluetooth LE to communicate with prototype devices and transferred data to the prototype.</p>
+
+<p><strong>NASDAQ as Senior Designer/Developer</strong> <em>October 2012 ~ March 2014</em></p>
+
+<p>During my time at NASDAQ, I was the only designer/developer on the team. Utilising the in-house framework, I developed newsroom sites for various big brand clients such as Facebook, Sony, Gatwick, Mattel and Centre Parcs.</p>
+
+<p>I also designed responsive, eye-catching designs for clients including Sony, and Gatwick. Two of which were put forward for ‘design impact’ awards.</p>
+
+<p>Also, while working at NASDAQ, I became a Microsoft Certified Professional.</p>
+
+<p><strong>The Whisky Exchange as Front-end developer</strong> <em>May 2012 ~ October 2012</em></p>
+
+<p>I designed and developed an internal system which allowed the sales team to manage products and orders on Amazon using the MWS API. It was created using .NET 4.0 which ran LINQ queries and web services to process data, and communicate with the Amazon API. I also worked on many minor front-end projects, micro-sites, newsletters, cross browser compatibility.</p>
+
+<hr />
+
+<h2 id="certifications">Certifications</h2>
+
+<p><strong>Udemy Course OS 13 &amp; Swift 5</strong>
+<br /><em>December 2019 ~ Present</em></p>
+
+<p><strong>Google Analytics Certified Advanced Google Analytics</strong>
+<br /><em>January 2019 ~ January 2021</em></p>
+
+<p><strong>CAA Approved UAV Operator CAA Permission for Commercial Work (PfCO)</strong>
+<br /><em>July 2018 ~ July 2019</em></p>
+
+<p><strong>Google Analytics Certified Google Analytics for Beginners</strong>
+<br /><em>April 2017 ~ March 2019</em></p>
+
+<p><strong>Microsoft Certified Professional Microsoft Programming in HTML5 with JavaScript and CSS3 (70-480)</strong>
+<br /><em>Feb 2013 ~ Present</em></p>
+
+<hr />
+
+<h2 id="skills">Skills</h2>
+<ul>
+  <li>Web Design &amp; Development, Ruby, <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="https://graphql.org" target="_blank">GraphQL</a></li>
+  <li>HTML, CSS, <a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">LESS</a>, Markdown</li>
+  <li><a href="https://jquery.com/" target="_blank">jQuery</a>, <a href="https://vuejs.org/" target="_blank">VueJS</a>, <a href="https://svelte.dev" target="_blank">Svelte</a></li>
+  <li><a href="https://developer.apple.com/" target="_blank">iOS Development</a>, Swift, SwiftUI</li>
+  <li>UI/UX Design</li>
+  <li>PostgreSQL, SQLite3, Microsoft SQL Server, MySQL</li>
+  <li><a href="https://www.sketchapp.com/" target="_blank">Sketch</a>, <a href="https://affinity.serif.com/en-gb/" target="_blank">Affinity Designer</a>, Adobe Creative Suite, Microsoft Visual Studio</li>
+  <li>Git, <a href="https://bitbucket.org/" target="_blank">BitBucket</a>, <a href="https://github.com/" target="_blank">GitHub</a>, SVN, TFS</li>
+  <li>Google Analytics, Google Tag Manager, Google Webmaster Tools, Google Firebase</li>
+  <li>Photography, Videography, CAA UAV Pilot training completed (2018)</li>
+  <li>Final Cut Pro X, LumaFusion, Affinity Photo</li>
+</ul>
+:ET

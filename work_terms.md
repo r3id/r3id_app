@@ -80,4 +80,4 @@ Just like a parking ticket, you can’t transfer this contract to anyone else wi
 
 Although the language is simple, the intentions are serious and this contract is a legal document under exclusive jurisdiction of UK courts.
 
-[r3idurl]: http://r3id.io
+[r3idurl]: https://r3id.dev
