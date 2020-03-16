@@ -16,14 +16,20 @@ Add the reading time to a post, like they do here on medium! Paste the code belo
 ```
 
 ```
-{% raw %}{% unless words contains “-” %}
-  {{ words | plus: 180 | divided_by: 180 | append: “ minutes to read” }}
+{% raw %}{% unless words contains "-" %}
+  {% assign minutes = words | plus: 180 | divided_by: 180 %}
+    {{ minutes }}
+  {% if minutes == 1 %}
+    {{ " minute to read." }}
+  {% else %}
+    {{ " minutes to read." }}
+  {% endif %}
 {% endunless %}{% endraw %}
 ```
 ## Dates
 Month, day, year
 ```
-{% raw %} {{ page.date | date: “%B %-d, %Y” }} {% endraw %}
+{% raw %} {{ page.date | date: "%B %-d, %Y" }} {% endraw %}
 ```
 Current year
 ```
