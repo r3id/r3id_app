@@ -21,7 +21,7 @@ For a downloadable PDF resume, [click here](https://r3id.dev/assets/downloads/cv
 
 I have worked on a selection of projects, across different industries. I plan to keep working on these in my free time and further develop my skill set.
 
-I'm currently accepting freelance projects. If you'd like to discuss any exciting project you have, send me an [email](mailto:hello@r3id.io).
+I'm currently accepting freelance projects. If you'd like to discuss any exciting project you have, send me an [email](mailto:hello@r3id.dev).
 
 
 **ibrandIQ as Tecnical Director** _July 2018 ~ July 2019_
