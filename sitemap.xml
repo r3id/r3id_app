@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://r3id.dev/</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/notes</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/resume</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/portfolio</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/privacy</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/setting-an-email-address-per-repo</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/lets-talk-about-graphql</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/my-first-graphql-api</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/graphql-and-rails-getting-started</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/force-drop</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/translate-google-sheets</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/rails-6-in-macos-catalina</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/first-ios-app-released</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/2020-goals</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/updating-ruby</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/updating-rails</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/jekyll-tips-and-tricks</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/jekyll-file-structure</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/filenames-to-lowercase</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/setting-up-rails-and-jekyll-part-2</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/setting-up-rails-and-jekyll-part-1</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/getting-started-with-sass</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/update-jekyll</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/slack-loader</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/overview-of-bourbon</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/jekyll-and-links</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://r3id.dev/css-only-toggle-switch</loc>
+  <lastmod>2020-03-19T15:41:22+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
