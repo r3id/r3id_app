@@ -1,6 +1,6 @@
 ---
 layout: resume_page
-title: Resume
+title: Résumé
 ---
 ## tl;dr
 
