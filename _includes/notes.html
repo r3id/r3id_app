@@ -10,7 +10,7 @@
   <details>
     <summary>
       <span class="open">View all notes</span>
-      <span class="close">Close archive</span>
+      <span class="close">Close notes list</span>
     </summary>
 
     {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
