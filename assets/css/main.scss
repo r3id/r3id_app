@@ -321,6 +321,8 @@ figcaption {
 .text {
   margin-bottom: 6rem;
 
+  &-center { text-align: center;}
+
   &-content p {
     margin-bottom: 0.75rem;
   }
@@ -480,6 +482,9 @@ summary span {
   color: rgb(152, 152, 152);
   font-style: italic;
   font-weight: 400;
+}
+.resume_download {
+  text-decoration: none;
 }
 .image-center {
   margin-right: auto;
