@@ -1,0 +1,161 @@
+I"U<p>Git Commands</p>
+
+<h2 id="git-config">git config</h2>
+<p>The <code class="highlighter-rouge">git config</code> command is used to set Git configuration values on a global or local project level. At its most basic level it sets the name and email which will be associated with commits.</p>
+
+<p>Example: <code class="highlighter-rouge">git config –global user.name "[name]"</code></p>
+
+<p>Example: <code class="highlighter-rouge">git config –global user.email "[email address]"</code></p>
+
+<h2 id="git-init">git init</h2>
+<p>This command is used to start a new repository.</p>
+
+<p>Usage: <code class="highlighter-rouge">git init [repository name]</code></p>
+
+<h2 id="git-clone">git clone</h2>
+<p>This command is used to obtain a repository from an existing URL.</p>
+
+<p>Usage: <code class="highlighter-rouge">git clone [url]</code></p>
+
+<h2 id="git-add">git add</h2>
+<p>This command adds one or more to the staging area.</p>
+
+<p>Usage: <code class="highlighter-rouge">git add * </code></p>
+
+<p>While this command allows you to add only one file to the staging area.</p>
+
+<p>Usage: <code class="highlighter-rouge">git add [file]</code></p>
+
+<h2 id="git-commit">git commit</h2>
+<p>This command records or snapshots the file permanently in the version history.</p>
+
+<p>Usage: <code class="highlighter-rouge">git commit -m "[ Type in the commit message]"</code></p>
+
+<p>This command commits any files you’ve added with the git add command and also commits any files you’ve changed since then.</p>
+
+<p>Usage: <code class="highlighter-rouge">git commit -a</code></p>
+
+<h2 id="git-diff">git diff</h2>
+<p>Usage: git diff</p>
+
+<p>This command shows the file differences which are not yet staged.</p>
+
+<p>Usage: <code class="highlighter-rouge">git diff –staged</code></p>
+
+<p>This command shows the differences between the files in the staging area and the latest version present.</p>
+
+<p>Usage: <code class="highlighter-rouge">git diff [first branch] [second branch]</code></p>
+
+<p>This command shows the differences between the two branches mentioned.</p>
+
+<h2 id="git-reset">git reset</h2>
+<p>Usage: <code class="highlighter-rouge">git reset [file]</code></p>
+
+<p>This command unstages the file, but it preserves the file contents.</p>
+
+<p>Usage: <code class="highlighter-rouge">git reset [commit]</code></p>
+
+<p>This command undoes all the commits after the specified commit and preserves the changes locally.</p>
+
+<p>Usage: git reset –hard [commit]  This command discards all history and goes back to the specified commit.</p>
+
+<h2 id="git-status">git status</h2>
+<p>Usage: <code class="highlighter-rouge">git status </code></p>
+
+<p>This command lists all the files that have to be committed.</p>
+
+<h2 id="git-rm">git rm</h2>
+<p>Usage: <code class="highlighter-rouge">git rm [file] </code></p>
+
+<p>This command deletes the file from your working directory and stages the deletion.</p>
+
+<h2 id="git-log">git log</h2>
+<p>Usage: <code class="highlighter-rouge">git log</code></p>
+
+<p>This command is used to list the version history for the current branch.</p>
+
+<p>Usage: <code class="highlighter-rouge">git log –follow[file] </code></p>
+
+<p>This command lists version history for a file, including the renaming of files also.</p>
+
+<h2 id="git-show">git show</h2>
+<p>Usage: <code class="highlighter-rouge">git show [commit]</code></p>
+
+<p>This command shows the metadata and content changes of the specified commit.</p>
+
+<h2 id="git-tag">git tag</h2>
+<p>Usage: <code class="highlighter-rouge">git tag [commitID]</code></p>
+
+<p>This command is used to give tags to the specified commit.</p>
+
+<h2 id="git-branch">git branch</h2>
+<p>Usage: <code class="highlighter-rouge">git branch</code></p>
+
+<p>This command lists all the local branches in the current repository.</p>
+
+<p>Usage: <code class="highlighter-rouge">git branch [branch name] </code></p>
+
+<p>This command creates a new branch.</p>
+
+<p>Usage: <code class="highlighter-rouge">git branch -d [branch name]</code></p>
+
+<p>This command deletes the feature branch.</p>
+
+<h2 id="git-checkout">git checkout</h2>
+<p>Usage: <code class="highlighter-rouge">git checkout [branch name]</code></p>
+
+<p>This command is used to switch from one branch to another.</p>
+
+<p>Usage: <code class="highlighter-rouge">git checkout -b [branch name]</code></p>
+
+<p>This command creates a new branch and also switches to it.</p>
+
+<p>## git merge
+Usage: <code class="highlighter-rouge">git merge [branch name]</code></p>
+
+<p>This command merges the specified branch’s history into the current branch.</p>
+
+<h2 id="git-remote">git remote</h2>
+<p>Usage: <code class="highlighter-rouge">git remote add [variable name] [Remote Server Link]</code></p>
+
+<p>This command is used to connect your local repository to the remote server.</p>
+
+<h2 id="git-push">git push</h2>
+<p>Usage: <code class="highlighter-rouge">git push [variable name] master</code></p>
+
+<p>This command sends the committed changes of master branch to your remote repository.</p>
+
+<p>Usage: <code class="highlighter-rouge">git push [variable name] [branch]</code></p>
+
+<p>This command sends the branch commits to your remote repository.</p>
+
+<p>Usage: <code class="highlighter-rouge">git push –all [variable name]</code></p>
+
+<p>This command pushes all branches to your remote repository.</p>
+
+<p>Usage: <code class="highlighter-rouge">git push [variable name] :[branch name]</code></p>
+
+<p>This command deletes a branch on your remote repository.</p>
+
+<h2 id="git-pull">git pull</h2>
+<p>Usage: <code class="highlighter-rouge">git pull [Repository Link] </code></p>
+
+<p>This command fetches and merges changes on the remote server to your working directory.</p>
+
+<h2 id="git-stash">git stash</h2>
+<p>Usage: <code class="highlighter-rouge">git stash save</code></p>
+
+<p>This command temporarily stores all the modified tracked files.</p>
+
+<p>Usage: <code class="highlighter-rouge">git stash pop</code></p>
+
+<p>This command restores the most recently stashed files.</p>
+
+<p>Usage: <code class="highlighter-rouge">git stash list</code></p>
+
+<p>This command lists all stashed changesets.</p>
+
+<p>Usage: <code class="highlighter-rouge">git stash drop</code></p>
+
+<p>This command discards the most recently stashed changeset.</p>
+:ET

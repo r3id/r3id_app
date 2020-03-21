@@ -4,7 +4,7 @@ title:  "Rails Snippet: Force drop a PostgreSQL database"
 categories: postgresql rails
 ---
 
-So while developing a Rails new site I discovered the need to drop (delete) my database and recreate it. Word to the wise, make sure you DON’T do this on your production server! I’ve not done this (yet!), but I thought I best give the warning. As always I decided to document this for my future reference, and it may help others out there too.
+So while developing a Rails new site I discovered the need to drop (delete) my database and recreate it. Word to the wise, make sure you **DON’T** do this on your production server! I’ve not done this (_yet!_), but I thought I best give the warning. As always I decided to document this for my future reference, and it may help others out there too.
 
 We start off in PostgreSQL by running the script below, which will force the disconnection of all clients connected to this database. This will allow you to then drop and recreate your DB. For this I am using SQLPro for Postgres in case you were wondering.
 ```
@@ -31,7 +31,7 @@ rails db:seed
 
 ---
 
-There maybe times where you want to import data back in, maybe you created some batch insert statements for example.
+There may be times where you want to import data back in, maybe you created some batch insert statements for example.
 
 An issue you may face is when you come to insert data more data into the DB. It will fail more than likely. The reason for this is due to your primary keys being out of sync.
 

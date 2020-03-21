@@ -1,0 +1,2 @@
+I"}<p>So while developing a Rails new site I discovered the need to drop (delete) my database and recreate it. Word to the wise, make sure you <strong>DON’T</strong> do this on your production server! I’ve not done this (<em>yet!</em>), but I thought I best give the warning. As always I decided to document this for my future reference, and it may help others out there too.</p>
+:ET
