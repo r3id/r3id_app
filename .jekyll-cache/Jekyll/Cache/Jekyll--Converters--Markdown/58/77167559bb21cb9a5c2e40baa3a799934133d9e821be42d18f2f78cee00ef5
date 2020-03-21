@@ -1,0 +1,13 @@
+I"J<p>Basic Usage</p>
+
+<p>Counters are initialized by data-attributes on page load.</p>
+
+<p>Add the data-countup attribute to initialize the element as a counter.</p>
+
+<p>By default, the counter will use the element’s text and count up to that value from zero. The text is parsed by the javascript parseFloat function, so you may use a decimal or integer.</p>
+
+<p><span data-countup="">1234</span></p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.4/countUp.min.js" integrity="sha256-xjpjb+xHwzwfkLAJ0vlYMNNJIIPATkKc2oaRSDRxSWc=" crossorigin="anonymous"></script>
+
+:ET
