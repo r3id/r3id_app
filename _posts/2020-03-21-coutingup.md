@@ -14,9 +14,9 @@ So I started work on a simple JS function which I could call rather than relying
 
 ## Demo
 
-<h3 class="number text-green">100</h3>
-<h3 class="number text-green">550001</h3>
-<h3 class="number text-green">8425</h3>
+<p class="text-green"><span class="number">100</span></p>
+<p class="text-green"><span class="number">550001</span> total</p>
+<p class="text-green">£<span class="number">845</span> spent</p>
 
 _Simply refresh the page to see the count up in action._
 
@@ -24,7 +24,15 @@ _Simply refresh the page to see the count up in action._
 
 ## The code
 
-We take each element using the  `.number` class and we pass that to the JS snippet. We then perform some simple math on the content of the element and step up until we reach the target number.
+In the HTML we simply add the number to a span with the class of `.number`.
+
+```
+<p class="text-green"><span class="number">100</span></p>
+<p class="text-green"><span class="number">550001</span> total</p>
+<p class="text-green">£<span class="number">845</span> spent</p>
+```
+
+For the JS side we take each element using the  `.number` class and we pass that to the JS snippet. We then perform some simple math on the content of the element and step up until we reach the target number.
 
 ```
 function countUp(numberElement) {
