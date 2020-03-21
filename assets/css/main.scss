@@ -74,8 +74,8 @@ details {
   --f-scale-xxl:2.2;
   --l-narrower:9rem;
   --l-narrow:18rem;
-  --l-regular:24rem;
-  --l-wide:36rem;
+  --l-regular:22rem;
+  --l-wide:26rem;
   font-size: var(--f-lineheight);
   font-family: var(--f-family);
   font-weight: var(--f-weight);
@@ -269,11 +269,6 @@ ul {
   width: 100%;
   height: auto;
   border-radius: 2px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 .video-wrapper {

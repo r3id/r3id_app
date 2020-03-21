@@ -1,6 +1,6 @@
 <figure class="img-figure" data-template="with">
   <div class="img-container">
-    <div class="img-wrapper" style="padding-bottom: 56.25%">
+    <div class="img-wrapper">
       {% if include.file %}
     		<img src="{{ include.file | prepend: '/assets/images/' | prepend: site.baseurl }}" alt="{{ include.title }}" class="img" decoding="async"  />
     	{% endif %}

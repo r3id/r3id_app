@@ -4,8 +4,9 @@ title: Jekyll File Structure
 categories: jekyll
 ---
 
-
 In this article we are going to take a high-level look at what these directories mean. Don’t worry if you don’t pick up these concepts just yet, as we’ll be going over these files and directories in later articles.
+
+{% include media-image.html file="articles/jekyll-structure.png" %}
 
 ## _config.yml
 
