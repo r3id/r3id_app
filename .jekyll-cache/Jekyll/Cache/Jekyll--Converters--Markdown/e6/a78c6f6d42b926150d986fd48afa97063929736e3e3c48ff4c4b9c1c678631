@@ -1,12 +1,6 @@
----
-layout: post
-title:  "GraphQL and Rails, getting started"
-categories: graphql rails
----
+I"#<p>I was working with the <a href="https://shopify.dev/docs/admin-api" target="_blank">ShopifyAPI</a>, and developing an app which utilised the REST API, and connected up to a development store.</p>
 
-I was working with the [ShopifyAPI](https://shopify.dev/docs/admin-api){:target="_blank"}, and developing an app which utilised the REST API, and connected up to a development store.
-
-Then I came across an issue, the REST API was very slow to update the large amount of data I was needing to pass updates too. So I started to look at GraphQL.
+<p>Then I came across an issue, the REST API was very slow to update the large amount of data I was needing to pass updates too. So I started to look at GraphQL.</p>
 
 <div class="image-center">
   <svg width="177px" height="57px" viewBox="0 0 177 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -29,21 +23,22 @@ Then I came across an issue, the REST API was very slow to update the large amou
     </g>
   </svg>
 </div>
-> "GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015"
-<br>**Source:** Wikipedia (of course!)
+<blockquote>
+  <p>“GraphQL is an open-source data query and manipulation language for APIs, and a runtime for fulfilling queries with existing data. GraphQL was developed internally by Facebook in 2012 before being publicly released in 2015”
+<br /><strong>Source:</strong> Wikipedia (of course!)</p>
+</blockquote>
 
-After spending a few hours reading up on GraphQL, and trying to get it to work — unsuccessfully i must add. I had a rest, only to come back to it an hour later and upon restarting my rails server, it started working!
+<p>After spending a few hours reading up on GraphQL, and trying to get it to work — unsuccessfully i must add. I had a rest, only to come back to it an hour later and upon restarting my rails server, it started working!</p>
 
-This is simply a getting started helper for anyone who needs it, so let's have a look at my initial code. I had created a method, which would run this code in a simple Rails app, by adding byebug just above result you’re able to see whats been returned in the terminal.
-```
-def shopify_test    
+<p>This is simply a getting started helper for anyone who needs it, so let’s have a look at my initial code. I had created a method, which would run this code in a simple Rails app, by adding byebug just above result you’re able to see whats been returned in the terminal.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def shopify_test    
     shop_url = "https://#{API_KEY}:#{PASSWORD}@#.{SHOP_NAME}.myshopify.com"
     ShopifyAPI::Base.site = shop_url
     ShopifyAPI::Base.api_version = '2020-01'
 
     client = ShopifyAPI::GraphQL.client
 
-    SHOP_NAME_QUERY = client.parse <<-'GRAPHQL'
+    SHOP_NAME_QUERY = client.parse &lt;&lt;-'GRAPHQL'
     {
       shop {
         name
@@ -54,13 +49,12 @@ def shopify_test
     result = client.query(SHOP_NAME_QUERY)
     puts result.data.shop.name
 end
-```
+</code></pre></div></div>
 
-You can get your `api_key` and `password` through the [App > Private Apps](https://bkservicesonline.myshopify.com/admin/apps/private) section of the Shopify Store.
-Running this would return simply your shop name. But once you have this working you can start to explore the rest of the GraphQL API.
+<p>You can get your <code class="highlighter-rouge">api_key</code> and <code class="highlighter-rouge">password</code> through the <a href="https://bkservicesonline.myshopify.com/admin/apps/private">App &gt; Private Apps</a> section of the Shopify Store.
+Running this would return simply your shop name. But once you have this working you can start to explore the rest of the GraphQL API.</p>
 
-```
-{
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   “data”: {
     “shop”: {
       “id”: “gid:\/\/shopify\/Shop\/{SHOP_ID}”,
@@ -68,7 +62,8 @@ Running this would return simply your shop name. But once you have this working 
     }
   }
 }
-```
-While this is just a basic overview of how to get up and running, the [Shopify Docs](https://shopify.dev/docs/admin-api) provide a much more in-depth look at their GraphQL queries and mutations.
+</code></pre></div></div>
+<p>While this is just a basic overview of how to get up and running, the <a href="https://shopify.dev/docs/admin-api">Shopify Docs</a> provide a much more in-depth look at their GraphQL queries and mutations.</p>
 
-I am sure i will be posting more about my experiences with GraphQL, and maybe write up some better “How To” guides.
+<p>I am sure i will be posting more about my experiences with GraphQL, and maybe write up some better “How To” guides.</p>
+:ET
