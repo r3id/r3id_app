@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Rails Snippet: Force drop a PostgreSQL database"
+title:  "Rails Snippet: Force drop a PostgreSQL DB"
 categories: postgresql rails
 ---
 
