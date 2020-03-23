@@ -10,11 +10,16 @@ As you may remember we are using `rbenv` to manage our Ruby versions. And this w
 The following lines are used to install Ruby 2.7.0 (check [ruby-lang.org](https://www.ruby-lang.org){:target="_blank"} for the latest version) and set it as your default Ruby version:
 
 ```
-$ brew update
-$ brew upgrade ruby-build
-$ rbenv install 2.7.0
-$ rbenv global 2.7.0
-$ ruby -v
+brew update
+
+brew upgrade ruby-build
+
+rbenv install 2.7.0
+
+rbenv global 2.7.0
+
+# version should be >= Ruby 2.7.0
+ruby -v
 ```
 
 An that's it, you've updated Ruby to the latest version.

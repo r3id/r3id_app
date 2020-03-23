@@ -75,22 +75,20 @@ rails g scaffold user name email
 This will generate the following file structure:
 
 ```
-      invoke  active_record
-   identical    db/migrate/20151222022044_create_users.rb
-   identical    app/models/user.rb
-      invoke    rspec
-      create      spec/models/user_spec.rb
-      invoke      factory_girl
-      create        spec/factories/users.rb
-      invoke  resource_route
-       route    resources :users
-      invoke  scaffold_controller
-   identical    app/controllers/users_controller.rb
-      invoke    rspec
-      create      spec/controllers/users_controller_spec.rb
-      create      spec/routing/users_routing_spec.rb
-      invoke      rspec
-      create        spec/requests/users_spec.rb
+  invoke  active_record
+  create    db/migrate/20200322224414_create_users.rb
+  create    app/models/user.rb
+  invoke    rspec
+  create      spec/models/user_spec.rb
+  invoke  resource_route
+   route    resources :users
+  invoke  scaffold_controller
+  create    app/controllers/users_controller.rb
+  invoke    rspec
+  create      spec/controllers/users_controller_spec.rb
+  create      spec/routing/users_routing_spec.rb
+  invoke      rspec
+  create        spec/requests/users_spec.rb
 ```
 
 Note that no views are created since we are running in API mode.
@@ -101,9 +99,8 @@ Go ahead and repeat the process with as many resources as you like, and once you
 rails db:migrate
 ```
 
-# run the default server on port 3000
-
 ```
+# run the default server on port 3000
 rails s
 ```
 
@@ -189,7 +186,7 @@ module YourApp
 
     # ...
 
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*', :headers => :any, :methods => [:get, :post, :options]
@@ -312,7 +309,7 @@ class Rack::Attack
   Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new
 
   # Allow all local traffic
-  whitelist('allow-localhost') do |req|
+  safelist('allow-localhost') do |req|
     '127.0.0.1' == req.ip || '::1' == req.ip
   end
 
@@ -337,7 +334,7 @@ For a full list of configuration options check the `Rack::Attack` gem homepage.
 
 Now that your API is safe from brute force attacks and bad client code you can sleep a little better at night!
 
-Authenticating Your API
+## Authenticating Your API
 
 Let’s lock our API down with some authentication.
 

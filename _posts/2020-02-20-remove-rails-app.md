@@ -10,8 +10,8 @@ The easiest way around this is to use terminal and cd into the directory.
 
 Once in the directory run the following command in the terminal
 ```
-$ rails db:drop
-$ cd .. && rm -rf app_name
+rails db:drop
+cd .. && rm -rf app_name
 ```
 
 First off we drop our database for the app, you may need to close off any connections that are active if you have already started development see my other article about [force dropping a database](/force-drop).

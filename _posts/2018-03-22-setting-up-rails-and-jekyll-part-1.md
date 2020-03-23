@@ -53,9 +53,11 @@ We will be installing the current version of Ruby (2.6.3), so enter the followin
 ```
 # Install Ruby.
 rbenv install 2.6.3
+
 # Set our main version to the latest version.
 rbenv global 2.6.3
-# Check out ruby version.
+
+# version should be >= Ruby 2.6.3
 ruby -v
 ```
 
@@ -97,8 +99,9 @@ rbenv rehash
 ```
 Now lets just double check to make sure Rails has installed correctly. Run the following command in iTerm2
 ```
+# version should be >= Rails 5.2.3
 rails -v
-Rails 5.2.3
+
 ```
 ## Setting up our database
 

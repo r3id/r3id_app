@@ -1,4 +1,4 @@
-I"ÅE<p>This how-to guide aims to give you the best start to building your Rails API. Thanks to the new <code class="highlighter-rouge">rails-api</code> gem that has shipped as part of the Rails core since version 5, Rails is an ideal candidate for building streamlined APIs quickly and easily.</p>
+I"ÈD<p>This how-to guide aims to give you the best start to building your Rails API. Thanks to the new <code class="highlighter-rouge">rails-api</code> gem that has shipped as part of the Rails core since version 5, Rails is an ideal candidate for building streamlined APIs quickly and easily.</p>
 
 <p>Before the advent of Rails 5, the best option for building APIs in Ruby was arguably Grape. Grape is still a great option, especially if you like to DIY from the ground up, but Rails API mode has some really great advantages that can‚Äôt be ignored; ActiveRecord by default, a strong developer community, and built in Webpacker support as of Rails 6 means you can easily harness the power of front end frameworks such as Vue and React.</p>
 
@@ -61,22 +61,20 @@ end
 
 <p>This will generate the following file structure:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      invoke  active_record
-   identical    db/migrate/20151222022044_create_users.rb
-   identical    app/models/user.rb
-      invoke    rspec
-      create      spec/models/user_spec.rb
-      invoke      factory_girl
-      create        spec/factories/users.rb
-      invoke  resource_route
-       route    resources :users
-      invoke  scaffold_controller
-   identical    app/controllers/users_controller.rb
-      invoke    rspec
-      create      spec/controllers/users_controller_spec.rb
-      create      spec/routing/users_routing_spec.rb
-      invoke      rspec
-      create        spec/requests/users_spec.rb
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  invoke  active_record
+  create    db/migrate/20200322224414_create_users.rb
+  create    app/models/user.rb
+  invoke    rspec
+  create      spec/models/user_spec.rb
+  invoke  resource_route
+   route    resources :users
+  invoke  scaffold_controller
+  create    app/controllers/users_controller.rb
+  invoke    rspec
+  create      spec/controllers/users_controller_spec.rb
+  create      spec/routing/users_routing_spec.rb
+  invoke      rspec
+  create        spec/requests/users_spec.rb
 </code></pre></div></div>
 
 <p>Note that no views are created since we are running in API mode.</p>
@@ -86,9 +84,8 @@ end
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails db:migrate
 </code></pre></div></div>
 
-<h1 id="run-the-default-server-on-port-3000">run the default server on port 3000</h1>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails s
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># run the default server on port 3000
+rails s
 </code></pre></div></div>
 
 <p>Your new API is now up and running on http://localhost:3000. Sweet!</p>
@@ -164,7 +161,7 @@ end
 
     # ...
 
-    config.middleware.insert_before 0, "Rack::Cors" do
+    config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'
         resource '*', :headers =&gt; :any, :methods =&gt; [:get, :post, :options]
@@ -278,7 +275,7 @@ end
   Rack::Attack.cache.store = ActiveSupport::Cache::MemoryStore.new
 
   # Allow all local traffic
-  whitelist('allow-localhost') do |req|
+  safelist('allow-localhost') do |req|
     '127.0.0.1' == req.ip || '::1' == req.ip
   end
 
@@ -303,7 +300,7 @@ end
 
 <p>Now that your API is safe from brute force attacks and bad client code you can sleep a little better at night!</p>
 
-<p>Authenticating Your API</p>
+<h2 id="authenticating-your-api">Authenticating Your API</h2>
 
 <p>Let‚Äôs lock our API down with some authentication.</p>
 

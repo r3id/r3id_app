@@ -12,12 +12,12 @@ So after a little investigation I came across a handy little terminal snippet.
 So, first off we need to be in our directory with the offending files
 
 ```
-$ cd your-dir
+cd your-dir
 ```
 
 Next we will enter the much needed snippet...
 ```
-$ for i in *; do mv "$i" "$(echo $i|tr A-Z a-z)"; done
+for i in *; do mv "$i" "$(echo $i|tr A-Z a-z)"; done
 ```
 
 This terminal snippet will loop through each file in the current directory, and rename the files to lower case! Yay!! My OCD has been appeased for the day ✊

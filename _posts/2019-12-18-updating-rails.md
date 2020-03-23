@@ -11,10 +11,13 @@ This will be a really short article as it and all we need to do its enter the fo
 Once Rails has been updated we will need to tell `rbenv` to use to use it by default.
 
 ```
-$ gem install rails -v 6.0.2.1
-$ rbenv rehash
-$ rails -v
-# Rails 6.0.2.1
+gem install rails -v 6.0.2.1
+
+rbenv rehash
+
+# version should be >= Rails 6.0.2.1
+rails -v
+
 ```
 
 Not as bad as you thought? Well why make things harder than they need to be. Anyway, as you see running `rails -v` we can make sure we are now running the latest Rails version.
