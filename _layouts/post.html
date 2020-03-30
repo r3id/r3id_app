@@ -9,7 +9,7 @@ class: page-post
 <main class="main">
   <div class="text">
     <h1 class="text-title">
-      <a href="/">{{ page.title }}</a>
+      <a href="/notes" title="return to notes">{{ page.title }}</a>
       {% unless words contains "-" %}
         <p class="time-to">It's a {{ words | plus: 180 | divided_by: 180 | append: " minute read" }}</p>
       {% endunless %}
