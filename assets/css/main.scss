@@ -329,7 +329,7 @@ figcaption {
   max-width: var(--l-narrow);
 
   &:last-child {
-    margin-bottom: 7rem;
+    margin-bottom: 3rem;
   }
 }
 
@@ -343,7 +343,7 @@ figcaption {
 .archive-text {
   text-align: center;
   font-style: italic;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 
   * {
     font-size: calc(var(--f-size) * var(--f-scale-s));
