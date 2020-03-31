@@ -1,10 +1,6 @@
----
-layout: portfolio_page
-title: Portfolio
----
-Coming soon...
+I"M)<p>Coming soon…</p>
 
-I am working hard to collate my portfolio of apps and web apps here. 🤓
+<p>I am working hard to collate my portfolio of apps and web apps here. 🤓</p>
 <div class="image-center">
   <svg width="90px" height="88px" viewBox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -23,3 +19,4 @@ I am working hard to collate my portfolio of apps and web apps here. 🤓
     </g>
   </svg>
 </div>
+:ET
