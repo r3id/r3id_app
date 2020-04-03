@@ -1,0 +1,2 @@
+I"A<p>We read <code class="highlighter-rouge">&gt;</code> and <code class="highlighter-rouge">&lt;</code> as “greater than” and “less than” in ruby. <code class="highlighter-rouge">before?</code> and <code class="highlighter-rouge">after?</code> methods makes the date/time comparisons much more human readable.</p>
+:ET
