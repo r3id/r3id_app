@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Let's explore before? and after? methods in Rails.
-categories: javascript html css
+categories: rails methods coding
 ---
 
 If you have been using Ruby, or any other language for some time. You've clearly used `>` and `<` or as we know them “greater than” and “less than”. Rails has recently added the more human readable `before?` and `after?` methods to date/time .
