@@ -1,0 +1,158 @@
+I"9<p>Testing in any language is pretty much one of the most vital parts in development. Without it, applications could be fragile and rigid, most likely breaking whenever you try to add a new feature.</p>
+
+<p>This is why learning how to test your code is a vital skill coding skill you need to have. Today, we’ll be taking a look at the basics of coding in Ruby using <a href="https://en.wikipedia.org/wiki/Test-driven_development">TDD (test-driven development)</a>.</p>
+
+<div class="image-center">
+  <svg width="148px" height="59px" viewBox="0 0 148 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g id="Group" transform="translate(133.000000, 40.000000)"></g>
+      <g id="Group" transform="translate(84.000000, 35.000000)"></g>
+      <g id="testing" fill="#000000" fill-rule="nonzero">
+        <path d="M137.2,52.9 C137.3,59 127.8,57 123.7,56.8 C118.7,56.5 113.7,56.1 108.7,55.9 C106.2,55.8 102.4,57.2 101.9,53.7 C101.6,51.2 101.8,48.5 101.8,46 C101.8,40.8 101.8,35.7 101.8,30.5 C101.8,25.3 101.8,20.2 101.8,15 C101.8,11.4 114.5,12.9 116.8,12.9 C119.5,12.9 123.4,17.1 125.5,18.8 C127.5,20.5 129.5,22.2 131.5,23.8 C133,25 136.6,27 136.8,29.1 C137,31 136.8,33.2 136.7,35.2 C136.7,36 137.9,36 138,35.2 C138,33 138.5,30.2 137.9,28 C137.4,26.1 133.8,24.1 132.3,23 C129.3,20.5 126.3,18 123.2,15.5 C121.7,14.3 119.7,11.8 117.6,11.8 C114.4,11.7 111,11.7 107.6,11.7 C105.8,11.7 102.7,11.1 101.1,12 C100.3,12.4 100.6,14.7 100.6,15.1 C100.6,19.6 100.6,24.1 100.6,28.6 C100.6,36.3 100.5,44.1 100.6,51.8 C100.6,57.5 101.6,57.2 106.8,57.1 C114.9,57.1 123,58.2 131.1,58.2 C137.3,58.2 138.5,58.8 138.4,52.8 C138.4,52.1 137.1,52.1 137.2,52.9 L137.2,52.9 Z" id="Path"></path>
+        <path d="M137.1,28.1 C132.4,27.9 127.7,27.6 123,27.4 C119.9,27.2 120.7,23.1 120.5,20.8 C120.2,18.4 119.8,16 119.2,13.6 C119,12.7 117.8,13.1 118,13.9 C118.8,17.6 119.3,21.3 119.6,25.1 C119.6,25.8 119.4,27.7 120.3,28.2 C122.1,29.2 125.2,28.7 127.2,28.8 C130.5,29 133.8,29.1 137.1,29.3 C137.9,29.3 137.9,28.1 137.1,28.1 L137.1,28.1 Z" id="Path"></path>
+        <path d="M108,36.5 C113.3,36.3 118.5,36.4 123.8,36.7 C124.6,36.7 124.6,35.5 123.8,35.4 C118.5,35.1 113.2,35 108,35.2 C107.2,35.2 107.2,36.5 108,36.5 L108,36.5 Z" id="Path"></path>
+        <path d="M108.1,42.7 C114,43.1 120,43.2 126,43.1 C126.8,43.1 126.8,41.8 126,41.8 C120,41.9 114.1,41.8 108.1,41.4 C107.3,41.4 107.3,42.6 108.1,42.7 L108.1,42.7 Z" id="Path"></path>
+        <path d="M109.3,49.9 C114.5,49.9 119.8,50.2 124.9,49.5 C125.7,49.4 125.7,48.1 124.9,48.2 C119.7,48.9 114.4,48.6 109.3,48.6 C108.5,48.6 108.5,49.9 109.3,49.9 L109.3,49.9 Z" id="Path"></path>
+        <path d="M137.7,52.2 C133.7,51 131.2,49.2 130.7,44.8 C130.1,39.5 134.6,36.7 139.4,36.5 C144.3,36.3 146.6,41.4 146,45.6 C145.7,47.4 144.7,49.1 143.5,50.5 C142,52.3 139.5,51.9 137.5,52.3 C136.7,52.5 137,53.7 137.8,53.5 C140.3,53 142.4,53.2 144.4,51.3 C146,49.8 147.2,47 147.4,44.7 C147.7,39.6 144.6,35.6 139.4,35.2 C135,34.9 129.7,38.2 129.5,42.8 C129.2,48.7 131.9,51.7 137.4,53.3 C138.1,53.6 138.5,52.4 137.7,52.2 L137.7,52.2 Z" id="Path"></path>
+        <path d="M133.5,44.1 C134.6,45.5 135.2,47 136.2,48.4 C136.3,48.6 136.5,48.7 136.7,48.7 C137.8,48.6 138.3,47 138.9,46.2 C140.3,44.3 142.1,42.8 144.1,41.6 C144.8,41.2 144.2,40.1 143.5,40.5 C141.5,41.7 139.7,43.2 138.3,45.1 C137.9,45.6 137.6,46.1 137.2,46.6 C136.8,47 136.8,47.4 137.3,47.7 C137.1,47.3 136.9,46.9 136.7,46.6 C136.1,45.4 135.3,44.3 134.4,43.3 C133.9,42.6 133,43.5 133.5,44.1 L133.5,44.1 Z" id="Path"></path>
+        <path d="M87.1,46.5 C87.1,49.7 86.5,51.2 82.8,51.2 C80.2,51.2 77.6,51.2 75,51.2 C69.8,51.2 64.6,51.2 59.4,51.1 C58.2,51.1 52.2,51.9 52.3,49.7 C52.4,47.2 52.5,44.6 52.5,42.1 C52.6,36.4 52.6,30.6 52.5,24.9 C52.4,19.8 52.2,14.7 51.9,9.6 C51.7,5.8 65.9,6.9 68.3,6.8 C70.3,6.7 72.5,10 73.8,11.2 C75.6,12.9 77.4,14.5 79.3,16.2 C81.1,17.8 83,19.4 85,20.9 C87.9,23.3 87.5,26.6 87.6,30 C87.6,30.8 88.9,30.8 88.9,30 C88.8,26.9 89.6,23.5 87.4,21.2 C83.7,17.2 78.8,14.1 74.8,10.4 C71.6,7.4 70.9,5.6 66.6,5.7 C61.8,5.8 55.7,4.9 51.2,6.3 C51,6.4 50.8,6.6 50.7,6.8 C50.2,9.5 50.8,12.6 51,15.3 C51.2,19.1 51.3,22.9 51.3,26.8 C51.4,35.1 51.3,43.4 51,51.6 C51,51.9 51.3,52.2 51.6,52.2 C58.1,52.3 64.6,52.4 71.1,52.4 C76.2,52.4 82.9,53.6 87.8,52.1 C88,52 88.2,51.9 88.2,51.7 C88.6,50 88.4,48.2 88.4,46.5 C88.3,45.7 87.1,45.7 87.1,46.5 L87.1,46.5 Z" id="Path"></path>
+        <path d="M86.8,22.4 C82.4,22.1 77.9,21.8 73.5,21.5 C69.9,21.3 70.4,17.5 70,14.7 C69.7,12 69.5,9.4 69.3,6.7 C69.3,5.9 68,5.9 68,6.7 C68.2,9.8 68.5,12.9 68.8,16 C69,17.5 68.8,21.1 69.9,22.2 C70.9,23.2 74.6,22.7 76,22.8 C79.5,23 83.1,23.3 86.6,23.5 C87.7,23.7 87.6,22.5 86.8,22.4 L86.8,22.4 Z" id="Path"></path>
+        <path d="M57.8,29.8 C63.6,29.7 69.4,29.7 75.3,29.6 C76.1,29.6 76.1,28.3 75.3,28.3 C69.5,28.4 63.7,28.4 57.8,28.5 C57,28.6 57,29.9 57.8,29.8 L57.8,29.8 Z" id="Path"></path>
+        <path d="M57.7,37.3 C63.4,37.2 69.2,37.1 74.9,37.2 C75.7,37.2 75.7,36 74.9,36 C69.2,35.9 63.4,36 57.7,36.1 C56.9,36 56.9,37.3 57.7,37.3 L57.7,37.3 Z" id="Path"></path>
+        <path d="M58.1,43.6 C63.2,43.6 68.4,43.6 73.5,43.6 C74.3,43.6 74.3,42.3 73.5,42.3 C68.4,42.3 63.2,42.3 58.1,42.3 C57.3,42.4 57.3,43.6 58.1,43.6 L58.1,43.6 Z" id="Path"></path>
+        <path d="M87.7,31 C95.9,30.6 99.1,40.8 92.3,45.2 C82.9,51.3 76,31.8 87.3,31 C88.1,30.9 88.1,29.7 87.3,29.7 C75.8,30.5 79.8,49.5 89.7,47.3 C94.6,46.2 97.8,42.4 97.4,37.3 C97.1,32.5 92.1,29.5 87.7,29.7 C86.9,29.8 86.9,31 87.7,31 L87.7,31 Z" id="Path"></path>
+        <path d="M85.2,35.8 C87,37.5 88.5,39.4 89.9,41.4 C90.3,42.1 91.4,41.4 91,40.8 C89.6,38.7 88,36.7 86.1,34.9 C85.5,34.4 84.6,35.3 85.2,35.8 L85.2,35.8 Z" id="Path"></path>
+        <path d="M85.3,41.8 C86.5,41.3 87.4,40.5 88.3,39.6 C89.7,38.2 91.3,37.2 93.2,36.6 C94,36.4 93.6,35.2 92.9,35.4 C91.5,35.8 90.2,36.4 89.1,37.3 C87.7,38.3 86.7,39.9 85,40.6 C84.2,40.9 84.6,42.1 85.3,41.8 L85.3,41.8 Z" id="Path"></path>
+        <path d="M37.2,41.9 C37.3,48 27.8,46 23.7,45.8 C18.7,45.5 13.7,45.1 8.7,44.9 C6.2,44.8 2.4,46.2 1.9,42.7 C1.6,40.2 1.8,37.5 1.8,35 C1.8,29.8 1.8,24.7 1.8,19.5 C1.8,14.3 1.8,9.2 1.8,4 C1.8,0.4 14.5,1.9 16.8,1.9 C19.5,1.9 23.4,6.1 25.5,7.8 C27.5,9.5 29.5,11.2 31.5,12.8 C33,14 36.6,16 36.8,18.1 C37,20 36.8,22.2 36.7,24.2 C36.7,25 37.9,25 38,24.2 C38,22 38.5,19.2 37.9,17 C37.4,15.1 33.8,13.1 32.3,12 C29.3,9.5 26.3,7 23.2,4.5 C21.7,3.3 19.7,0.8 17.6,0.8 C14.4,0.7 11,0.7 7.6,0.7 C5.8,0.7 2.7,0.1 1.1,1 C0.3,1.4 0.6,3.7 0.6,4.1 C0.6,8.6 0.6,13.1 0.6,17.6 C0.6,25.3 0.5,33.1 0.6,40.8 C0.6,46.5 1.6,46.2 6.8,46.1 C14.9,46.1 23,47.2 31.1,47.2 C37.3,47.2 38.5,47.8 38.4,41.8 C38.4,41.1 37.1,41.1 37.2,41.9 L37.2,41.9 Z" id="Path"></path>
+        <path d="M37.1,17.1 C32.4,16.9 27.7,16.6 23,16.4 C19.9,16.2 20.7,12.1 20.5,9.8 C20.2,7.4 19.8,5 19.2,2.6 C19,1.7 17.8,2.1 18,2.9 C18.8,6.6 19.3,10.3 19.6,14.1 C19.6,14.8 19.4,16.7 20.3,17.2 C22.1,18.2 25.2,17.7 27.2,17.8 C30.5,18 33.8,18.1 37.1,18.3 C37.9,18.3 37.9,17.1 37.1,17.1 L37.1,17.1 Z" id="Path"></path>
+        <path d="M8,25.5 C13.3,25.3 18.5,25.4 23.8,25.7 C24.6,25.7 24.6,24.5 23.8,24.4 C18.5,24.1 13.2,24 8,24.2 C7.2,24.2 7.2,25.5 8,25.5 L8,25.5 Z" id="Path"></path>
+        <path d="M8.1,31.7 C14,32.1 20,32.2 26,32.1 C26.8,32.1 26.8,30.8 26,30.8 C20,30.9 14.1,30.8 8.1,30.4 C7.3,30.4 7.3,31.6 8.1,31.7 L8.1,31.7 Z" id="Path"></path>
+        <path d="M9.3,38.9 C14.5,38.9 19.8,39.2 24.9,38.5 C25.7,38.4 25.7,37.1 24.9,37.2 C19.7,37.9 14.4,37.6 9.3,37.6 C8.5,37.6 8.5,38.9 9.3,38.9 L9.3,38.9 Z" id="Path"></path>
+        <path d="M37.7,41.2 C33.7,40 31.2,38.2 30.7,33.8 C30.1,28.5 34.6,25.7 39.4,25.5 C44.3,25.3 46.6,30.4 46,34.6 C45.7,36.4 44.7,38.1 43.5,39.5 C42,41.3 39.5,40.9 37.5,41.3 C36.7,41.5 37,42.7 37.8,42.5 C40.3,42 42.4,42.2 44.4,40.3 C46,38.8 47.2,36 47.4,33.7 C47.7,28.6 44.6,24.6 39.4,24.2 C35,23.9 29.7,27.2 29.5,31.8 C29.2,37.7 31.9,40.7 37.4,42.3 C38.1,42.6 38.5,41.4 37.7,41.2 L37.7,41.2 Z" id="Path"></path>
+        <path d="M33.5,33.1 C34.6,34.5 35.2,36 36.2,37.4 C36.3,37.6 36.5,37.7 36.7,37.7 C37.8,37.6 38.3,36 38.9,35.2 C40.3,33.3 42.1,31.8 44.1,30.6 C44.8,30.2 44.2,29.1 43.5,29.5 C41.5,30.7 39.7,32.2 38.3,34.1 C37.9,34.6 37.6,35.1 37.2,35.6 C36.8,36 36.8,36.4 37.3,36.7 C37.1,36.3 36.9,35.9 36.7,35.6 C36.1,34.4 35.3,33.3 34.4,32.3 C33.9,31.6 33,32.5 33.5,33.1 L33.5,33.1 Z" id="Path"></path>
+      </g>
+    </g>
+  </svg>
+</div>
+
+<h4 id="what-is-being-used-to-test-in-ruby">What is being used to test in Ruby?</h4>
+<p><a href="https://rspec.info">Rspec</a> is possibly the most widely used testing tool in Ruby. If you are going to be learning how to test in Ruby, this is the main tool that you should focus on. Rspec is a <a href="https://opensource.com/article/20/2/domain-specific-languages">domain specific language (DSL)</a> and is a perfect tool to use for testing in test-driven development.</p>
+
+<h4 id="how-do-you-install-it">How do you install it?</h4>
+<p>To install Rspec into a new project, just follow the steps below.</p>
+
+<p>Firstly create a folder. This is where all your files will live. From your terminal, you can create a new folder for this project and name it <code class="highlighter-rouge">rspec_tutorial</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir rspec_tutorial
+</code></pre></div></div>
+
+<p>Then you should cd into that folder.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd rspec_tutorial
+</code></pre></div></div>
+
+<p>Now create a gemfile in your project folder. Note how it is capitalised and that there is no suffix.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch Gemfile
+</code></pre></div></div>
+
+<p>Next, add the following code into your gemfile by copy and pasting the code below.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source 'https://rubygems.org'
+gem 'rspec'
+</code></pre></div></div>
+
+<p>Now we run <code class="highlighter-rouge">bundle install</code> from your terminal while still in the project directory. All done! Your project is now set up to use Rspec!</p>
+
+<h4 id="what-are-the-basics-of-rspec">What are the basics of Rspec?</h4>
+
+<p>The basics of an Rspec file contain 3 main sections:</p>
+<ul>
+  <li>describe,</li>
+  <li>it,</li>
+  <li>and expect .</li>
+</ul>
+
+<p>Of course, there is much more to Rspec, but you can start writing tests with just these 3. I’ll detail the whole test below and then we can break it down afterwards.</p>
+
+<p>The example below will be testing a file that has a class Dog and it has a function #bark that prints out the string Woof! Very important to note that none of that code has been written yet. In test-driven development, we write out the tests first before writing any tests.</p>
+
+<p>First, let’s create a file to house all our tests. We usually split up our tests for every file we create. Since we are expecting to create a <code class="highlighter-rouge">dog.rb</code> file for our Dog class, we are going to create a <code class="highlighter-rouge">dog.spec.rb</code> file. This is the convention we will follow.</p>
+
+<p>Lets build our test</p>
+
+<p>To create the file, input the following terminal command: <code class="highlighter-rouge">touch dog.spec.rb</code></p>
+
+<p>Now you just copy and paste this into your <code class="highlighter-rouge">dog.spec.rb</code> file.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require 'rspec'
+require_relative 'dog'
+
+describe Dog do
+  describe '#bark' do
+    it 'returns the string "Woof!"' do
+      expect(subject.bark).to eql('Woof!')
+    end
+  end
+end
+</code></pre></div></div>
+
+<p>We can start at the top and talk about the first two lines:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require 'rspec'
+require_relative 'dog'
+</code></pre></div></div>
+
+<p>Here, we are just allowing the file to have rspec functionality with <code class="highlighter-rouge">require 'rspec'</code>. The second line is importing in the file that we are testing: <code class="highlighter-rouge">require_relative 'dog'</code>. Note how you don’t need to add the extension <code class="highlighter-rouge">.rb</code> when using require_relative.</p>
+
+<p>The next line starts out the scope of our test, and that will be the Dog class.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>describe Dog do
+</code></pre></div></div>
+
+<p>Within the Dog class, we are going to describe the method we are testing for like this</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>describe Dog do
+  describe '#bark' do
+</code></pre></div></div>
+
+<p>Now, we are going to describe what the method is meant to do</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>describe Dog do
+  describe '#bark' do
+    it 'returns the string "Woof!"' do
+</code></pre></div></div>
+
+<p>Finally, we write out the expectation of what the result is. We wrap the method call in an expect wrapper and declare what it is to equal.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>describe Dog do
+  describe '#bark' do
+    it 'returns the string "Woof!"' do
+      expect(subject.bark).to eql('Woof!')
+    end
+  end
+end
+</code></pre></div></div>
+
+<p>Now, when you run the following code, you will see the test pass or fail: <code class="highlighter-rouge">rspec dog.spec.rb</code></p>
+
+<p>This will fail because there is no Dog class with a #bark method. Simply add the following code into a new file called <code class="highlighter-rouge">dog.rb</code>.</p>
+
+<p>Lets build our code now</p>
+
+<p>First create the file from your terminal: <code class="highlighter-rouge">touch dog.rb</code></p>
+
+<p>Then paste the following code into there:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Dog
+  def bark
+    "Woof!"
+  end
+end
+</code></pre></div></div>
+
+<p>Run <code class="highlighter-rouge">rspec dog.spec.rb</code> again and see if your tests pass or fail.</p>
+
+<p>Your tests should now all pass!</p>
+
+<h4 id="and-finally">And finally…</h4>
+<p>As you can see Rspec is an easy tool to use. Don’t let testing intimidate you or hold you back from writing clean applications. While it will take more time to initially build your applications, you’ll find that you’ll be save a lot of time in the long run.</p>
+
+<h4 id="further-reading">Further reading</h4>
+<ul>
+  <li><a href="https://www.rubyguides.com/2018/07/rspec-tutorial/">Ruby Guides: Rspec Tutorial</a></li>
+</ul>
+:ET
