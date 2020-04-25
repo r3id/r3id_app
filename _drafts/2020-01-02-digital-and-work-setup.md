@@ -18,7 +18,7 @@ _<Image here?>_
 
 As for the software, I don't have that many apps I use on a daily basis. If we exclude all the crap that comes pre-installed on the Mac this is what I use. I'm gonna group these by topic. When it comes to development this is what I use:
 - Atom.io is my primary code editor.
-- I use Sublime Text 3 for larger files
+- I use Sublime Text 3 for editing larger files as Atom can't handle them!
 - SQLPro for PostgreSQL
 - Chrome
 - Safari
