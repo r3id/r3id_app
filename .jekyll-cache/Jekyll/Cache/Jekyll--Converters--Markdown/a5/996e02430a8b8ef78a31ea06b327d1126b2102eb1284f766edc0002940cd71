@@ -1,12 +1,6 @@
----
-layout: post
-title: An overview of Bourbon
-categories: css sass framework
----
+I"�A<p>As some of you are aware, I created a Sass Library called “<a href="https://doughnut.r3id.io/" target="_blank">Doughnut</a>”, it’s pretty awesome if I don’t say so myself. It has served me well on a few personal projects I have done. However, there are many others out there which are far more mature. In this post, I am going to do a quick overview of one that has stood out to me the most due to its simplicity and ability to add features quickly.</p>
 
-As some of you are aware, I created a Sass Library called "[Doughnut](https://doughnut.r3id.io/){:target="_blank"}", it's pretty awesome if I don’t say so myself. It has served me well on a few personal projects I have done. However, there are many others out there which are far more mature. In this post, I am going to do a quick overview of one that has stood out to me the most due to its simplicity and ability to add features quickly.
-
----
+<hr />
 
 <div class="image-center">
 <svg width="180px" height="29px" viewBox="0 0 180 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -22,34 +16,31 @@ As some of you are aware, I created a Sass Library called "[Doughnut](https://do
 </svg>
 </div>
 
-[Bourbon](http://bourbon.io){:target="_blank"} is a semantic, lightweight, yet extensive mixin library which makes the development of a site much quicker and easily maintainable. Containing up-to-date mixins, vendor prefixes and variables sheet makes it very easy to maintain and write site-wide changes with little fuss. You can read in the [Bourbon docs](http://bourbon.io/docs/){:target="_blank"} about the dozens of others!
+<p><a href="http://bourbon.io" target="_blank">Bourbon</a> is a semantic, lightweight, yet extensive mixin library which makes the development of a site much quicker and easily maintainable. Containing up-to-date mixins, vendor prefixes and variables sheet makes it very easy to maintain and write site-wide changes with little fuss. You can read in the <a href="http://bourbon.io/docs/" target="_blank">Bourbon docs</a> about the dozens of others!</p>
 
-Here's a really simple example of a Bourbon mixin:
+<p>Here’s a really simple example of a Bourbon mixin:</p>
 
-```
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 section {
   @include linear-gradient(to top, red, orange);
 }
 
-```
+</code></pre></div></div>
 
-This compiles to:
+<p>This compiles to:</p>
 
-```
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 section {
   background-color: red;
   background-image: -webkit-linear-gradient(bottom, red, orange);
   background-image:         linear-gradient(to top, red, orange);
 }
 
-```
+</code></pre></div></div>
 
-And here’s just a couple of mixin examples that I’ve used (they also include the up-to-date vendor prefixes, where required):
+<p>And here’s just a couple of mixin examples that I’ve used (they also include the up-to-date vendor prefixes, where required):</p>
 
-```
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 //Animations
 .intro-text {
     @include animation-duration(2s);
@@ -72,117 +63,107 @@ And here’s just a couple of mixin examples that I’ve used (they also include
      @include transition(all 1.4s ease-in-out);
 }
 
-```
+</code></pre></div></div>
 
-Bourbon also includes a great selection of [functions](http://bourbon.io/docs/#functions){:target="_blank"}. One of my most used functions is the Pixels and Rems conversion function as seen below. Assuming 1rem is equal to 16px. (You can override this by defining a new size for the `$em-base`).
+<p>Bourbon also includes a great selection of <a href="http://bourbon.io/docs/#functions" target="_blank">functions</a>. One of my most used functions is the Pixels and Rems conversion function as seen below. Assuming 1rem is equal to 16px. (You can override this by defining a new size for the <code class="highlighter-rouge">$em-base</code>).</p>
 
-```
-font-size: rem(12);
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font-size: rem(12);
+</code></pre></div></div>
 
-CSS Output
+<p>CSS Output</p>
 
-```
-font-size: 0.75rem;
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>font-size: 0.75rem;
+</code></pre></div></div>
 
+<p>Developed by the team over at <a href="https://thoughtbot.com" target="_blank">thoughtbot</a>, Bourbon is part of an expanding family of other useful tools (<a href="http://neat.bourbon.io" target="_blank">Neat</a>, <a href="http://bitters.bourbon.io" target="_blank">Bitters</a> and <a href="http://refills.bourbon.io" target="_blank">Refills</a>) which have developed using Bourbon as a base, let’s have a look at them now.</p>
 
-Developed by the team over at [thoughtbot](https://thoughtbot.com){:target="_blank"}, Bourbon is part of an expanding family of other useful tools ([Neat](http://neat.bourbon.io){:target="_blank"}, [Bitters](http://bitters.bourbon.io){:target="_blank"} and [Refills](http://refills.bourbon.io){:target="_blank"}) which have developed using Bourbon as a base, let's have a look at them now.
+<hr />
 
----
+<h2 id="neat">Neat</h2>
+<p><a href="http://neat.bourbon.io" target="_blank">Neat</a> is a semantic grid framework built on top of Sass and Bourbon. It is simple enough to get you up and running in minutes, and powerful enough to handle virtually any responsive layout you can dream of building.</p>
 
-## Neat
-[Neat](http://neat.bourbon.io){:target="_blank"} is a semantic grid framework built on top of Sass and Bourbon. It is simple enough to get you up and running in minutes, and powerful enough to handle virtually any responsive layout you can dream of building.
+<p>So instead of implementing the grid layout into my html markup:</p>
 
-So instead of implementing the grid layout into my html markup:
-
-```
-
-<div class=“row”>
-  <section>
-    <aside class=“col-md-3”>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;div class=“row”&gt;
+  &lt;section&gt;
+    &lt;aside class=“col-md-3”&gt;
       ...
-    </aside>
-    <article class=“col-md-9”>
+    &lt;/aside&gt;
+    &lt;article class=“col-md-9”&gt;
       ...
-    </article>
-  </section>
-</div>
+    &lt;/article&gt;
+  &lt;/section&gt;
+&lt;/div&gt;
 
-```
+</code></pre></div></div>
 
-Bourbon Neat lets me implement the grid layout through Css:
+<p>Bourbon Neat lets me implement the grid layout through Css:</p>
 
-```
-
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 section {
   @include outer-container;
   aside { @include span-columns(3); }
   article { @include span-columns(9); }
 }
 
-```
+</code></pre></div></div>
 
-This makes my html markup stay clean and semantic:
+<p>This makes my html markup stay clean and semantic:</p>
 
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+&lt;section&gt;
+  &lt;aside&gt;What is it about?&lt;/aside&gt;
+  &lt;article&gt;Neat is an open source semantic grid framework built on top of Sass and Bourbon…&lt;/article&gt;
+&lt;/section&gt;
 
-<section>
-  <aside>What is it about?</aside>
-  <article>Neat is an open source semantic grid framework built on top of Sass and Bourbon…</article>
-</section>
+</code></pre></div></div>
 
-```
+<hr />
 
----
+<h2 id="bitters">Bitters</h2>
+<p><a href="http://bitters.bourbon.io" target="_blank">Bitters</a> a collection of base styles, typography, form styles, variables, and even includes an error message module. Bitters is not a library. <a href="https://thoughtbot.com" target="_blank">Thoughtbot</a> has structured them in a way that is designed to be your starting point. Bitters are worth using and easy enough to edit to your liking.</p>
 
-## Bitters
-[Bitters](http://bitters.bourbon.io){:target="_blank"} a collection of base styles, typography, form styles, variables, and even includes an error message module. Bitters is not a library. [Thoughtbot](https://thoughtbot.com){:target="_blank"} has structured them in a way that is designed to be your starting point. Bitters are worth using and easy enough to edit to your liking.
+<hr />
 
----
+<h2 id="refills">Refills</h2>
+<p><a href="http://refills.bourbon.io" target="_blank">Refills</a> are a collection of nifty UI components built using ‘The Bourbon Family’. It has components and patterns built with Bourbon and Neat. It’s a good thing to have in your tool belt because even if it’s not really what you want, it gets you pretty close.</p>
 
-## Refills
-[Refills](http://refills.bourbon.io){:target="_blank"} are a collection of nifty UI components built using 'The Bourbon Family'. It has components and patterns built with Bourbon and Neat. It's a good thing to have in your tool belt because even if it's not really what you want, it gets you pretty close.
+<hr />
 
----
+<h2 id="installing-bourbon">Installing Bourbon</h2>
 
-## Installing Bourbon
+<p>In Rails its a very simple to install. Switch to your selected project using your terminal install the Bourbon gem file.</p>
 
-In Rails its a very simple to install. Switch to your selected project using your terminal install the Bourbon gem file.
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ gem bourbon
+</code></pre></div></div>
 
-```
-$ gem bourbon
-```
+<p>The run:</p>
 
-The run:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle install
+</code></pre></div></div>
 
-```
-$ bundle install
-```
+<p>Restart your server. Then rename <code class="highlighter-rouge">application.css</code> to <code class="highlighter-rouge">application.scss</code> this SCSS extension allows us to use Sass:</p>
 
-Restart your server. Then rename `application.css` to `application.scss` this SCSS extension allows us to use Sass:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
+</code></pre></div></div>
 
-```
-mv app/assets/stylesheets/application.css app/assets/stylesheets/application.scss
-```
+<p>Delete the sprocket directive in application.scss:</p>
 
-Delete the sprocket directive in application.scss:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*= require_tree .
+</code></pre></div></div>
 
-```
-*= require_tree .
-```
+<p>Import Bourbon at the beginning of <code class="highlighter-rouge">application.scss</code>. All additional stylesheets should get imported below Bourbon:</p>
 
-Import Bourbon at the beginning of `application.scss`. All additional stylesheets should get imported below Bourbon:
-
-```
-@import "bourbon";
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@import "bourbon";
 @import 'neat';
 @import 'base/base' # This is for bitters
-```
+</code></pre></div></div>
 
----
+<hr />
 
-## Conclusion
-[Bourbon](http://bourbon.io){:target="_blank"} gives you more than enough to create a great base for a site's styling, and quickly too. But the best thing about [Bourbon's](http://bourbon.io){:target="_blank"} approach is that it also allows you to go a step further and provides the freedom you need to customise and add styles to it without becoming a pain to maintain.
+<h2 id="conclusion">Conclusion</h2>
+<p><a href="http://bourbon.io" target="_blank">Bourbon</a> gives you more than enough to create a great base for a site’s styling, and quickly too. But the best thing about <a href="http://bourbon.io" target="_blank">Bourbon’s</a> approach is that it also allows you to go a step further and provides the freedom you need to customise and add styles to it without becoming a pain to maintain.</p>
 
-Throw in the addition of [Neat](http://neat.bourbon.io){:target="_blank"}, [Bitters](http://bitters.bourbon.io){:target="_blank"} and [Refills](http://refills.bourbon.io){:target="_blank"}, and you start to see why thoughtbot’s [Bourbon](http://bourbon.io){:target="_blank"} should seriously be in the running for your next project.
+<p>Throw in the addition of <a href="http://neat.bourbon.io" target="_blank">Neat</a>, <a href="http://bitters.bourbon.io" target="_blank">Bitters</a> and <a href="http://refills.bourbon.io" target="_blank">Refills</a>, and you start to see why thoughtbot’s <a href="http://bourbon.io" target="_blank">Bourbon</a> should seriously be in the running for your next project.</p>
+:ET

@@ -1,10 +1,4 @@
----
-layout: post
-title: Let's explore before? and after? methods in Rails.
-categories: rails methods coding
----
-
-If you have been using Ruby, or any other language for some time. You've clearly used `>` and `<` or as we know them “greater than” and “less than”. Rails has recently added the more human readable `before?` and `after?` methods to date/time .
+I"�8<p>If you have been using Ruby, or any other language for some time. You’ve clearly used <code class="highlighter-rouge">&gt;</code> and <code class="highlighter-rouge">&lt;</code> or as we know them “greater than” and “less than”. Rails has recently added the more human readable <code class="highlighter-rouge">before?</code> and <code class="highlighter-rouge">after?</code> methods to date/time .</p>
 
 <div class="image-center">
   <svg width="76px" height="86px" viewBox="0 0 76 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -22,39 +16,38 @@ If you have been using Ruby, or any other language for some time. You've clearly
   </svg>
 </div>
 
-So previously we would compare two date/time objects using the `>` and `<` operators.
+<p>So previously we would compare two date/time objects using the <code class="highlighter-rouge">&gt;</code> and <code class="highlighter-rouge">&lt;</code> operators.</p>
 
-```
-Time.utc(2020, 4, 4, 00, 00, 00) < Time.utc(2019, 4, 4, 00, 00, 00)
-# => false
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Time.utc(2020, 4, 4, 00, 00, 00) &lt; Time.utc(2019, 4, 4, 00, 00, 00)
+# =&gt; false
 
-Date.tomorrow > Date.today
-# => true
-```
+Date.tomorrow &gt; Date.today
+# =&gt; true
+</code></pre></div></div>
 
-While we are used to this code by now, it's not so easy to read. We would read it as Date.tomorrow is “greater than” Date.today.
+<p>While we are used to this code by now, it’s not so easy to read. We would read it as Date.tomorrow is “greater than” Date.today.</p>
 
-**So how can the `before?` and `after? `methods make this much better?**
+<p><strong>So how can the <code class="highlighter-rouge">before?</code> and <code class="highlighter-rouge">after? </code>methods make this much better?</strong></p>
 
-Normally, when we compare dates in English, we would say:-
+<p>Normally, when we compare dates in English, we would say:-</p>
 
-_"The due date for the project is before the end of month"._
+<p><em>“The due date for the project is before the end of month”.</em>
 or
-_"All submissions after the end date will be ignored."_
+<em>“All submissions after the end date will be ignored.”</em></p>
 
-So to match these, we now have the `before?` and `after?` comparison methods.
+<p>So to match these, we now have the <code class="highlighter-rouge">before?</code> and <code class="highlighter-rouge">after?</code> comparison methods.</p>
 
-By utilising the new methods we can compare date and time values like so
+<p>By utilising the new methods we can compare date and time values like so</p>
 
-```
-due_date = 30.days.from_now
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>due_date = 30.days.from_now
 due_date.before?(Date.today)
-# => false
+# =&gt; false
 
 due_date.after?(Date.today)
-# => true
-```
+# =&gt; true
+</code></pre></div></div>
 
-These new comparison methods help make our code much more readable, and would read like _"Is due date before today or after today?"_
+<p>These new comparison methods help make our code much more readable, and would read like <em>“Is due date before today or after today?”</em></p>
 
-We will start to explore more recent features of Rails in upcoming notes. Thanks for reading.
+<p>We will start to explore more recent features of Rails in upcoming notes. Thanks for reading.</p>
+:ET

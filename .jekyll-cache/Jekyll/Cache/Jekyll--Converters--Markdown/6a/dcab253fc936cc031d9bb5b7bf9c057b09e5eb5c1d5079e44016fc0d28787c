@@ -1,12 +1,6 @@
----
-layout: post
-title: Counting up, a JS code snippet
-categories: javascript html css
----
+I"�<p>Working on the ‘UK food data’* website today, and I decided I wanted to have some animated stats on the page.</p>
 
-Working on the 'UK food data'* website today, and I decided I wanted to have some animated stats on the page.
-
-Basically the stats would show how many establishments we hold data on and how many users we have using the API etc. I thought it would be a nice addition to the site.
+<p>Basically the stats would show how many establishments we hold data on and how many users we have using the API etc. I thought it would be a nice addition to the site.</p>
 
 <div class="image-center">
   <svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -19,59 +13,60 @@ Basically the stats would show how many establishments we hold data on and how m
   </svg>
 </div>
 
-So I started work on a simple JS function which I could call rather than relying on ones that are already out there. That said, I may move to using something like [inorganik's countUp](https://inorganik.github.io/countUp.js/){:target="_blank"}, but we shall see how this simple script works out.
+<p>So I started work on a simple JS function which I could call rather than relying on ones that are already out there. That said, I may move to using something like <a href="https://inorganik.github.io/countUp.js/" target="_blank">inorganik’s countUp</a>, but we shall see how this simple script works out.</p>
 
----
+<hr />
 
-## Demo
+<h2 id="demo">Demo</h2>
 
 <p class="text-green"><span class="number">100</span></p>
 <p class="text-green"><span class="number">550001</span> total</p>
 <p class="text-green">£<span class="number">845</span> spent</p>
 
-_Simply refresh the page to see the count up in action._
+<p><em>Simply refresh the page to see the count up in action.</em></p>
 
----
+<hr />
 
-## The code
+<h2 id="the-code">The code</h2>
 
-In the HTML we simply add the number to a span with the class of `.number`.
+<p>In the HTML we simply add the number to a span with the class of <code class="highlighter-rouge">.number</code>.</p>
 
-```
-<p class="text-green"><span class="number">100</span></p>
-<p class="text-green"><span class="number">550001</span> total</p>
-<p class="text-green">£<span class="number">845</span> spent</p>
-```
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p class="text-green"&gt;&lt;span class="number"&gt;100&lt;/span&gt;&lt;/p&gt;
+&lt;p class="text-green"&gt;&lt;span class="number"&gt;550001&lt;/span&gt; total&lt;/p&gt;
+&lt;p class="text-green"&gt;£&lt;span class="number"&gt;845&lt;/span&gt; spent&lt;/p&gt;
+</code></pre></div></div>
 
-For the JS side we take each element using the  `.number` class and we pass that to the JS snippet. We then perform some simple math on the content of the element and step up until we reach the target number.
+<p>For the JS side we take each element using the  <code class="highlighter-rouge">.number</code> class and we pass that to the JS snippet. We then perform some simple math on the content of the element and step up until we reach the target number.</p>
 
-```
-function countUp(numberElement) {
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function countUp(numberElement) {
   let current = 0;
   const total = parseInt(numberElement.textContent);
   const increment = Math.ceil(total / 100);
 
   function step() {
     current += increment;
-    if (current > total) current = total;
+    if (current &gt; total) current = total;
     numberElement.textContent = current.toLocaleString();
-    (current !== total) && requestAnimationFrame(step);
+    (current !== total) &amp;&amp; requestAnimationFrame(step);
   }
   step();
 }
 
-document.querySelectorAll('.number').forEach(elem => countUp(elem));
-```
+document.querySelectorAll('.number').forEach(elem =&gt; countUp(elem));
+</code></pre></div></div>
 
----
+<hr />
 
-There we go, really quick article today. Hopefully it helps someone out, however if you're after something a bit more in-depth, I'd highly recommend checking out [inorganik's countUp](https://inorganik.github.io/countUp.js/){:target="_blank"}.
+<p>There we go, really quick article today. Hopefully it helps someone out, however if you’re after something a bit more in-depth, I’d highly recommend checking out <a href="https://inorganik.github.io/countUp.js/" target="_blank">inorganik’s countUp</a>.</p>
 
-_\* Still a holding name, any ideas?_
+<p><em>* Still a holding name, any ideas?</em></p>
 
 <style>
   .text-green {
     color: #009b72;
   }
 </style>
+
 <script type="text/javascript" async="" src="/assets/js/counting_up.js"></script>
+
+:ET
