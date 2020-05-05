@@ -1,7 +1,10 @@
 ---
 layout: portfolio_page
-title: FHRS GraphQL
+title: UK Food API
+url: "https://ukfoodapi.com"
+categories: rails api graphql
 ---
+
 
 The FSA have a handy [API](https://api.ratings.food.gov.uk/help) which lets you connect to their DB of Food hygiene scheme ratings.
 
