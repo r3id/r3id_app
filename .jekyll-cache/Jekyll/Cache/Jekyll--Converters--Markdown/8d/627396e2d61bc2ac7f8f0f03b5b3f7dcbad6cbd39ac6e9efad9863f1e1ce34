@@ -1,0 +1,40 @@
+I"m<p>URL: <a href="https://mypropertyhero.co.uk">https://mypropertyhero.co.uk</a></p>
+
+<p>My Property Hero is looking to change and simplify your property journey. While there are many comparison sites out there, they are building a platform which will provide you a central location manage all aspects of your home, or property.</p>
+
+<div class="image-center">
+  <img src="/assets/images/work/mphuk/propertyhero-logo.png" title="My Property Hero" alt="company logo" />
+</div>
+
+<h4 id="homepage">Homepage</h4>
+
+<div class="scrolling-box">
+  <img src="/assets/images/work/mphuk/propertyhero-1.png" title="My Property Hero" alt="website" />
+</div>
+
+<h4 id="tenant-page">Tenant page</h4>
+
+<div class="scrolling-box">
+  <img src="/assets/images/work/mphuk/propertyhero-2.png" title="My Property Hero" alt="website" />
+</div>
+
+<style>
+.scrolling-box {
+  display: block;
+  max-width: 650px;
+  height: 350px;
+  overflow-y: scroll;
+  text-align: center;
+  width: 100%;
+  margin: 15px auto;
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 90%);
+  border: 2px solid hsl(0, 0%, 25%);
+}
+.scrolling-box img {
+  width: 100%;
+  display: block;
+}
+
+</style>
+
+:ET

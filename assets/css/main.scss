@@ -549,3 +549,20 @@ summary span {
     transform: translateY(-15px);
   }
 }
+
+.scrolling-box {
+  display: block;
+  max-width: 650px;
+  height: 350px;
+  overflow-y: scroll;
+  text-align: center;
+  width: 100%;
+  margin: 15px auto;
+  box-shadow: 8px 8px 0px 0px hsl(0, 0%, 90%);
+  border: 2px solid hsl(0, 0%, 25%);
+
+  & img {
+    width: 100%;
+    display: block;
+  }
+}

@@ -2,9 +2,9 @@
 layout: portfolio_page
 title: Portfolio
 ---
-Coming soon...
 
-I am working hard to collate my portfolio of apps and web apps here. 🤓
+It's just a selection of my work for you to take a peek at 👀.
+
 <div class="image-center">
   <svg width="90px" height="88px" viewBox="0 0 90 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -23,3 +23,15 @@ I am working hard to collate my portfolio of apps and web apps here. 🤓
     </g>
   </svg>
 </div>
+
+[My Property Hero](/portfolio/my-property-hero)
+
+[UK Food API](/portfolio/ukfoodapi)
+
+[B K Services](/portfolio/bk-services)
+
+[Bill Split!](/portfolio/billsplit)
+
+[Mono weather](/portfolio/monoweather)
+
+And then there's [r3id.dev](https://r3id.dev) obviously 😉.

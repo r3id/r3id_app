@@ -1,15 +1,31 @@
 ---
 layout: portfolio_page
 title: UK Food API
-url: "https://ukfoodapi.com"
+siteurl: "https://ukfoodapi.com"
 categories: rails api graphql
 ---
 
+Site: [{{ page.siteurl }}]({{ page.siteurl }})
 
-The FSA have a handy [API](https://api.ratings.food.gov.uk/help) which lets you connect to their DB of Food hygiene scheme ratings.
+The UK Food API was a personal project in which I wanted to make getting the FHRS data a lot easier. So, I built a GraphQL API along with a set of worker tasks to pull in the data on a regular basis to keep it all up-to-date. 🤓
 
-With over 1/2 a million establishments in there, dotted up and down the UK its quite something.
+Then while building it, I decided to pull in more data about the UK food establishments, making it one of the most comprehensive lists of establishments.
 
-_"So why, if there is already a REST API provided; did I create a GraphQL version?"_
+The API is **currently in beta**, and the data is growing weekly. Over the next few months the app will be pulling in data from many sources, and enhance the growing listings much, much more. Once this phase of the project has been completed; I will be working on an app which will consume the API and provide a easy to use UI which will enable companies within the food and drink sector to utilise this data and reach new markets and increase sales.
 
-Well, the simple answer is I wanted to learn GraphQL. And what better way than using a already existing database of data. 🤓
+#### Homepage
+
+<div class="scrolling-box">
+  <img src="/assets/images/work/ukfood/ukfa-1.png" title="{{ page.title }}" alt="website" />
+</div>
+
+#### Account page
+
+<div class="scrolling-box">
+  <img src="/assets/images/work/ukfood/ukfa-2.png" title="{{ page.title }}" alt="website" />
+</div>
+
+#### Subscription page
+<div class="scrolling-box">
+  <img src="/assets/images/work/ukfood/ukfa-3.png" title="{{ page.title }}" alt="website" />
+</div>

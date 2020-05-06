@@ -1,0 +1,10 @@
+I"5<p>Site: <a href="https://ukfoodapi.com">https://ukfoodapi.com</a></p>
+
+<p>The FSA have a handy <a href="https://api.ratings.food.gov.uk/help">API</a> which lets you connect to their DB of Food hygiene scheme ratings.</p>
+
+<p>With over 1/2 a million establishments in there, dotted up and down the UK its quite something.</p>
+
+<p><em>“So why, if there is already a REST API provided; did I create a GraphQL version?”</em></p>
+
+<p>Well, the simple answer is I wanted to learn GraphQL. And what better way than using a already existing database of data. 🤓</p>
+:ET
