@@ -14,7 +14,7 @@ My Property Hero is looking to change and simplify your property journey. While 
 </div>
 
 <div class="image-center">
-  <img src="/assets/images/work/mphuk/platform.png" title="{{ page.title }}" alt="website" />
+  <img src="/assets/images/work/mphuk/platform.png" title="{{ page.title }}" alt="website" class="w300" />
 </div>
 
 #### Homepage
