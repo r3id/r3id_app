@@ -1,0 +1,99 @@
+I"c<p>The Rails 5.2 release brought with it a new way of handling secret keys. So in this now I’m going to explain how to update your Rails app and how to implement Credentials for storing information like API keys, passwords to 3rd party tools, randomly-generated secrets, or encryption algorithms.</p>
+
+<p>In Rails 5.1 and earlier, the best practice for storing private data was to use a <code class="highlighter-rouge">.secrets</code> file that assigned the data to constants used elsewhere in the app, and to make sure this file was listed in your <code class="highlighter-rouge">.gitignore</code> so that the information was never made publicly available on GitHub (or other repos).</p>
+
+<p>The problems with this were that</p>
+<ul>
+  <li>the secrets were stored in plain text and;</li>
+  <li>it was easy to forget to <code class="highlighter-rouge">.gitignore</code> it or inadvertently share it by moving the file to a different directory.</li>
+</ul>
+
+<h3 id="1-updates-later">.1 updates later…</h3>
+<p>In Rails 5.2 and later, apps come with a master.key file that’s automatically referenced in the <code class="highlighter-rouge">.gitignore</code>. This key is used to decrypt your new <code class="highlighter-rouge">credentials.yml.enc</code> file, which can and should be checked into your version control. The key and the credentials file come as a set. The private data in credentials.yml.enc is encrypted but can be edited and saved directly when you open and decrypt the file from command line.</p>
+
+<p>How to Update Rails: First, update your Rails version. There are two options here: a simple update of just your Rails version, or a deeper update to rewrite your configuration as though you’d just created a fresh app.</p>
+
+<p>The simple version is to copy the text in the GEMFILE section on the right from rubygems.org, for example in your Gemfile replace the current line containing</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'rails'
+</code></pre></div></div>
+
+<p>with</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem 'rails', '~&gt; 6.0', '&gt;= 6.0.2.2'
+</code></pre></div></div>
+
+<p>Ideally, update all your gems by running <code class="highlighter-rouge">bundle update</code> followed by <code class="highlighter-rouge">bundle install</code>.</p>
+
+<p>For a more thorough update, after the steps above, run rails app:update. This will add or modify files in bin and config. For each file, you have the options <code class="highlighter-rouge">[Ynaqdh]</code></p>
+
+<ul>
+  <li>Yes: overwrite;</li>
+  <li>no: don’t overwrite;</li>
+  <li>all: overwrite all;</li>
+  <li>quit;</li>
+  <li>diff: show difference;</li>
+  <li>help</li>
+</ul>
+
+<p>Though every app is different, it’s probably ok to overwrite anything you haven’t edited (like bin files) and probably <strong>NOT</strong> ok to overwrite anything you have edited, like <code class="highlighter-rouge">config/routes.rb and config/application.rb</code>. I went with Y for all files out of curiosity, and then had to add my routes and application back from a recent GitHub commit. If rails app:update adds a database migration, be sure to run rails db:migrate locally and heroku run rails db:migrate in production (for example).</p>
+
+<p><em>Note: using rails is equivalent to rake in this case.</em></p>
+
+<p>At this point, test your app to make sure everything works before proceeding with updating from Secrets to Credentials.
+How to Implement Credentials: The command for creating the new pair of files (<code class="highlighter-rouge">master.key</code> and <code class="highlighter-rouge">credentials.yml.enc</code>) is the same as the command for editing them. If you use VS Code, you’ll use the command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EDITOR="code --wait" rails credentials:edit
+</code></pre></div></div>
+
+<p>(If you use Atom, you’ll use <code class="highlighter-rouge">EDITOR="atom --wait" rails credentials:edit</code>, and so on for whatever editor you prefer).</p>
+
+<p>It’ll look like nothing is happening in your console, but the file should open in your editor after a few seconds. To start with, it should look like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws:
+  access_key_id: 123
+  secret_access_key: 345
+# Used as the base secret for all MessageVerifiers in Rails, including the one protecting cookies.
+
+secret_key_base: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+</code></pre></div></div>
+
+<p>The secret_key_base is paired with your credentials.yml.enc, so don’t edit it. Use yaml syntax to <code class="highlighter-rouge">organize/nest/label</code> your private data. For a <code class="highlighter-rouge">credentials.yml.enc</code> containing this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>aws:
+  access_key_id: 123
+  secret_access_key: 345
+my_secret: 'ABC'
+api_keys:
+  google:
+    maps: 'DEF'
+    places: 'GHI'
+  spotify: 'JKL'
+</code></pre></div></div>
+
+<p>You would access 123 in any of your Ruby files with:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rails.application.credentials.aws[:secret_key_id]
+</code></pre></div></div>
+
+<p>You would access ‘ABC’ with:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rails.application.credentials.my_secret
+</code></pre></div></div>
+
+<p>You would access ‘DEF’ with:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Rails.application.credentials.api_keys[:google][:maps]
+</code></pre></div></div>
+
+<p>With your credentials.yml.enc set up and used in your code, you can now delete the .secrets file and remove it from your .gitignore.</p>
+
+<p>Using Credentials in Production: Finally, if you’ll need to access the credentials in production (and you probably will) then add or comment in the following in <code class="highlighter-rouge">config/environments/production.rb</code>:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config.require_master_key = true
+</code></pre></div></div>
+
+<p>When you deploy your code to a server, Rails will need another way of accessing your master key since it’s not in version control. You can set it as an environment variable. For example, in Heroku this would be:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku config:set RAILS_MASTER_KEY=XXXXXXXXXXXXXXXXXXXXXXXXX
+</code></pre></div></div>
+
+<p>That’s it — you’re all set! Welcome to improved security with encrypted Rails Credentials.</p>
+:ET
