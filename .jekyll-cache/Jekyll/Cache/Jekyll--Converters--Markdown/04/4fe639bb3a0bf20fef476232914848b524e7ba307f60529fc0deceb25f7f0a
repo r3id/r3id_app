@@ -1,4 +1,4 @@
-I"�%<p>When Rails 6 was released Webpacker became the default JavaScript compiler instead of Sprockets. Meaning that moving forward all javascript code will be compiled with the help of webpack by default.</p>
+I"b'<p>When Rails 6 was released Webpacker became the default JavaScript compiler instead of Sprockets. Meaning that moving forward all javascript code will be compiled with the help of webpack by default.</p>
 
 <div class="image-center">
   <svg width="80px" height="76px" viewBox="0 0 80 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -9,40 +9,40 @@
 </div>
 
 <h4 id="pre-rails-6">Pre-Rails 6</h4>
-<p>The JavaScript was compiled with Sprockets Rails by default and resided in <code class="highlighter-rouge">app/assets/javascripts</code> directory. Stubs would be created when using scaffold generators.</p>
+<p>The JavaScript was compiled with Sprockets Rails by default and resided in <code class="language-plaintext highlighter-rouge">app/assets/javascripts</code> directory. Stubs would be created when using scaffold generators.</p>
 
 <p>With Rails 5.1 and up, we would provide an option to use Webpacker as the compiler while creating a new rails application,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new myapp --webpack
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new myapp --webpack
 </code></pre></div></div>
 
 <p>Or to use it with existing Rails application,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Gemfile
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Gemfile
 gem 'webpacker', '~&gt; 4.x'
 </code></pre></div></div>
 
 <p>And then install it with the Rails application,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bundle
 bundle exec rails webpacker:install
 </code></pre></div></div>
 
 <hr />
 
 <h4 id="rails-6-onwards">Rails 6 onwards…</h4>
-<p>When we create a new application with Rails 6, the Webpacker gem will be installed and <code class="highlighter-rouge">webpacker:install</code> will be run by the Rails application generator.</p>
+<p>When we create a new application with Rails 6, the Webpacker gem will be installed and <code class="language-plaintext highlighter-rouge">webpacker:install</code> will be run by the Rails application generator.</p>
 
-<p>By default, The <code class="highlighter-rouge">app/javascript</code> directory will host the JavaScript files. The existing JavaScript code for Active Storage, Action Cable, Turbolinks, and Rails-UJS will be loaded by a new <code class="highlighter-rouge">application.js</code> pack in <code class="highlighter-rouge">app/javascript</code> directory.</p>
+<p>By default, The <code class="language-plaintext highlighter-rouge">app/javascript</code> directory will host the JavaScript files. The existing JavaScript code for Active Storage, Action Cable, Turbolinks, and Rails-UJS will be loaded by a new <code class="language-plaintext highlighter-rouge">application.js</code> pack in <code class="language-plaintext highlighter-rouge">app/javascript</code> directory.</p>
 
-<p>The Action Cable stubs will be created in the <code class="highlighter-rouge">app/javascripr/channels</code> directory and will use ES6 instead of CoffeeScript. Note that no other JavaScript stubs will be created by default when using the scaffold generators.</p>
+<p>The Action Cable stubs will be created in the <code class="language-plaintext highlighter-rouge">app/javascripr/channels</code> directory and will use ES6 instead of CoffeeScript. Note that no other JavaScript stubs will be created by default when using the scaffold generators.</p>
 
 <h4 id="what-is-webpacker">What is Webpacker?</h4>
 <p>Webpacker is a gem which allows easy integration of JavaScript pre-processor and bundler with Rails. It provides various helpers and configuration options to use webpack easily with Rails.</p>
 
 <p>Webpacker directory structure with Rails 6 the app/javascript directory contains:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/javascript:
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/javascript:
   ├── channels:
   │   # action cable channel files here
   │   └── consumer.js
@@ -52,9 +52,9 @@ bundle exec rails webpacker:install
   │   └── application.js
 </code></pre></div></div>
 
-<p>The packs directory contains entry points for webpack. All the files in the packs directory are compiled by Webpacker. The <code class="highlighter-rouge">application.js</code> pack by default includes JavaScript code for Active Storage, Action Cable, Turbolinks, and Rails-UJS,</p>
+<p>The packs directory contains entry points for webpack. All the files in the packs directory are compiled by Webpacker. The <code class="language-plaintext highlighter-rouge">application.js</code> pack by default includes JavaScript code for Active Storage, Action Cable, Turbolinks, and Rails-UJS,</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require("@rails/ujs").start()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
@@ -62,26 +62,26 @@ require("channels")
 
 <h4 id="how-to-use-webpacker-with-packs">How to use Webpacker with packs?</h4>
 
-<p>With the help of packs, Webpacker provides a convenient way to access and use JavaScript required for different layouts in the Rails application. The packs can be accessed via helper methods <code class="highlighter-rouge">javascript_pack_tag</code> and if css styles are being imported in pack files, <code class="highlighter-rouge">stylesheet_pack_tag</code>.</p>
+<p>With the help of packs, Webpacker provides a convenient way to access and use JavaScript required for different layouts in the Rails application. The packs can be accessed via helper methods <code class="language-plaintext highlighter-rouge">javascript_pack_tag</code> and if css styles are being imported in pack files, <code class="language-plaintext highlighter-rouge">stylesheet_pack_tag</code>.</p>
 
-<p>For instance, with Rails 6, the <code class="highlighter-rouge">app/javascript/packs/application.js</code> pack will be included by default in <code class="highlighter-rouge">app/views/layouts/application.html.erb</code> layout as follows:</p>
+<p>For instance, with Rails 6, the <code class="language-plaintext highlighter-rouge">app/javascript/packs/application.js</code> pack will be included by default in <code class="language-plaintext highlighter-rouge">app/views/layouts/application.html.erb</code> layout as follows:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %&gt;
 </code></pre></div></div>
 
 <p>It is encouraged to place the actual application logic in a relevant structure within app/javascript and only use the pack files to reference that code so that webpack knows it needs to be compiled.</p>
 
 <h4 id="how-to-configure-webpacker">How to configure Webpacker?</h4>
 
-<p>The configuration information for Webpacker lies in <code class="highlighter-rouge">config/webpacker.yml</code>. We can change options like source path, packs path and many more from the configuration file.</p>
+<p>The configuration information for Webpacker lies in <code class="language-plaintext highlighter-rouge">config/webpacker.yml</code>. We can change options like source path, packs path and many more from the configuration file.</p>
 
-<p>The environment specific JavaScript configuration files for webpack can be found at <code class="highlighter-rouge">config/webpack</code> directory. More on webpack configuration with Webpacker here.</p>
+<p>The environment specific JavaScript configuration files for webpack can be found at <code class="language-plaintext highlighter-rouge">config/webpack</code> directory. More on webpack configuration with Webpacker here.</p>
 
 <h4 id="compilation">Compilation</h4>
 
 <p>Keeping the process similar to the previous assets pipeline, the JavaScript compilation happens along with the request while running the Rails server in development mode.</p>
 
-<p>In production mode rake assets:precompile does the job. The <code class="highlighter-rouge">assets:precompile</code> rake task runs <code class="highlighter-rouge">webpacker:compile</code> by default to generate webpack compiled assets.</p>
+<p>In production mode rake assets:precompile does the job. The <code class="language-plaintext highlighter-rouge">assets:precompile</code> rake task runs <code class="language-plaintext highlighter-rouge">webpacker:compile</code> by default to generate webpack compiled assets.</p>
 
 <p>We can also use live reloading and hot module replacement in development mode with the help of binstubs provided by Webpacker.</p>
 :ET

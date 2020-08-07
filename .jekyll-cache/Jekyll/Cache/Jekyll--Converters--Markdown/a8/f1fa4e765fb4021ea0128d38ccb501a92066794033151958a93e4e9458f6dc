@@ -1,9 +1,9 @@
-I"S<p>So previously when we were setting up Rails we installed Ruby, so in this post we are going to go over how you would update your Ruby version.</p>
+I"y<p>So previously when we were setting up Rails we installed Ruby, so in this post we are going to go over how you would update your Ruby version.</p>
 
-<p>As you may remember we are using <code class="highlighter-rouge">rbenv</code> to manage our Ruby versions. And this was installed on top of <a href="https://brew.sh/" target="_blank">Homebrew</a>.
+<p>As you may remember we are using <code class="language-plaintext highlighter-rouge">rbenv</code> to manage our Ruby versions. And this was installed on top of <a href="https://brew.sh/" target="_blank">Homebrew</a>.
 The following lines are used to install Ruby 2.7.0 (check <a href="https://www.ruby-lang.org" target="_blank">ruby-lang.org</a> for the latest version) and set it as your default Ruby version:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew update
 
 brew upgrade ruby-build
 

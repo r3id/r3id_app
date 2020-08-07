@@ -1,4 +1,4 @@
-I"<p>My previous setup tutorials seemed to help a few people setup their Rails environment so I decided to write this updated version now macOS Catalina has moved over to ZSH as it’s default shell.</p>
+I"� <p>My previous setup tutorials seemed to help a few people setup their Rails environment so I decided to write this updated version now macOS Catalina has moved over to ZSH as it’s default shell.</p>
 
 <h2 id="install-nodejs">Install NodeJS</h2>
 
@@ -10,7 +10,7 @@ Once you have done this we can move on.</p>
 <h2 id="homebrew">Homebrew</h2>
 <p>Next up we need to install <a href="http://brew.sh/" target="_blank">Homebrew</a> it comes with a very simple install script. During install you may be asked you to install Xcode Command Line Tools, if so just say yes.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 </code></pre></div></div>
 
 <hr />
@@ -19,7 +19,7 @@ Once you have done this we can move on.</p>
 
 <p>With Homebrew installed we can now move on to installing Ruby, the current version at time of writing this is (2.7.0). You will need to enter the following commands into your terminal window.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Install Ruby.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Install Ruby.
 rbenv install 2.7.0
 
 # Set our main version to the latest version.  
@@ -35,15 +35,15 @@ ruby -v
 
 <p><a href="https://ohmyz.sh" target="_blank">Oh-my-ZSH</a> is a fantastic tool for managing your zsh configuration</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 </code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch ~/.zshrc
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>touch ~/.zshrc
 </code></pre></div></div>
 
 <p>at the bottom add the following lines</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH="$HOME/.rbenv/bin:$PATH"
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 </code></pre></div></div>
 
@@ -54,23 +54,23 @@ eval "$(rbenv init -)"
 
 <p>Replace the example name and email address in the following steps with the ones you used for your Github account.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global color.ui true
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global color.ui true
 git config --global user.name “your name”
 git config --global user.email “your@email.com”
 ssh-keygen -t rsa -C “your@email.com”
 </code></pre></div></div>
 
 <p>The next step is to take the newly generated SSH key and add it to your Github account. You want to copy and paste the output of the following command and paste it here.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat ~/.ssh/id_rsa.pub
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat ~/.ssh/id_rsa.pub
 </code></pre></div></div>
 
 <p>Once you’ve done this, you can check and see if it worked:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -T git@github.com
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ssh -T git@github.com
 </code></pre></div></div>
 
 <p>You should get a message like this:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi r3id! You’ve successfully authenticated, but GitHub does not provide shell access.
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Hi r3id! You’ve successfully authenticated, but GitHub does not provide shell access.
 </code></pre></div></div>
 
 <hr />
@@ -78,7 +78,7 @@ ssh-keygen -t rsa -C “your@email.com”
 <h2 id="yarn">Yarn</h2>
 <p>You now need to install Yarn. Yarn is a JavaScript a fast, reliable, and secure alternative npm client.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install yarn
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install yarn
 </code></pre></div></div>
 
 <hr />
@@ -86,16 +86,16 @@ ssh-keygen -t rsa -C “your@email.com”
 <h2 id="ride-the-rails">Ride the Rails</h2>
 <p>Installing Rails is really to install just enter the following command in iTerm2</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rails
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install rails
 </code></pre></div></div>
 
-<p>Rails should now be installed, however for us to use the rails executable, we need to tell <code class="highlighter-rouge">rbenv</code> to see it:</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv rehash
+<p>Rails should now be installed, however for us to use the rails executable, we need to tell <code class="language-plaintext highlighter-rouge">rbenv</code> to see it:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rbenv rehash
 </code></pre></div></div>
 
 <p>Now lets just double check to make sure Rails has installed correctly. Run the following command in iTerm2</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails -v
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails -v
 Rails 6.0.0
 </code></pre></div></div>
 
@@ -104,12 +104,12 @@ Rails 6.0.0
 
 <p>We are going to use Homebrew to install our PostgreSQL server and client so open up iTerm2 and enter.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install postgresql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install postgresql
 </code></pre></div></div>
 
 <p>To have “launchd” start postgresql at login, you will need to run the following command</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew services start postgresql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew services start postgresql
 </code></pre></div></div>
 
 <p>The PostgreSQL default user is normally set to your current macOS username and has no password. Check out the <a href="https://www.postgresql.org/docs/" target="_blank">PostgreSQL docs</a> for more info.</p>
@@ -119,27 +119,27 @@ Rails 6.0.0
 <h2 id="lets-create-our-first-rails-site">Let’s create our first Rails site</h2>
 <p>Open up an iTerm2 window, and we’ll get Rails to generate our new site which we will call “sample-app”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new sample-app -d postgresql
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new sample-app -d postgresql
 </code></pre></div></div>
 
-<p>The command will create a new directory called <code class="highlighter-rouge">sample-app</code> and install your Rails app in there. You may have noticed the <code class="highlighter-rouge">-d postgresql</code>, well this tells Rails to set the Database to use <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>. If you were to leave this off, Rails would by default use SQLite3.</p>
+<p>The command will create a new directory called <code class="language-plaintext highlighter-rouge">sample-app</code> and install your Rails app in there. You may have noticed the <code class="language-plaintext highlighter-rouge">-d postgresql</code>, well this tells Rails to set the Database to use <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>. If you were to leave this off, Rails would by default use SQLite3.</p>
 
 <p>Now we change into the directory that we created.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd sample-app
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd sample-app
 </code></pre></div></div>
 
 <p>As a final step, we create the database</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails db:create
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails db:create
 </code></pre></div></div>
 
 <p>Now in a similar method to Jekyll, we run the following command to start up our Rails server.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails s
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails s
 </code></pre></div></div>
 
-<p>You could run <code class="highlighter-rouge">rails s</code> or <code class="highlighter-rouge">rails server</code> they are both the same thing its more personal preference.</p>
+<p>You could run <code class="language-plaintext highlighter-rouge">rails s</code> or <code class="language-plaintext highlighter-rouge">rails server</code> they are both the same thing its more personal preference.</p>
 
 <p>So now you have Rails setup and your server running, all that’s left to do is to visit <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> to view your new Rails app in your browser of choice.</p>
 
@@ -147,6 +147,6 @@ Rails 6.0.0
 
 <p>As a final note, you may need to run to install webpacker, which is what Rails now uses to manage the asset pipeline.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails webpacker:install
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails webpacker:install
 </code></pre></div></div>
 :ET

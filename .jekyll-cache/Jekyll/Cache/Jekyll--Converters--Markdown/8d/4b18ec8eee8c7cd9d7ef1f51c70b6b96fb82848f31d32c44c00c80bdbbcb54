@@ -1,2 +1,0 @@
-I"/<p>The Rails 5.2 release brought with it a new way of handling secret keys. So in this now I’m going to explain how to update your Rails app and how to implement Credentials for storing information like API keys, passwords to 3rd party tools, randomly-generated secrets, or encryption algorithms.</p>
-:ET

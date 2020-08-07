@@ -1,4 +1,4 @@
-I"�V<p>Historically developing API’s has been a pain for developers. And the way we develop API’s needs evolve to keep up with how we consume API’s across multiple platforms.</p>
+I"�V<p>Historically developing API’s has been a pain for developers. And the way we develop API’s needs evolve to keep up with how we consume API’s across multiple platforms.</p>
 
 <p>Enter GraphQL; a query language developed by Facebook in 2012 and which was later released publicly in 2015. It has been gaining a lot of traction over the last few years, with companies such as GitHub, Shopify, Netflix, and Spotify using it to develop their API’s.</p>
 
@@ -47,7 +47,7 @@
 
 <p>In GraphQL, all you need to do to evolve your API is to write new code and “deprecate” fields which are no longer in use. You can write new types, queries, and mutations without the need to ship another version of your API.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class UserType &lt; Types::BaseObject
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class UserType &lt; Types::BaseObject
   description "Sample user type"
 
   field :name, String, null: true

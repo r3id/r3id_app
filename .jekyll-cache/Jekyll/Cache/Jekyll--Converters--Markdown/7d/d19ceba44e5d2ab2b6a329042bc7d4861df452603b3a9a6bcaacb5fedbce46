@@ -1,36 +1,36 @@
-I"�<p>So we are continuing on with our <a href="/setting-up-rails-and-jekyll-part-1">Rails and Jekyll install</a>. In part 2 we are going to now install Jekyll and get our basic site up and running.</p>
+I"�<p>So we are continuing on with our <a href="/setting-up-rails-and-jekyll-part-1">Rails and Jekyll install</a>. In part 2 we are going to now install Jekyll and get our basic site up and running.</p>
 
 <h2 id="moving-onto-jekyll">Moving onto Jekyll</h2>
 <p>So Jekyll is where I noticed the some minor changes to the way we install Jekyll over previous versions. So fire up iTerm2 and enter the following command</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem install jekyll bundler
 </code></pre></div></div>
 
 <p>Once this has done its thing let’s make sure Jekyll installed by typing</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll -v
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll -v
 </code></pre></div></div>
 
 <h2 id="working-with-jekyll">Working with Jekyll</h2>
 <p>So now you have Jekyll installed we can move on to the fun stuff, creating and running your first Jekyll site.
 So let’s take our first step’s to create a new site, for this we need to change directory. I have a source directory which resides inside my documents directory, so let’s go to that within iTerm2.
 Switch over to iTerm2 and type the following command, and this will change us in our source directory. Make sure we have this created first!</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd source
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd source
 </code></pre></div></div>
 
 <p>We now want to create our first site! In iTerm2 enter</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new my-site
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new my-site
 </code></pre></div></div>
 
 <p>Jekyll then creates a folder structure which contains the files needed for our new site. Once this has completed, we’ll need to switch to our newly created site directory.</p>
 
 <p>Switch back into iTerm2 enter</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd my-site
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd my-site
 </code></pre></div></div>
 
 <p>You should now be in your newly created site directory, and you will be pleased to know we’re coming to the end of this article!</p>
 
-<p>So there’s one more command that needs to be run, and this is where the magic happens! Back into terminal we go and enter <code class="highlighter-rouge">jekyll s</code> you could also enter <code class="highlighter-rouge">jekyll serve</code>. The command simply starts up the Jekyll server locally.</p>
+<p>So there’s one more command that needs to be run, and this is where the magic happens! Back into terminal we go and enter <code class="language-plaintext highlighter-rouge">jekyll s</code> you could also enter <code class="language-plaintext highlighter-rouge">jekyll serve</code>. The command simply starts up the Jekyll server locally.</p>
 
-<p>And we’re done! So now in the background Jekyll is humming away watching our site files, so as you edit your sites files the site will update and rebuild. There are some things you’ll need to look out for; occasionally things won’t update this maybe because you have updated your configuration file. If this does happen, simply hit CTRL + C inside terminal to cancel/stop Jekyll. And then restart the site again by using the <code class="highlighter-rouge">jekyll s</code> command.</p>
+<p>And we’re done! So now in the background Jekyll is humming away watching our site files, so as you edit your sites files the site will update and rebuild. There are some things you’ll need to look out for; occasionally things won’t update this maybe because you have updated your configuration file. If this does happen, simply hit CTRL + C inside terminal to cancel/stop Jekyll. And then restart the site again by using the <code class="language-plaintext highlighter-rouge">jekyll s</code> command.</p>
 
 <p>And that’s about it for now. I will be covering more on Jekyll in future articles, thanks for taking the time to read this.</p>
 

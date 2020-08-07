@@ -1,4 +1,4 @@
-I"�<p>Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won’t be using any JS for this just some clever CSS.</p>
+I"+<p>Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won’t be using any JS for this just some clever CSS.</p>
 
 <div class="image-center">
 <img src="assets/images/articles/toggle-switch.png" width="300" />
@@ -6,9 +6,9 @@
 
 <hr />
 
-<p>So let’s start off by creating the HTML layout. We will be using a checkbox, along with the Pseudo selectors <code class="highlighter-rouge">:checked</code>, <code class="highlighter-rouge">:before</code> and <code class="highlighter-rouge">:after</code> to get our toggle looking like the one pictured above.</p>
+<p>So let’s start off by creating the HTML layout. We will be using a checkbox, along with the Pseudo selectors <code class="language-plaintext highlighter-rouge">:checked</code>, <code class="language-plaintext highlighter-rouge">:before</code> and <code class="language-plaintext highlighter-rouge">:after</code> to get our toggle looking like the one pictured above.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="#"&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="#"&gt;
   &lt;div class="switch"&gt;
     &lt;input id="sw1" type="checkbox" class="switch-input"&gt;
     &lt;label for="sw1" class="switch-label"&gt;Switch&lt;/label&gt;
@@ -17,11 +17,11 @@
 </code></pre></div></div>
 
 <p>Next up we will write out our CSS, I would recommend using Sass to set some variables, but for this article, we’ll use plain old CSS.
-Notice we use transitions on <code class="highlighter-rouge">.switch-label:before</code> and <code class="highlighter-rouge">.switch-label:after</code> the transitions provide that animation a starting point for our animation.</p>
+Notice we use transitions on <code class="language-plaintext highlighter-rouge">.switch-label:before</code> and <code class="language-plaintext highlighter-rouge">.switch-label:after</code> the transitions provide that animation a starting point for our animation.</p>
 
 <p>To finish up, we set the background colour and the position the aformentoned classes. These classes let our transitions know what they need to do sure our transitions work properly.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Switch Container */
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Switch Container */
 .switch {
   position: relative;
   display: inline-block;

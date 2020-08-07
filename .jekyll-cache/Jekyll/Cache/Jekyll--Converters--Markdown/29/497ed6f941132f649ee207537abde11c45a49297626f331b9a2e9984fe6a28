@@ -1,4 +1,4 @@
-I"#<p>I was working with the <a href="https://shopify.dev/docs/admin-api" target="_blank">ShopifyAPI</a>, and developing an app which utilised the REST API, and connected up to a development store.</p>
+I"R#<p>I was working with the <a href="https://shopify.dev/docs/admin-api" target="_blank">ShopifyAPI</a>, and developing an app which utilised the REST API, and connected up to a development store.</p>
 
 <p>Then I came across an issue, the REST API was very slow to update the large amount of data I was needing to pass updates too. So I started to look at GraphQL.</p>
 
@@ -31,7 +31,7 @@
 <p>After spending a few hours reading up on GraphQL, and trying to get it to work — unsuccessfully i must add. I had a rest, only to come back to it an hour later and upon restarting my rails server, it started working!</p>
 
 <p>This is simply a getting started helper for anyone who needs it, so let’s have a look at my initial code. I had created a method, which would run this code in a simple Rails app, by adding byebug just above result you’re able to see whats been returned in the terminal.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def shopify_test    
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def shopify_test    
     shop_url = "https://#{API_KEY}:#{PASSWORD}@#.{SHOP_NAME}.myshopify.com"
     ShopifyAPI::Base.site = shop_url
     ShopifyAPI::Base.api_version = '2020-01'
@@ -51,10 +51,10 @@
 end
 </code></pre></div></div>
 
-<p>You can get your <code class="highlighter-rouge">api_key</code> and <code class="highlighter-rouge">password</code> through the <a href="https://bkservicesonline.myshopify.com/admin/apps/private">App &gt; Private Apps</a> section of the Shopify Store.
+<p>You can get your <code class="language-plaintext highlighter-rouge">api_key</code> and <code class="language-plaintext highlighter-rouge">password</code> through the <a href="https://bkservicesonline.myshopify.com/admin/apps/private">App &gt; Private Apps</a> section of the Shopify Store.
 Running this would return simply your shop name. But once you have this working you can start to explore the rest of the GraphQL API.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   “data”: {
     “shop”: {
       “id”: “gid:\/\/shopify\/Shop\/{SHOP_ID}”,

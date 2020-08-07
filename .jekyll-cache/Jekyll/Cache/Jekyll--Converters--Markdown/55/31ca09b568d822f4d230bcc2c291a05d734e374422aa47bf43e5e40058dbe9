@@ -1,4 +1,4 @@
-I"�H<p>Well, I have been learning GraphQL for around a week, and how time has flown past. It’s been an interesting journey I must say.</p>
+I"�H<p>Well, I have been learning GraphQL for around a week, and how time has flown past. It’s been an interesting journey I must say.</p>
 
 <div class="image-center">
   <svg width="194px" height="57px" viewBox="0 0 194 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -26,7 +26,7 @@
 
 <p>This is the establishment query. This will lookup an establishment based on it’s FHRS_ID - I haven’t given them my own ID’s… yet 😉</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   establishment(fhrsId: 349461) {
     fhrsId
     busiessName
@@ -45,7 +45,7 @@
 
 <p>This query would return just some basic data relating to the establishment. Below shows the returned data.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "data": {
     "establishment": [
       {
@@ -68,7 +68,7 @@
 
 <p>But this is where the beauty of GraphQL comes into play. By allowing the user to pick the data they want, they can get even more data. The below example is now adding in the scheme name, and the local authority information.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   establishment(fhrsId: 349461) {
     fhrsId
     busiessName
@@ -94,7 +94,7 @@
 
 <p>This query would return the slightly more information.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
   "data": {
     "establishment": [
       {
