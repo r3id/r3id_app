@@ -11,7 +11,7 @@ This is a summary of our contract. You won’t find complicated legal terms or l
 
 ## In short...
 
-You, the client, are hiring [R3ID][r3idurl], to design and develop a website for an estimated total price which is/has been outlined in previous correspondence. Of course it’s a little more complicated, but we’ll get to that.
+You, the client, are hiring [R3ID][r3idurl], to build a bespoke solution or design and develop a website for an estimated total price which is/has been outlined in previous correspondence. Of course it’s a little more complicated, but we’ll get to that.
 
 ## What do both parties agree to do?
 
@@ -29,7 +29,7 @@ If the project includes HTML markup and CSS templates, we’ll develop these usi
 
 Users of older or less capable browsers will experience a design that is appropriate to the capabilities of their software. For people using Microsoft Internet Explorer 7 and 8, this means a universal, typographically focussed design but no layout.
 
-We will not test old or abandoned browsers, for example Microsoft Internet Explorer 5, 5.5, 6 for Windows or Mac, previous versions of Apple’s Safari, Mozilla Firefox or Opera unless otherwise specified.
+We will not test old or abandoned browsers, for example Microsoft Internet Explorer for Windows or Mac, previous versions of Apple’s Safari, Mozilla Firefox or Opera unless otherwise specified.
 
 If you need us to consider these older browsers, we will charge you at the hourly rate of £45.00 per/hour for any necessary additional design work, development and testing.
 
@@ -70,7 +70,7 @@ When we the contract between both parties ends, copyright is automatically assig
 
 We are sure you understand how important it is as a small business that you pay the invoices that we send you promptly. As we’re also sure you’ll want to stay friends, you agree to stick tight to the agreed payment schedule.
 
-Invoices will be raised and dispatched electronically on the 28th day of the month. Upon receipt of invoice payment is required within 14 days, unless other arrangements have been expressly agreed.
+Invoices will be raised and dispatched electronically upon completion of the project. Upon receipt of invoice payment is required within 7 days, unless other arrangements have been expressly agreed.
 
 [R3ID][r3idurl] reserves the right to charge interest on overdue invoices at the rate of 5% above Bank base rate at the time of the charge.
 
