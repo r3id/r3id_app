@@ -72,7 +72,7 @@ We are sure you understand how important it is as a small business that you pay 
 
 Invoices will be raised and dispatched electronically upon completion of the project. Upon receipt of invoice payment is required within 7 days, unless other arrangements have been expressly agreed.
 
-[R3ID][r3idurl] reserves the right to charge interest on overdue invoices at the rate of 5% above Bank base rate at the time of the charge, we will also include any recovery fees if a payment is late. 
+[R3ID][r3idurl] reserves the right to charge interest on overdue invoices at the rate of 5% above Bank base rate at the time of the charge, we will also include a recovery fee if a payment is late. 
 
 ## Finally
 
