@@ -6,16 +6,16 @@ categories: rails development upgrade
 
 So previously when we were setting up Rails we installed Rails, so in today we are going to go over how you would update to the latest Rails release.
 
-This will be a really short article as it and all we need to do its enter the following lines, and we will install Rails 6.0.2.1 (check [rubyonrails.org](https://rubyonrails.org){:target="_blank"} for the latest version).
+This will be a really short article as it and all we need to do its enter the following lines, and we will install Rails 6.0.3.4 (check [rubyonrails.org](https://rubyonrails.org){:target="_blank"} for the latest version).
 
 Once Rails has been updated we will need to tell `rbenv` to use to use it by default.
 
 ```
-gem install rails -v 6.0.2.1
+gem install rails -v 6.0.3.4
 
 rbenv rehash
 
-# version should be >= Rails 6.0.2.1
+# version should be >= Rails 6.0.3.4
 rails -v
 
 ```
