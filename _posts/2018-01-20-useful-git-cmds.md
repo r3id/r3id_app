@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  Some useful Git commands
 categories: git tips
 ---
@@ -35,7 +35,7 @@ Example: `git clone https://repourl.com/repo_name.git`
 ## git add
 The `git add` command adds a change in the working directory to the staging area. It lets Git know that you want to include updates to a particular file in the next commit.
 
-#### Options
+### Options
 `git add .`
 
 Stage all changes in all files for the next commit.
@@ -52,7 +52,7 @@ Stage all changes in `[directory]` for the next commit.
 ## git commit
 The git commit command captures a snapshot of the project's currently staged changes. Committed snapshots can be thought of as _safe_ versions of a project, and Git will not change them unless you explicitly ask it to.
 
-#### Options
+### Options
 `git commit`
 
 Commit the staged snapshot. This will launch a text editor prompting you for a commit message. After you’ve entered a message, save the file and close the editor to create the actual commit.
@@ -82,7 +82,7 @@ To create a new tag execute the following command:
 ## git branch
 A branch represents an independent line of development. Branches serve as an abstraction for the edit/stage/commit process. You can think of them as a way to request a brand new working directory, staging area, and project history. New commits are recorded in the history for the current branch, which results in a fork in the history of the project.
 
-#### Options
+### Options
 `git branch` list all of the branches in your repository. This is synonymous with git branch --list.
 
 `git branch <branch>` creates a new branch called <branch>. This does not check out the new branch.

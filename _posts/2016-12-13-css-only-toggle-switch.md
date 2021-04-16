@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: CSS only toggle switch
 categories: css sass
 ---

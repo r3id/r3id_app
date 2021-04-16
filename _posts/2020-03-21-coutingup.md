@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Counting up, a JS code snippet
 categories: javascript html css
 ---

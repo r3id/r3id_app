@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "How to: Set all file names in a directory to lowercase"
 categories: files editing
 ---

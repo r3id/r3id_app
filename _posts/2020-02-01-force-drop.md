@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Rails Snippet: Force drop a PostgreSQL DB"
 categories: postgresql rails
 ---

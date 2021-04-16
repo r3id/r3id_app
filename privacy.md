@@ -1,6 +1,7 @@
 ---
 layout: legal_page
 title: Privacy
+date: 16th April 2021
 ---
 
 At [r3id.dev][r3idurl] we are committed to safeguarding and preserving the privacy of our visitors.

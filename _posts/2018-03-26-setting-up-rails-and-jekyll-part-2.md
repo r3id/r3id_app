@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Setting up Rails and Jekyll (Part 2)
 categories: jekyll rails homebrew setup
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Jekyll and links…
 categories: rails jekyll development
 ---

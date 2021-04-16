@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: An overview of Bourbon
 categories: css sass framework
 ---

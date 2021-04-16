@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "My first GraphQL API"
 categories: graphql rails
 ---

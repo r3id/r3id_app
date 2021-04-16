@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Rails 6 setup in macOS Catalina"
 categories: macos catalina rails
 ---

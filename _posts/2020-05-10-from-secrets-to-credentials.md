@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Rails from secrets to credentials
 categories: rails, config, development
 ---
@@ -18,16 +18,15 @@ categories: rails, config, development
 </div>
 The Rails 5.2 release brought with it a new way of handling secret keys. So in this now I'm going to explain how to update your Rails app and how to implement Credentials for storing information like API keys, passwords to 3rd party tools, randomly-generated secrets, or encryption algorithms.
 
-In Rails 5.1 and earlier, the best practice for storing private data was to use a `.secrets` file that assigned the data to constants used elsewhere in the app, and to make sure this file was listed in your `.gitignore` so that the information was never made publicly available on GitHub (or other repos). 
+In Rails 5.1 and earlier, the best practice for storing private data was to use a `.secrets` file that assigned the data to constants used elsewhere in the app, and to make sure this file was listed in your `.gitignore` so that the information was never made publicly available on GitHub (or other repos).
 
-The problems with this were that 
+The problems with this were that
 - the secrets were stored in plain text and;
 - it was easy to forget to `.gitignore` it or inadvertently share it by moving the file to a different directory.
 
-### A .1 update later...
 Now with Rails 5.2 and later, apps come with a `master.key` file that’s automatically referenced in the `.gitignore`. This key is used to decrypt your new `credentials.yml.enc` file, which can and should be checked into your version control. The key and the credentials file come as a set. The private data in credentials.yml.enc is encrypted but can be edited and saved directly when you open and decrypt the file from command line.
 
-### First things first
+## First things first
 First of all, you will need to update your Rails version. There are two options here: a simple update of just your Rails version, or a deeper update to rewrite your configuration as though you’d just created a fresh app.
 
 The simple version is to copy the text in the GEMFILE section on the right from rubygems.org, for example in your Gemfile replace the current line containing
@@ -40,24 +39,24 @@ with
 
 ```
 gem 'rails', '~> 6.0', '>= 6.0.2.2'
-``` 
+```
 
 Ideally, update all your gems by running `bundle update` followed by `bundle install`.
 
 For a more thorough update, after the steps above, run rails app:update. This will add or modify files in bin and config. For each file, you have the options `[Ynaqdh]`
 
-- Yes: overwrite; 
+- Yes: overwrite;
 - no: don’t overwrite;
-- all: overwrite all; 
-- quit; 
-- diff: show difference; 
+- all: overwrite all;
+- quit;
+- diff: show difference;
 - help
 
-Though every app is different, it’s probably ok to overwrite anything you haven’t edited (like bin files) and probably **NOT** ok to overwrite anything you have edited, like `config/routes.rb and config/application.rb`. I went with `Y` for all files out of curiosity, and then had to add my routes and application back from a recent GitHub commit. If rails app:update adds a database migration, be sure to run `rails db:migrate` locally and heroku run `rails db:migrate` in production _(for example)_. 
+Though every app is different, it’s probably ok to overwrite anything you haven’t edited (like bin files) and probably **NOT** ok to overwrite anything you have edited, like `config/routes.rb and config/application.rb`. I went with `Y` for all files out of curiosity, and then had to add my routes and application back from a recent GitHub commit. If rails app:update adds a database migration, be sure to run `rails db:migrate` locally and heroku run `rails db:migrate` in production _(for example)_.
 
 _Note: using rails is equivalent to rake in this case._
 
-### Let's get this working
+## Let's get this working
 At this point, test your app to make sure everything works before proceeding with updating from Secrets to Credentials.
 How to Implement Credentials: The command for creating the new pair of files (`master.key` and `credentials.yml.enc`) is the same as the command for editing them. If you use VS Code, you’ll use the command:
 
@@ -65,11 +64,11 @@ How to Implement Credentials: The command for creating the new pair of files (`m
 EDITOR="code --wait" rails credentials:edit
 ```
 
-If you use Atom, you’ll use 
+If you use Atom, you’ll use
 ```
 EDITOR="atom --wait" rails credentials:edit
 ```
-and so on for whatever editor you prefer. 
+and so on for whatever editor you prefer.
 
 It’ll look like nothing is happening in your console, but the file should open in your editor after a few seconds. To start with, it should look like this:
 

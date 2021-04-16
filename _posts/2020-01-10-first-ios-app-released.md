@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: First iOS app released!
 categories: ios mobile development
 ---
@@ -13,5 +13,5 @@ Ok so its nothing groundbreaking but it's a start.
 [Mono Weather](https://apps.apple.com/gb/app/mono-weather/id1495912833){:target="_blank"} is a minimalist weather app, that simply provides you with the weather for your current location.
 
 <div class="image-center">
-<img src="assets/images/articles/mono-weather-app.png" width="300"/>
+  <img src="assets/images/articles/mono-weather-app.png" width="300"/>
 </div>

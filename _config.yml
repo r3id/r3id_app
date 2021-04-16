@@ -1,5 +1,5 @@
 title: 'R3ID'
-email: hell@r3id.io
+email: hell@r3id.dev
 description: "A software engineer based in Hertfordshire who specializes in developing (and occasionally designing) exceptional, high-quality websites and applications."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://r3id.dev" # the base hostname & protocol for your site, e.g. http://example.com
@@ -11,6 +11,7 @@ permalink: pretty
 permalink: /:title
 plugins:
   - jekyll-feed
+  - jekyll-postcss
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Rails testing, with rspec
 categories: rails testing rspec
 ---
@@ -41,10 +41,10 @@ This is why learning how to test your code is a vital skill coding skill you nee
   </svg>
 </div>
 
-#### What is being used to test in Ruby?
+## What is being used to test in Ruby?
 [Rspec](https://rspec.info){:target="_blank"} is possibly the most widely used testing tool in Ruby. If you are going to be learning how to test in Ruby, this is the main tool that you should focus on. Rspec is a [domain specific language (DSL)](https://opensource.com/article/20/2/domain-specific-languages){:target="_blank"}  and is a perfect tool to use for testing in test-driven development.
 
-#### How do you install it?
+## How do you install it?
 To install Rspec into a new project, just follow the steps below.
 
 Firstly create a folder. This is where all your files will live. From your terminal, you can create a new folder for this project and name it `rspec_tutorial`:
@@ -71,7 +71,7 @@ gem 'rspec'
 
 Now we run `bundle install` from your terminal while still in the project directory. All done! Your project is now set up to use Rspec!
 
-#### What are the basics of Rspec?
+## What are the basics of Rspec?
 
 The basics of an Rspec file contain 3 main sections:
 - describe,
@@ -161,7 +161,7 @@ Finished in 0.00003 seconds (files took 0.15926 seconds to load)
 0 examples, 0 failures, 1 error occurred outside of examples
 ```
 
-#### Lets build our code!
+## Lets build our code!
 
 Firstly you will need to create the file from your terminal: `touch dog.rb`
 
@@ -209,13 +209,13 @@ Finished in 0.00827 seconds (files took 0.18086 seconds to load)
 1 example, 0 failures
 ```
 
-#### And finally...
+## And finally...
 As you can see Rspec is an easy tool to use. Don’t let testing intimidate you or hold you back from writing clean applications. While it will take more time to initially build your applications, you’ll find that you’ll be save a lot of time in the long run.
 
 You can download the source code for this at the following [Gist](https://gist.github.com/r3id/cdb6c5521aab9e3cab122d3430dab439){:target="_blank"}
 
 
-#### Further reading
+## Further reading
 I will add more articles here which are worth a read to further you Rspec learning.
 
 - [Ruby Guides: Rspec Tutorial](https://www.rubyguides.com/2018/07/rspec-tutorial/){:target="_blank"}

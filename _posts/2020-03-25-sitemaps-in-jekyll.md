@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Adding Sitemaps to a Jekyll site
 categories: jekyll sitemap tips
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "PostgreSQL Tip: Resync table sequence"
 categories: rails, config, development
 ---

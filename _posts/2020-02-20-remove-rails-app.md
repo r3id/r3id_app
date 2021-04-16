@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Rails Snippet: Delete DB and App"
 categories: rails
 ---

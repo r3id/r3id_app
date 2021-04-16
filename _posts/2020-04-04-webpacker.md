@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Webpacker and Rails 6
 categories: rails webpacker coding
 ---
@@ -14,7 +14,7 @@ When Rails 6 was released Webpacker became the default JavaScript compiler inste
   </svg>
 </div>
 
-#### Pre-Rails 6
+## Pre-Rails 6
 The JavaScript was compiled with Sprockets Rails by default and resided in `app/assets/javascripts` directory. Stubs would be created when using scaffold generators.
 
 With Rails 5.1 and up, we would provide an option to use Webpacker as the compiler while creating a new rails application,
@@ -39,14 +39,14 @@ bundle exec rails webpacker:install
 
 ---
 
-#### Rails 6 onwards...
+## Rails 6 onwards...
 When we create a new application with Rails 6, the Webpacker gem will be installed and `webpacker:install` will be run by the Rails application generator.
 
 By default, The `app/javascript` directory will host the JavaScript files. The existing JavaScript code for Active Storage, Action Cable, Turbolinks, and Rails-UJS will be loaded by a new `application.js` pack in `app/javascript` directory.
 
 The Action Cable stubs will be created in the `app/javascripr/channels` directory and will use ES6 instead of CoffeeScript. Note that no other JavaScript stubs will be created by default when using the scaffold generators.
 
-#### What is Webpacker?
+## What is Webpacker?
 Webpacker is a gem which allows easy integration of JavaScript pre-processor and bundler with Rails. It provides various helpers and configuration options to use webpack easily with Rails.
 
 Webpacker directory structure with Rails 6 the app/javascript directory contains:
@@ -71,7 +71,7 @@ require("@rails/activestorage").start()
 require("channels")
 ```
 
-#### How to use Webpacker with packs?
+## How to use Webpacker with packs?
 
 With the help of packs, Webpacker provides a convenient way to access and use JavaScript required for different layouts in the Rails application. The packs can be accessed via helper methods `javascript_pack_tag` and if css styles are being imported in pack files, `stylesheet_pack_tag`.
 
@@ -83,13 +83,13 @@ For instance, with Rails 6, the `app/javascript/packs/application.js` pack will 
 
 It is encouraged to place the actual application logic in a relevant structure within app/javascript and only use the pack files to reference that code so that webpack knows it needs to be compiled.
 
-#### How to configure Webpacker?
+## How to configure Webpacker?
 
 The configuration information for Webpacker lies in `config/webpacker.yml`. We can change options like source path, packs path and many more from the configuration file.
 
 The environment specific JavaScript configuration files for webpack can be found at `config/webpack` directory. More on webpack configuration with Webpacker here.
 
-#### Compilation
+## Compilation
 
 Keeping the process similar to the previous assets pipeline, the JavaScript compilation happens along with the request while running the Rails server in development mode.
 

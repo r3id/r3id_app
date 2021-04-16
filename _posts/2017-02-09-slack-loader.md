@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Slack style loader
 categories: css jquery sass
 ---

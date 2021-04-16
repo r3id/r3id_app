@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Let's talk about GraphQL"
 categories: graphql rails
 ---

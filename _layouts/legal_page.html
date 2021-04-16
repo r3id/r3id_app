@@ -1,17 +1,24 @@
 ---
 layout: default
-class: page-legal
+class: home-page
 ---
 
-<main class="main">
-  <div class="text">
-    <h1 class="text-title">
-      <a href="/" title="back to home">{{ page.title }}</a>
-    </h1>
-    <div class="text-content">
-      {{ content }}
-    </div>
-  </div>
+{% include page-nav.html %}
 
-  {% include footer.html %}
-</main>
+<div class="default-container">
+  <div class="pt-20 pb-1 inline-flex overflow-x-auto space-x-2">
+		<a href="/">
+			<p class="cursor-pointer text-sm text-gray-400 dark:text-gray-600 hover:font-medium hover:text-gray-700 dark:hover:text-gray-300 min-w-max">Home /</p>
+		</a>
+		<a href="{{ page.url }}">
+			<p class="cursor-pointer text-sm text-draplin dark:text-draplin hover:font-medium hover:text-gray-700 dark:hover:text-gray-300 min-w-max">{{ page.title }}</p>
+		</a>
+	</div>
+	<div class="mb-6">
+		<h1 class="pb-2 font-bold text-3xl text-gray-600">{{ page.title }}</h1>
+    <p class="text-sm italic text-gray-300">Last updated: {{ page.date }}</p>
+	</div>
+  <div class="text-content">
+    {{ content }}
+  </div>
+</div>

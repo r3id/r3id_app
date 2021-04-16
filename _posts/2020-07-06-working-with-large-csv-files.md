@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: "Splitting large CSV files"
 categories: csv, data, development
 ---
@@ -16,7 +16,7 @@ So to start we need to work out our best option. I started with splitting the fi
 
 By running these commands we will be able to open the first one and see how many rows there are in the file.
 
-Note: **make sure you have navigated to the correct folder**, so the folder where the file has been saved. Then run the following snippet.
+_Note: make sure you have navigated to the correct folder, so the folder where the file has been saved. Then run the following snippet._
 
 ```
 split -b 100m file_to_split.csv

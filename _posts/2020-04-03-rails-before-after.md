@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Let's explore before? and after? methods in Rails.
 categories: rails methods coding
 ---

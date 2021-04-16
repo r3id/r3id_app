@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Jekyll File Structure
 categories: jekyll
 ---

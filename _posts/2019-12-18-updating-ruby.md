@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Updating Ruby
 categories: rails updateruby homebrew
 ---

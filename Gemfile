@@ -1,14 +1,19 @@
 source "https://rubygems.org"
 
 gem "jekyll"
+gem "jekyll-seo-tag"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
+  gem 'jekyll-postcss'
 end
 
-install_if -> { RUBY_PLATFORM =~ %r!mingw|mswin|java! } do
+platforms :mingw, :x64_mingw, :mswin, :jruby do
   gem "tzinfo"
   gem "tzinfo-data"
 end
 
-gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+
+gem "webrick", "~> 1.7"

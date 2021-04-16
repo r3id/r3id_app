@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: 'Jekyll tips & tricks'
 categories: jekyll development tips
 ---

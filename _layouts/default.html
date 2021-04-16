@@ -1,17 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="light">
   <head>
     <title>{% if page.title %}{{ page.title }} || {% if page.layout == 'post' %}Notes to self ::{% endif %} {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv=”last-modified” content=”{{ 'now' | date: '%Y-%m-%d' }}”>
-    <meta name="description" content="{{ site.description }}" />
-    <link rel="stylesheet" href="/assets/css/main.css" media="screen" />
-    <link rel="stylesheet" href="/assets/css/main.css" media="print" />
-    <link rel="icon" type="image/png" href="{{ site.url }}/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="last-modified" content="{{ 'now' | date: '%Y-%m-%d' }}">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/assets/css/main.css" media="screen">
+    <link rel="stylesheet" href="/assets/css/main.css" media="print">
+    <link rel="icon" type="image/png" href="{{ site.url }}/favicon.ico">
+    <script src="https://kit.fontawesome.com/b4cc0eca3e.js" crossorigin="anonymous"></script>
   </head>
-  <body class="{{ layout.class }}">
+  <body class="{{ layout.class }} text-gray-500">
+
     {{ content }}
+
+    {% include footer.html %}
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68933763-1"></script>

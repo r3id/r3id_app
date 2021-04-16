@@ -1,0 +1,33 @@
+---
+layout: default
+class: home-page
+---
+
+{% include page-nav.html %}
+
+{% capture words %}
+  {{ content | number_of_words | minus: 240 }}
+{% endcapture %}
+
+<div class="default-container">
+  <div class="pt-20 pb-1 inline-flex overflow-x-auto space-x-2">
+		<a href="/">
+			<p class="cursor-pointer text-sm text-gray-400 dark:text-gray-600 hover:font-medium hover:text-gray-700 dark:hover:text-gray-300 min-w-max">Home /</p>
+		</a>
+    <a href="/notes">
+			<p class="cursor-pointer text-sm text-gray-400 dark:text-gray-600 hover:font-medium hover:text-gray-700 dark:hover:text-gray-300 min-w-max">Notes to self /</p>
+		</a>
+		<a href="{{ page.url }}">
+			<p class="cursor-pointer text-sm text-draplin dark:text-draplin hover:font-medium hover:text-gray-700 dark:hover:text-gray-300 min-w-max">{{ page.title }}</p>
+		</a>
+	</div>
+	<div class="mb-6">
+		<h1 class="pb-2 font-bold text-3xl text-gray-600">{{ page.title }}</h1>
+    {% unless words contains "-" %}
+      <p class="text-sm italic mb-4">It's a {{ words | plus: 180 | divided_by: 180 | append: " minute read" }}</p>
+    {% endunless %}
+	</div>
+  <div class="text-content">
+    {{ content }}
+  </div>
+</div>

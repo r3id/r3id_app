@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "How to: Translate Google Sheets"
 categories: translate google sheets
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title: Getting started with Sass
 categories: CSS Sass Preprocessors Development Tips
 ---
