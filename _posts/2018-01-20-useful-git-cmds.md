@@ -7,7 +7,7 @@ categories: git tips
 As developers we need to store our code somewhere. I mainly use Git, which is also one of the most popular version control systems. So, in this article we are going to look at a few Git commands which will come in handy, and most of which you'd use regularly.
 
 <div class="image-center">
-<img src="assets/images/articles/a-gitflow.png" />
+<img src="{{ site.url }}/assets/images/articles/a-gitflow.png" />
 </div>
 
 ---

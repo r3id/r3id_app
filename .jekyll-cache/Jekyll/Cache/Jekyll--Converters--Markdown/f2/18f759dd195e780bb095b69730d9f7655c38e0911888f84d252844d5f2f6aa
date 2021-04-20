@@ -1,35 +1,27 @@
----
-layout: article
-title: CSS only toggle switch
-categories: css sass
----
-
-Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won't be using any JS for this just some clever CSS.
+I"<<p>Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won’t be using any JS for this just some clever CSS.</p>
 
 <div class="image-center">
-<img src="{{ site.url }}/assets/images/articles/toggle-switch.png" width="300"/>
+<img src="https://r3id.dev/assets/images/articles/toggle-switch.png" width="300" />
 </div>
 
-<hr>
+<hr />
 
-So let's start off by creating the HTML layout. We will be using a checkbox, along with the Pseudo selectors `:checked`, `:before` and `:after` to get our toggle looking like the one pictured above.
+<p>So let’s start off by creating the HTML layout. We will be using a checkbox, along with the Pseudo selectors <code class="language-plaintext highlighter-rouge">:checked</code>, <code class="language-plaintext highlighter-rouge">:before</code> and <code class="language-plaintext highlighter-rouge">:after</code> to get our toggle looking like the one pictured above.</p>
 
-```
-<form action="#">
-  <div class="switch">
-    <input id="sw1" type="checkbox" class="switch-input">
-    <label for="sw1" class="switch-label">Switch</label>
-  </div>
-</form>
-```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="#"&gt;
+  &lt;div class="switch"&gt;
+    &lt;input id="sw1" type="checkbox" class="switch-input"&gt;
+    &lt;label for="sw1" class="switch-label"&gt;Switch&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code></pre></div></div>
 
-Next up we will write out our CSS, I would recommend using Sass to set some variables, but for this article, we'll use plain old CSS.
-Notice we use transitions on `.switch-label:before` and `.switch-label:after` the transitions provide that animation a starting point for our animation.
+<p>Next up we will write out our CSS, I would recommend using Sass to set some variables, but for this article, we’ll use plain old CSS.
+Notice we use transitions on <code class="language-plaintext highlighter-rouge">.switch-label:before</code> and <code class="language-plaintext highlighter-rouge">.switch-label:after</code> the transitions provide that animation a starting point for our animation.</p>
 
-To finish up, we set the background colour and the position the aformentoned classes. These classes let our transitions know what they need to do sure our transitions work properly.
+<p>To finish up, we set the background colour and the position the aformentoned classes. These classes let our transitions know what they need to do sure our transitions work properly.</p>
 
-```
-/* Switch Container */
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/* Switch Container */
 .switch {
   position: relative;
   display: inline-block;
@@ -92,18 +84,18 @@ To finish up, we set the background colour and the position the aformentoned cla
   left: 30px;
 }
 
-```
+</code></pre></div></div>
 
-Now below we have a demo of what we have just made. You can use this in a form instead of a checkbox, or you could hook it up to some JavaScript for fire an event.
+<p>Now below we have a demo of what we have just made. You can use this in a form instead of a checkbox, or you could hook it up to some JavaScript for fire an event.</p>
 
-Because its based on a checkbox you have quite a bit of freedom on how you wish to use it.
+<p>Because its based on a checkbox you have quite a bit of freedom on how you wish to use it.</p>
 
-You can download the [source here](https://gist.github.com/r3id/baf83e79c0e789fd239f3a1cf040c7ac){:target="_blank"}.
+<p>You can download the <a href="https://gist.github.com/r3id/baf83e79c0e789fd239f3a1cf040c7ac" target="_blank">source here</a>.</p>
 
 <div class="demo-holder">
   <form action="#">
     <div class="switch">
-      <input id="switch-1" type="checkbox" class="switch-input">
+      <input id="switch-1" type="checkbox" class="switch-input" />
       <label for="switch-1" class="switch-label">Switch</label>
     </div>
   </form>
@@ -169,3 +161,4 @@ You can download the [source here](https://gist.github.com/r3id/baf83e79c0e789fd
   }
   </style>
 </div>
+:ET

@@ -1,29 +1,21 @@
----
-layout: article
-title: Slack style loader
-categories: css jquery sass
----
+I"-<p>Loaders are a nice way to keeping users informed that a page is loading, or that its simply doing something. It provides a gentle reassurance and feedback that we’ve not forgotten about the user, or that the page hasn’t crashed or hung.</p>
 
-Loaders are a nice way to keeping users informed that a page is loading, or that its simply doing something. It provides a gentle reassurance and feedback that we've not forgotten about the user, or that the page hasn't crashed or hung.
-
-In todays post we are going to create a really simple loader based off of the one used by [Slack](https://www.slack.com){:target="_blank"}.
+<p>In todays post we are going to create a really simple loader based off of the one used by <a href="https://www.slack.com" target="_blank">Slack</a>.</p>
 
 <div class="image-center">
-<img src="{{ site.url }}/assets/images/articles/slack-logo.png" width="160" />
+<img src="https://r3id.dev/assets/images/articles/slack-logo.png" width="160" />
 </div>
 
-<hr>
+<hr />
 
-So to start off we need to add an element which will allow our CSS to build our loader. So lets create our element and give it the class name `loader`.
+<p>So to start off we need to add an element which will allow our CSS to build our loader. So lets create our element and give it the class name <code class="language-plaintext highlighter-rouge">loader</code>.</p>
 
-```
-<div class="loader"></div>
-```
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="loader"&gt;&lt;/div&gt;
+</code></pre></div></div>
 
-Now on to creating our our Sass code. The first things we need to create are our variables, this will allow us to reference them later, and it keeps our SCSS clean and tidy - feel free to change the colours to suit your project.
+<p>Now on to creating our our Sass code. The first things we need to create are our variables, this will allow us to reference them later, and it keeps our SCSS clean and tidy - feel free to change the colours to suit your project.</p>
 
-```
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 $colors:
   rgba(225, 22, 101, 0.75)
   rgba(61, 186, 145, 0.75)
@@ -36,21 +28,19 @@ $thickness: 0.5em;
 $lat: ($size - $thickness) / 2;
 $offset: $lat - $thickness;
 
-```
+</code></pre></div></div>
 
-With our variables in hand lets start to create our `.loader` class.
+<p>With our variables in hand lets start to create our <code class="language-plaintext highlighter-rouge">.loader</code> class.</p>
 
-
-```
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 .loader {
   position: relative;
   width: $size;
   height: $size;
   transform: rotate(165deg);
 
-  &:before,
-  &:after {
+  &amp;:before,
+  &amp;:after {
     content: '';
     position: absolute;
     top: 50%;
@@ -62,21 +52,20 @@ With our variables in hand lets start to create our `.loader` class.
     transform: translate(-50%, -50%);
   }
 
-  &:before {
+  &amp;:before {
     animation: before 2s infinite;
   }
 
-  &:after {
+  &amp;:after {
     animation: after 2s infinite;
   }
 }
 
-```
+</code></pre></div></div>
 
-Now lets create our animations.
+<p>Now lets create our animations.</p>
 
-```
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 @keyframes before {
   0% {
     width: $thickness;
@@ -129,12 +118,11 @@ Now lets create our animations.
   }
 }
 
-```
+</code></pre></div></div>
 
-Finally, this bit is optional, but this will let us centre our loader.
+<p>Finally, this bit is optional, but this will let us centre our loader.</p>
 
-```
-
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
 html,
 body {
   height: 100%;
@@ -146,9 +134,9 @@ body {
   left: calc(50% - #{$size / 2});
 }
 
-```
+</code></pre></div></div>
 
-Below is a demo of our code, and you can download it [here](https://gist.github.com/r3id/f84c2234d08d2c2082cb538f03ace9c4){:target="_blank"}.
+<p>Below is a demo of our code, and you can download it <a href="https://gist.github.com/r3id/f84c2234d08d2c2082cb538f03ace9c4" target="_blank">here</a>.</p>
 
 <div class="demo-holder">
 <div class="loader"></div>
@@ -216,3 +204,4 @@ Below is a demo of our code, and you can download it [here](https://gist.github.
 }
 </style>
 </div>
+:ET

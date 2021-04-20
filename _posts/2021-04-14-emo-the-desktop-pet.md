@@ -7,5 +7,5 @@ categories: emo, tech, robot
 Coming soon...
 
 <div class="image-center">
-  <img src="assets/images/articles/emo_pet.png" width="300"/>
+  <img src="{{ site.url }}/assets/images/articles/emo_pet.png" width="300"/>
 </div>
