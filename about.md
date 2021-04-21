@@ -11,7 +11,7 @@ I have been a developer for over 15 years and spent many years working with .NET
 
 I’m currently available for freelance work! Let’s chat via [email][emaillink].
 
-Looking for my CV? [Here you go!][emaillink]
+Looking for my CV? Please drop me an [email][emaillink] if you'd like my CV.
 
 ## Experience
 A lot of my career has been working within the financial industry. I found this to be where a lot of the innovation has been and I have gained experience working within some amazing startups.
