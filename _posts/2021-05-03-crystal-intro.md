@@ -1,6 +1,6 @@
 ---
 layout: article
-title: "Crystal clear?"
+title: "Installing Crystal"
 categories: crystal, development
 ---
 
