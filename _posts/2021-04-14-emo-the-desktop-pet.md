@@ -17,7 +17,7 @@ After months of waiting, and various other things that went on - _you can read a
 Yes, I know EMO's not the first desktop pet to see a release [Digital Dream Labs][ddlurl]{:target="_blank"} (formerly Anki) have Vector and Cozmo, While the concept is similar, both robots are very different. EMO walks round, while the other two roll around on their tank like tracks.
 
 <div class="image-center">
-  <img src="{{ site.url }}/assets/images/articles/emo_expressions.jpg" width="300"/>
+  <img src="{{ site.url }}/assets/images/articles/emo_expressions.png" width="300"/>
 </div>
 
 Anyway...
