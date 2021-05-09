@@ -13,9 +13,9 @@ categories: crystal, development
   </svg>
 </div>
 
-Over the last week I discovered [Crystal][crystalurl], via a framwork called [Lucky][luckyurl].
+Over the last week I discovered [Crystal][crystalurl]{:target="_blank"}, via a framwork called [Lucky][luckyurl]{:target="_blank"}.
 
-So I started to do a bit of digging and [Crystal][crystalurl] sounds pretty awesome. Heavily inspired by Ruby, it looks like it could be an easy transition over to [Crystal][crystalurl] for any Ruby developer.
+So I started to do a bit of digging and [Crystal][crystalurl]{:target="_blank"} sounds pretty awesome. Heavily inspired by Ruby, it looks like it could be an easy transition over to [Crystal][crystalurl]{:target="_blank"} for any Ruby developer.
 
 One of the best features I can see is that it uses the compiler to find errors and NULL references, meaning you can find issues with their easy to understand messages quicker.
 

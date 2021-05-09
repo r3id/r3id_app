@@ -1,10 +1,4 @@
----
-layout: article
-title: "Oh Crumbs, here comes Biscuit!"
-categories: analytics, app, rails
----
-
-<div class="image-center">
+I"�	<div class="image-center">
   <svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
       <g id="noun_cookie_3685142-2" transform="translate(22.500005, 22.500002) rotate(24.000000) translate(-22.500005, -22.500002) translate(-0.000000, 0.000002)" fill="#000000" fill-rule="nonzero">
@@ -16,12 +10,12 @@ categories: analytics, app, rails
   </svg>
 </div>
 
-So what's [Biscuit][biscuiturl]{:target="_blank"}, other than a tastey treat you can dunk in your tea?
+<p>So what’s <a href="https://itsbiscuit.com" target="_blank">Biscuit</a>, other than a tastey treat you can dunk in your tea?</p>
 
-Well, [Biscuit][biscuiturl]{:target="_blank"} is a simple, privacy-focused, alternative to Google Analytics - at least it will be when it launches it soon.
+<p>Well, <a href="https://itsbiscuit.com" target="_blank">Biscuit</a> is a simple, privacy-focused, alternative to Google Analytics - at least it will be when it launches it soon.</p>
 
-The main goal was to solve that problem with a privacy-focused, easy-to-integrate solution. [Biscuit][biscuiturl]{:target="_blank"} will also respect your visitors' privacy by never tracking them across websites or collecting uniquely identifiable information. [Biscuit][biscuiturl]{:target="_blank"} will also offer an efficient, easy to use dashboard which provides actionable, aggregated statistics.
+<p>The main goal was to solve that problem with a privacy-focused, easy-to-integrate solution. <a href="https://itsbiscuit.com" target="_blank">Biscuit</a> will also respect your visitors’ privacy by never tracking them across websites or collecting uniquely identifiable information. <a href="https://itsbiscuit.com" target="_blank">Biscuit</a> will also offer an efficient, easy to use dashboard which provides actionable, aggregated statistics.</p>
 
-I will be releasing more information as the project develops. In the meantime you can check out [Biscuit][biscuiturl]{:target="_blank"} at [itsbiscuit.com][biscuiturl]{:target="_blank"}
+<p>I will be releasing more information as the project develops. In the meantime you can check out <a href="https://itsbiscuit.com" target="_blank">Biscuit</a> at <a href="https://itsbiscuit.com" target="_blank">itsbiscuit.com</a></p>
 
-[biscuiturl]: https://itsbiscuit.com
+:ET
