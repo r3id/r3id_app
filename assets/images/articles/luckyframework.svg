@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>luckyframework</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="luckyframework">
+            <polygon id="Path" points="0 0 512 0 512 512 0 512"></polygon>
+            <path d="M193.609,427 C220.992,332 295.992,197 341.992,157 L389.142,240.116 C417.617,290.799 429.435,320.045 430.992,327 C440.212,377.237 407.21,423.812 370.992,427 L193.609,427 Z" id="Path" fill="#9CFD65" fill-rule="nonzero"></path>
+            <path d="M140.992,427 C152.382,338.05 245.992,172 315.992,117 L341.992,157 C285.992,222 225.992,327 193.609,427 L140.992,427 Z" id="Path" fill="#34DB96" fill-rule="nonzero"></path>
+            <path d="M81.762,325.006 C89.092,292.489 203.61,117 203.61,117 C233.61,72 283.61,72 315.993,117 C240.993,202 175.993,327 140.993,427 C101.559,422 70.553,373.235 81.763,325.006 L81.762,325.006 Z" id="Path" fill="#1B92B1" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,22 +1,17 @@
----
-layout: page
-title: About me
----
+I"�$<p>Hello, I’m Alan, and I am a developer, designer, photographer and dad.</p>
 
-Hello, I’m Alan, and I am a developer, designer, photographer and dad.
+<p>I’ve worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. I find myself more at home creating user-friendly, well-crafted front-end experiences with a strong focus on usability, performance, and maintainability.</p>
 
-I’ve worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. I find myself more at home creating user-friendly, well-crafted front-end experiences with a strong focus on usability, performance, and maintainability.
+<p>I have been a developer for over 15 years and spent many years working with .NET (C#). Recently I have embraced Ruby and Swift, and have found myself working on more Rails projects. During 2020 I started learning iOS development and released 2 apps to the app store.</p>
 
-I have been a developer for over 15 years and spent many years working with .NET (C#). Recently I have embraced Ruby and Swift, and have found myself working on more Rails projects. During 2020 I started learning iOS development and released 2 apps to the app store.
+<p>I’m currently available for freelance work! Let’s chat via <a href="mailto:hello@r3id.dev">email</a>.</p>
 
-I’m currently available for freelance work! Let’s chat via [email][emaillink].
+<p>Looking for my CV? Please drop me an <a href="mailto:hello@r3id.dev">email</a> if you’d like my CV.</p>
 
-Looking for my CV? Please drop me an [email][emaillink] if you'd like my CV.
+<h2 id="experience">Experience</h2>
+<p>A lot of my career has been working within the financial industry. I found this to be where a lot of the innovation has been and I have gained experience working within some amazing startups.</p>
 
-## Experience
-A lot of my career has been working within the financial industry. I found this to be where a lot of the innovation has been and I have gained experience working within some amazing startups.
-
-I am now taking this experience and seeing where it can be applied in other industries such as property, and analytical solutions.
+<p>I am now taking this experience and seeing where it can be applied in other industries such as property, and analytical solutions.</p>
 
 <div class="relative mb-4">
   <div class="z-10 relative">
@@ -43,13 +38,13 @@ I am now taking this experience and seeing where it can be applied in other indu
       <div class="block ml-6">
         <div class="flex space-x-2">
           <span class="text-gray-800 font-medium dark:text-white">Construction Supermarket</span>
-          <a href="https://constructionsupermarket.co.uk" target="_blank">
+          <a href="https://www.itsbiscuit.com/" target="_blank">
             <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
           </a>
         </div>
-        <span class="text-sm text-gray-400 mb-0">CTO • August 2020 ~ Present</span>
+        <span class="text-sm text-gray-400 mb-0">CTO • April 2021 ~ Present</span>
       </div>
     </div>
     <div class="pt-2 pb-2 flex items-center">
@@ -134,26 +129,26 @@ I am now taking this experience and seeing where it can be applied in other indu
     </div>
   </div>
   <div class="z-0">
-    <div class="absolute top-8 bg-gray-100 h-90 w-1 ml-0.5 dark:bg-black"></div>
+    <div class="absolute top-8 bg-gray-100 h-100 w-1 ml-0.5 dark:bg-black"></div>
   </div>
 </div>
 
-## Education
-I belive education is important, and am constantly striving to learn new things. Be it a new development language, or improving my exisiting skills. I am currently working on my iOS development skills in my spare time, which keeping up-to-date with the latest movements in the Rails community.
+<h2 id="education">Education</h2>
+<p>I belive education is important, and am constantly striving to learn new things. Be it a new development language, or improving my exisiting skills. I am currently working on my iOS development skills in my spare time, which keeping up-to-date with the latest movements in the Rails community.</p>
 
-## Skills
-- Web Design &amp; Development, Ruby, [Ruby on Rails](http://rubyonrails.org/){:target="_blank"}, [Jekyll](https://jekyllrb.com/){:target="_blank"}, [GraphQL](https://graphql.org){:target="_blank"}
-- HTML, CSS, [Sass](http://sass-lang.com/){:target="_blank"}, [LESS](http://lesscss.org/){:target="_blank"}, Markdown
-- [jQuery](https://jquery.com/){:target="_blank"}, [VueJS](https://vuejs.org/){:target="_blank"}, [Svelte](https://svelte.dev){:target="_blank"}
-- [iOS Development](https://developer.apple.com/){:target="_blank"}, Swift, SwiftUI
-- UI/UX Design
-- PostgreSQL, SQLite3, Microsoft SQL Server, MySQL
-- [Sketch](https://www.sketchapp.com/){:target="_blank"}, [Affinity Designer](https://affinity.serif.com/en-gb/){:target="_blank"}, Adobe Creative Suite, Microsoft Visual Studio
-- Git, [BitBucket](https://bitbucket.org/){:target="_blank"}, [GitHub](https://github.com/){:target="_blank"}, SVN, TFS
-- Google Analytics, Google Tag Manager, Google Webmaster Tools, Google Firebase
-- Photography, Videography, CAA UAV Pilot training completed (2018)
-- Final Cut Pro X, LumaFusion, Affinity Photo
+<h2 id="skills">Skills</h2>
+<ul>
+  <li>Web Design &amp; Development, Ruby, <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="https://graphql.org" target="_blank">GraphQL</a></li>
+  <li>HTML, CSS, <a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">LESS</a>, Markdown</li>
+  <li><a href="https://jquery.com/" target="_blank">jQuery</a>, <a href="https://vuejs.org/" target="_blank">VueJS</a>, <a href="https://svelte.dev" target="_blank">Svelte</a></li>
+  <li><a href="https://developer.apple.com/" target="_blank">iOS Development</a>, Swift, SwiftUI</li>
+  <li>UI/UX Design</li>
+  <li>PostgreSQL, SQLite3, Microsoft SQL Server, MySQL</li>
+  <li><a href="https://www.sketchapp.com/" target="_blank">Sketch</a>, <a href="https://affinity.serif.com/en-gb/" target="_blank">Affinity Designer</a>, Adobe Creative Suite, Microsoft Visual Studio</li>
+  <li>Git, <a href="https://bitbucket.org/" target="_blank">BitBucket</a>, <a href="https://github.com/" target="_blank">GitHub</a>, SVN, TFS</li>
+  <li>Google Analytics, Google Tag Manager, Google Webmaster Tools, Google Firebase</li>
+  <li>Photography, Videography, CAA UAV Pilot training completed (2018)</li>
+  <li>Final Cut Pro X, LumaFusion, Affinity Photo</li>
+</ul>
 
-
-[r3idurl]: https://r3id.dev
-[emaillink]: mailto:hello@r3id.dev
+:ET
