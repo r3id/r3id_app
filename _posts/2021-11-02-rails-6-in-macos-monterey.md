@@ -4,7 +4,7 @@ title:  "Rails 6 setup in macOS Monterey"
 categories: macos catalina rails
 ---
 
-My previous setup tutorials seemed to help a few people setup their Rails environment so I decided to create this updated version now macOS Monterey.
+My previous setup tutorials seemed to help a few people setup their Rails environment so I decided to create this updated version for the recently released macOS Monterey.
 
 ## Install NodeJS
 
