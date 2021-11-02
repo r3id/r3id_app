@@ -48,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```
 
 ```
-touch ~/.zshrc
+nano ~/.zshrc
 ```
 
 at the bottom add the following lines
@@ -115,7 +115,7 @@ Now lets just double check to make sure Rails has installed correctly. Run the f
 
 ```
 rails -v
-Rails 6.0.2
+Rails 6.1.4.1
 ```
 
 ## Setting up our database
