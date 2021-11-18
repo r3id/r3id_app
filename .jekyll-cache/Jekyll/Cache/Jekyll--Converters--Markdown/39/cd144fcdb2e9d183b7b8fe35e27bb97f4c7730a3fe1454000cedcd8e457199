@@ -1,4 +1,4 @@
-I"	%<p>Hello, I’m Alan, and I am a developer, designer, photographer and dad.</p>
+I"O'<p>Hello, I’m Alan, and I am a developer, designer, photographer and dad.</p>
 
 <p>I’ve worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. I find myself more at home creating user-friendly, well-crafted front-end experiences with a strong focus on usability, performance, and maintainability.</p>
 
@@ -37,6 +37,22 @@
       </div>
       <div class="block ml-6">
         <div class="flex space-x-2">
+          <span class="text-gray-800 font-medium dark:text-white">Propiti</span>
+          <a href="https://www.propiti.uk/" target="_blank">
+            <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <span class="text-sm text-gray-400 mb-0">Founder • June 2020 ~ Present</span>
+      </div>
+    </div>
+    <div class="pt-2 pb-2 flex items-center">
+      <div>
+        <div class="h-2 w-2 rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+      </div>
+      <div class="block ml-6">
+        <div class="flex space-x-2">
           <span class="text-gray-800 font-medium dark:text-white">Construction Supermarket</span>
           <a href="https://constructionsupermarket.co.uk" target="_blank">
             <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +60,7 @@
             </svg>
           </a>
         </div>
-        <span class="text-sm text-gray-400 mb-0">CTO • August 2020 ~ Present</span>
+        <span class="text-sm text-gray-400 mb-0">Consultant/Lead Developer • August 2020 ~ December 2021</span>
       </div>
     </div>
     <div class="pt-2 pb-2 flex items-center">
@@ -118,18 +134,13 @@
       <div class="block ml-6">
         <div class="flex space-x-2">
           <span class="text-gray-800 font-medium dark:text-white">Balmoral Financial</span>
-          <a href="http://www.balmoralfinancial.co.uk/" target="_blank">
-            <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-            </svg>
-          </a>
         </div>
         <span class="text-sm text-gray-400 mb-0">Senior Developer • November 2014 ~ March 2015</span>
       </div>
     </div>
   </div>
   <div class="z-0">
-    <div class="absolute top-8 bg-gray-100 h-90 w-1 ml-0.5 dark:bg-black"></div>
+    <div class="absolute top-8 bg-gray-100 h-100 w-1 ml-0.5 dark:bg-black"></div>
   </div>
 </div>
 
@@ -138,7 +149,7 @@
 
 <h2 id="skills">Skills</h2>
 <ul>
-  <li>Web Design &amp; Development, Ruby, <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="https://graphql.org" target="_blank">GraphQL</a></li>
+  <li>Web Design &amp; Development, Ruby, <a href="http://rubyonrails.org/" target="_blank">Ruby on Rails</a>, <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>, <a href="https://crystal-lang.org" target="_blank">Crystal</a>, <a href="https://www.luckyframework.org" target="_blank">Lucky Framework</a>, <a href="https://graphql.org" target="_blank">GraphQL</a></li>
   <li>HTML, CSS, <a href="http://sass-lang.com/" target="_blank">Sass</a>, <a href="http://lesscss.org/" target="_blank">LESS</a>, Markdown</li>
   <li><a href="https://jquery.com/" target="_blank">jQuery</a>, <a href="https://vuejs.org/" target="_blank">VueJS</a>, <a href="https://svelte.dev" target="_blank">Svelte</a></li>
   <li><a href="https://developer.apple.com/" target="_blank">iOS Development</a>, Swift, SwiftUI</li>

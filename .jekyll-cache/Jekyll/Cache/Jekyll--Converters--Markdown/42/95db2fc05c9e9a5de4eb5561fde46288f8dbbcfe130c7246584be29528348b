@@ -1,5 +1,5 @@
-I"r<div class="image-center">
-  <img src="https://r3id.dev/assets/images/articles/emo_pet.png" width="300" />
+I"|<div class="image-center">
+  <img src="http://localhost:4000/assets/images/articles/emo_pet.png" width="300" />
 </div>
 
 <h3 id="what-is-emo">What is EMO?</h3>
@@ -11,7 +11,7 @@
 <p>Yes, I know EMO’s not the first desktop pet to see a release <a href="https://www.digitaldreamlabs.com" target="_blank">Digital Dream Labs</a> (formerly Anki) have Vector and Cozmo, While the concept is similar, both robots are very different. EMO walks round, while the other two roll around on their tank like tracks.</p>
 
 <div class="image-center">
-  <img src="https://r3id.dev/assets/images/articles/emo_expressions.png" width="300" />
+  <img src="http://localhost:4000/assets/images/articles/emo_expressions.png" width="300" />
 </div>
 
 <p>Anyway…</p>

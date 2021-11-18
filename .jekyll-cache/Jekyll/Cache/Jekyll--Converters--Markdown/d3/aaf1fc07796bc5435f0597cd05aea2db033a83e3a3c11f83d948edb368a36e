@@ -1,9 +1,9 @@
-I"-<p>Loaders are a nice way to keeping users informed that a page is loading, or that its simply doing something. It provides a gentle reassurance and feedback that we’ve not forgotten about the user, or that the page hasn’t crashed or hung.</p>
+I"2<p>Loaders are a nice way to keeping users informed that a page is loading, or that its simply doing something. It provides a gentle reassurance and feedback that we’ve not forgotten about the user, or that the page hasn’t crashed or hung.</p>
 
 <p>In todays post we are going to create a really simple loader based off of the one used by <a href="https://www.slack.com" target="_blank">Slack</a>.</p>
 
 <div class="image-center">
-<img src="https://r3id.dev/assets/images/articles/slack-logo.png" width="160" />
+<img src="http://localhost:4000/assets/images/articles/slack-logo.png" width="160" />
 </div>
 
 <hr />

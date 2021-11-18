@@ -1,7 +1,7 @@
-I"<<p>Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won’t be using any JS for this just some clever CSS.</p>
+I"A<p>Today I am going to build up a CSS toggle switch. We will be basing the style to that of the ones used on the iPhone. We won’t be using any JS for this just some clever CSS.</p>
 
 <div class="image-center">
-<img src="https://r3id.dev/assets/images/articles/toggle-switch.png" width="300" />
+<img src="http://localhost:4000/assets/images/articles/toggle-switch.png" width="300" />
 </div>
 
 <hr />
