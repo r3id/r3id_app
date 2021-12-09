@@ -155,12 +155,12 @@ I belive education is important, and am constantly striving to learn new things.
 ## Skills
 - Web Design &amp; Development, Ruby, [Ruby on Rails](http://rubyonrails.org/){:target="_blank"}, [Jekyll](https://jekyllrb.com/){:target="_blank"}, [Crystal](https://crystal-lang.org){:target="_blank"}, [Lucky Framework](https://www.luckyframework.org){:target="_blank"}, [GraphQL](https://graphql.org){:target="_blank"}
 - HTML, CSS, [Sass](http://sass-lang.com/){:target="_blank"}, [LESS](http://lesscss.org/){:target="_blank"}, Markdown
-- [jQuery](https://jquery.com/){:target="_blank"}, [VueJS](https://vuejs.org/){:target="_blank"}, [Svelte](https://svelte.dev){:target="_blank"}
+- [jQuery](https://jquery.com/){:target="_blank"}, [Next.JS](https://nextjs.org/){:target="_blank"}, [Svelte](https://svelte.dev){:target="_blank"}
 - [iOS Development](https://developer.apple.com/){:target="_blank"}, Swift, SwiftUI
 - UI/UX Design
 - PostgreSQL, SQLite3, Microsoft SQL Server, MySQL
-- [Sketch](https://www.sketchapp.com/){:target="_blank"}, [Affinity Designer](https://affinity.serif.com/en-gb/){:target="_blank"}, Adobe Creative Suite, Microsoft Visual Studio
-- Git, [BitBucket](https://bitbucket.org/){:target="_blank"}, [GitHub](https://github.com/){:target="_blank"}, SVN, TFS
+- [Sketch](https://www.sketchapp.com/){:target="_blank"}, [Affinity Designer](https://affinity.serif.com/en-gb/){:target="_blank"}, [Adobe Creative Suite](https://adobe.com){:target="_blank"}, Microsoft Visual Studio
+- [Git](https://git-scm.com){:target="_blank"}, [BitBucket](https://bitbucket.org/){:target="_blank"}, [GitHub](https://github.com/){:target="_blank"}, SVN, TFS
 - Google Analytics, Google Tag Manager, Google Webmaster Tools, Google Firebase
 - Photography, Videography, CAA UAV Pilot training completed (2018)
 - Final Cut Pro X, LumaFusion, Affinity Photo
