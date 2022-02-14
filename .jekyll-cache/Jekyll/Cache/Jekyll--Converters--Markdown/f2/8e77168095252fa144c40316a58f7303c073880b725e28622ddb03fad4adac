@@ -52,7 +52,7 @@ Hello {{ '*alan*' | textilize | upcase }}
 #=&gt; Hello *ALAN*
 
 It's the {{ 'now' | date: "%d %h, %Y " }}
-#=&gt; It's the 24 Nov, 2021 
+#=&gt; It's the 14 Feb, 2022 
 </code></pre></div></div>
 
 <ul>

@@ -1,0 +1,33 @@
+I"0	<p>Now we’re going to actually create the new Rails 7 app.</p>
+
+<p>Since this tutorial is for Rails 7 with Tailwind, the command I’m going to recommend is—</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new APP_NAME --css tailwind -d postgresql
+</code></pre></div></div>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">rails</code> is the Rails CLI (command line interface) tool</li>
+  <li><code class="language-plaintext highlighter-rouge">new</code> tells the Rails CLI that we want to generate a new application</li>
+  <li><code class="language-plaintext highlighter-rouge">APP_NAME</code> is, well, your app name</li>
+  <li><code class="language-plaintext highlighter-rouge">--css tailwind</code> is an optional parameter that tells Rails we want to use Tailwind for styles</li>
+  <li><code class="language-plaintext highlighter-rouge">-d postgresql</code> is an optional parameter that tells Rails we want to use the PostgreSQL to persist our data</li>
+</ul>
+
+<p>I normally always override the default SQLite database, this is just a personal preference.</p>
+
+<p><em>Quick aside: Even though it’s glorious that Rails 7 doesn’t ship with Node or Webpack, there’s an unfortunate chance that you might still need that setup. For example, if you need any sort of JavaScript transpiling (i.e., for CoffeeScript, TypeScript, JSX), you will need to default back to a bundler and a package.json file. This tutorial isn’t going to be focusing on setting up Rails 7 with a bundler, so if you’re in that boat, this tutorial isn’t going to be quite as useful for you.</em></p>
+
+<p>After generating your new Rails app, you’ll need to cd into your new app and create your database.</p>
+
+<p>Run…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails db:create
+</code></pre></div></div>
+
+<p>…and then you can start up your development server…</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails s
+</code></pre></div></div>
+
+<p>Now you can navigate to your browser to <code class="language-plaintext highlighter-rouge">localhost:3000</code>, and if everything has gone according to plan, you should see the Rails default index page.</p>
+:ET
