@@ -1,6 +1,6 @@
-I"0	<p>Now we’re going to actually create the new Rails 7 app.</p>
+I"E	<p>In this post we are going to briefly go over how we create a new Rails 7 app.</p>
 
-<p>Since this tutorial is for Rails 7 with Tailwind, the command I’m going to recommend is—</p>
+<p>Since this tutorial is for Rails 7 with Tailwind, the command I’m going to recommend is</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails new APP_NAME --css tailwind -d postgresql
 </code></pre></div></div>
@@ -19,12 +19,12 @@
 
 <p>After generating your new Rails app, you’ll need to cd into your new app and create your database.</p>
 
-<p>Run…</p>
+<p>Next up we run.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails db:create
 </code></pre></div></div>
 
-<p>…and then you can start up your development server…</p>
+<p>And then you can start up your development server.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rails s
 </code></pre></div></div>
