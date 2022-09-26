@@ -26,25 +26,25 @@ I am now taking this experience and seeing where it can be applied in other indu
       </div>
       <div class="block ml-6">
         <div class="flex space-x-2">
+          <span class="text-gray-800 font-medium dark:text-white">Propiti</span>
+        </div>
+        <span class="text-sm text-gray-400 mb-0">Founder • Feb 2021 ~ Present</span>
+      </div>
+    </div>
+    <div class="pt-2 pb-2 flex items-center">
+      <div>
+        <div class="h-2 w-2 rounded-lg bg-gray-200 dark:bg-gray-700"></div>
+      </div>
+      <div class="block ml-6">
+        <div class="flex space-x-2">
           <span class="text-gray-800 font-medium dark:text-white">Outfund</span>
-          <a href="https://www.out.fund/" target="_blank">
+          <a href="https://out.fund" target="_blank">
             <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
             </svg>
           </a>
         </div>
-        <span class="text-sm text-gray-400 mb-0">Software Engineer • March 2022 ~ Present</span>
-      </div>
-    </div>
-    <div class="pt-2 pb-2 flex items-center">
-      <div>
-        <div class="h-2 w-2 rounded-lg bg-glow"></div>
-      </div>
-      <div class="block ml-6">
-        <div class="flex space-x-2">
-          <span class="text-gray-800 font-medium dark:text-white">Freelane Developer/Designer</span>
-        </div>
-        <span class="text-sm text-gray-400 mb-0">Founder • April 2016 ~ Present</span>
+        <span class="text-sm text-gray-400 mb-0">Software Engineer • March 2022 ~ September 2022</span>
       </div>
     </div>
     <div class="pt-2 pb-2 flex items-center">
