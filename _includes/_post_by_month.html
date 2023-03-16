@@ -1,0 +1,22 @@
+{% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%B %Y'"  %}
+    {% for yearMonth in postsByYearMonth %}
+    <h3 class="flex items-center mt-6" id="y{{post.date | date: "%Y"}}">
+    <span class="font-bold text-xl">{{yearMonth.name | date:"%Y"}}</span>
+    <span class="text-xl ml-auto">{{yearMonth.name | date:"%B"}}</span>
+    </h3>
+    {% for post in yearMonth.items %}
+    <a class="flex items-baseline relative mt-2" href="{{ post.url }}">
+        <p class="flex-initial">{{ post.title }}</p>
+        <hr class="post-spacer">
+        <p class="flex-initial">
+            {% assign d = post.date | date: "%-d"  %}
+            {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st
+            {% when '2' or '22' %}{{ d }}nd
+            {% when '3' or '23' %}{{ d }}rd
+            {% else %}{{ d }}th
+            {% endcase %}
+        </p>
+    </a>
+    {% endfor %}
+{% endfor %}
