@@ -7,7 +7,7 @@ Hello, I’m Alan, and I am a developer, designer, photographer and dad.
 
 I’ve worked through all stages of the development life-cycle for a broad range of clients spanning many industry sectors. I find myself more at home creating user-friendly, well-crafted front-end experiences with a strong focus on usability, performance, and maintainability.
 
-I have been a developer for over 15 years and spent many years working with .NET (C#). Over the last 6 years I have embraced Ruby, and have found myself working on more Rails projects. During 2020 I started learning iOS development and released 2 apps to the app store.
+I have been a developer for over 20 years and spent many years working with .NET (C#). Since 2017 I have embraced Ruby, and have found myself working on more Rails projects. During 2020 I started learning iOS development and released 2 apps to the app store.
 
 I’m currently available for freelance work! Let’s chat via [email][emaillink].
 
@@ -16,13 +16,29 @@ Looking for my CV? Please drop me an [email][emaillink] if you'd like my CV.
 ## Experience
 A lot of my career has been working within the financial industry. I found this to be where a lot of the innovation has been and I have gained experience working within some amazing startups.
 
-I am now taking this experience and seeing where it can be applied in other industries such as property, and analytical solutions.
+I am now taking this experience and seeing where it can be applied in other industries such as government, property, and analytical solutions.
 
 <div class="relative mb-4">
   <div class="z-10 relative">
     <div class="pt-2 pb-2 flex items-center">
       <div>
         <div class="h-2 w-2 rounded-lg bg-glow"></div>
+      </div>
+      <div class="block ml-6">
+        <div class="flex space-x-2">
+          <span class="text-gray-800 font-medium dark:text-white">Triad Group</span>
+          <a href="https://triad.co.uk" target="_blank">
+            <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+            </svg>
+          </a>
+        </div>
+        <span class="text-sm text-gray-400 mb-0">Senior Software Engineer • March 2024 ~ Present</span>
+      </div>
+    </div>
+    <div class="pt-2 pb-2 flex items-center">
+      <div>
+        <div class="h-2 w-2 rounded-lg bg-gray-200 dark:bg-gray-700"></div>
       </div>
       <div class="block ml-6">
         <div class="flex space-x-2">
@@ -33,7 +49,7 @@ I am now taking this experience and seeing where it can be applied in other indu
             </svg>
           </a>
         </div>
-        <span class="text-sm text-gray-400 mb-0">Senior Software Engineer • October 2022 ~ Present</span>
+        <span class="text-sm text-gray-400 mb-0">Senior Software Engineer • October 2022 ~ March 2024</span>
       </div>
     </div>
     <div class="pt-2 pb-2 flex items-center">
@@ -125,22 +141,6 @@ I am now taking this experience and seeing where it can be applied in other indu
           </a>
         </div>
         <span class="text-sm text-gray-400 mb-0">Senior UI • Developer February 2017 ~ July 2017</span>
-      </div>
-    </div>
-    <div class="pt-2 pb-2 flex items-center">
-      <div>
-        <div class="h-2 w-2 rounded-lg bg-gray-200 dark:bg-gray-700"></div>
-      </div>
-      <div class="block ml-6">
-        <div class="flex space-x-2">
-          <span class="text-gray-800 font-medium dark:text-white">Capital on Tap</span>
-          <a href="https://www.capitalontap.com/" target="_blank">
-            <svg class="cursor-pointer w-4 h-4 stroke-current text-gray-500 mt-1 hover:text-glow transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
-            </svg>
-          </a>
-        </div>
-        <span class="text-sm text-gray-400 mb-0">Developer • April 2015 ~ April 2016</span>
       </div>
     </div>
   </div>
